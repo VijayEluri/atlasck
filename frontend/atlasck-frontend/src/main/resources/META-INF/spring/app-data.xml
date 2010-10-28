@@ -24,18 +24,17 @@
     <property name="dataSource" ref="dataSource"/>
     <property name="hibernateProperties">
       <props>
-        <prop key="dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+        <prop key="dialect">org.hibernate.dialect.MySQLInnoDBDialect</prop>
         <prop key="show_sql">true</prop>
       </props>
     </property>
     <property name="mappingResources">
       <list>
-      	<!-- <value>mappings/author.hbm.xml</value>
-        <value>mappings/link.hbm.xml</value> -->
-
-		<value>mappings/Question.hbm.xml</value>
-
-
+      	<value>mappings/Question.hbm.xml</value>
+      	<value>mappings/Visitor.hbm.xml</value>
+      	<value>mappings/CurrentVersion.hbm.xml</value>
+      	<value>mappings/CurrentVersion.hbm.xml</value>
+      	<value>mappings/Answer.hbm.xml</value>
       </list>
     </property>
   </bean>
@@ -54,6 +53,6 @@
   </bean>
 
   <!--repository init area-->
-  <!-- <bean id="repository.links" class="org.linkstorage.repository.HibernateLinkBase"
-        autowire="constructor"/> -->
+  <bean id="repository.currentVersion" class="com.atlasck.repository.CurrentVersion"
+        autowire="constructor"/>
 </beans>
