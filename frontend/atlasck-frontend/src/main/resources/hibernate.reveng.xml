@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-schema="atlasck" match-name=".*"></table-filter>
+	<table-filter match-name="answers" match-catalog="atlasck"></table-filter>
+	<table-filter match-name="current_version"
+		match-catalog="atlasck">
+	</table-filter>
+	<table-filter match-name="questions" match-catalog="atlasck"></table-filter>
+	<table-filter match-name="visitors" match-catalog="atlasck"></table-filter>
+	<table catalog="atlasck" name="answers" class="com.atlasck.domain.Answer"></table>
+	<table catalog="atlasck" name="current_version"
+		class="com.atlasck.domain.CurrentVersion">
+	</table>
+	<table catalog="atlasck" name="visitors" class="com.atlasck.domain.Visitor"></table>
+	<table catalog="atlasck" name="questions" class="com.atlasck.domain.Question"></table>
+</hibernate-reverse-engineering>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+  <context:component-scan base-package="org.atlasck.aspects" />
+
+  <!--Enables the use of @AspectJ style of aspects' declarations. AspectJ run-time isn't necessarily involved-->
+  <aop:aspectj-autoproxy/>
+
+  <!--Platform Transaction Manager declared as "transactionManager" will be used.-->
+  <!--"aspectj" mode enables load-time/compile-time weaving of transactional methods, which enables
+   those methods to be intercepted even when called internally.
+   (Unlike Spring generated proxies which will only be intercepted when called from outside)-->
+  <tx:annotation-driven mode="aspectj"/>
+
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="dataSource" ref="dataSource"/>
+    <property name="hibernateProperties">
+      <props>
+        <prop key="dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+        <prop key="show_sql">true</prop>
+      </props>
+    </property>
+    <property name="mappingResources">
+      <list>
+      	<!-- <value>mappings/author.hbm.xml</value>
+        <value>mappings/link.hbm.xml</value> -->
+
+		<value>mappings/Question.hbm.xml</value>
+
+
+      </list>
+    </property>
+  </bean>
+
+  <context:property-placeholder location="classpath*:/META-INF/properties/*.properties"/>
+
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+    <property name="driverClassName" value="${database.driverClassName}"/>
+    <property name="url" value="${database.url}"/>
+    <property name="username" value="${database.username}"/>
+    <property name="password" value="${database.password}"/>
+  </bean>
+
+  <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    <property name="sessionFactory" ref="sessionFactory"/>
+  </bean>
+
+  <!--repository init area-->
+  <!-- <bean id="repository.links" class="org.linkstorage.repository.HibernateLinkBase"
+        autowire="constructor"/> -->
+</beans>
