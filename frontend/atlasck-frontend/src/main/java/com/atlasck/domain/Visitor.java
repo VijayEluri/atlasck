@@ -11,6 +11,7 @@ import java.util.Set;
  */
 public class Visitor implements java.io.Serializable {
 
+	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String nickname;
 	private String email;

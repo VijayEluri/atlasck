@@ -9,7 +9,7 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
-  <context:component-scan base-package="org.atlasck.aspects" />
+  <context:component-scan base-package="com.atlasck.aspects" />
 
   <!--Enables the use of @AspectJ style of aspects' declarations. AspectJ run-time isn't necessarily involved-->
   <aop:aspectj-autoproxy/>
@@ -33,7 +33,6 @@
       	<value>mappings/Question.hbm.xml</value>
       	<value>mappings/Visitor.hbm.xml</value>
       	<value>mappings/CurrentVersion.hbm.xml</value>
-      	<value>mappings/CurrentVersion.hbm.xml</value>
       	<value>mappings/Answer.hbm.xml</value>
       </list>
     </property>
@@ -53,6 +52,6 @@
   </bean>
 
   <!--repository init area-->
-  <bean id="repository.currentVersion" class="com.atlasck.repository.CurrentVersion"
+  <bean id="repository.currentVersions" class="com.atlasck.repository.CurrentVersionImpl"
         autowire="constructor"/>
 </beans>

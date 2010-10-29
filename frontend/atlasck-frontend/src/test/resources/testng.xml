@@ -6,12 +6,13 @@
   <parameter name="username" value="atlas"/>
   <parameter name="passwd" value="admin"/>
 
-  <!--view names that return from LinkController methods-->
-  <parameter name="getCurrentVersion" value="currentVersion"/>
+  <!--view names that return from LinkController methods
+  <parameter name="getCurrentVersion" value="currentVersion"/>-->
 
-  <test name="integration-tests">
+  <test name="integration-tests-new">
     <packages>
-      <package name="com.atlasck.domain"/>
+    	<package name="com.atlasck.domain"/>
+      <package name="com.atlasck.repository"/>
     </packages>
   </test>
 
