@@ -1,18 +1,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="10" verbose="1" name="AtlasFrontendIntegration-suite"
-	annotations="JDK" parallel="methods">
+<suite verbose="1" name="AtlasFrontendIntegration-suite" annotations="JDK">
 
   <!--base defaults which i'll be passing to my test methods-->
-  <parameter name="username" value="atlas"/>
-  <parameter name="passwd" value="admin"/>
 
   <!--view names that return from LinkController methods
   <parameter name="getCurrentVersion" value="currentVersion"/>-->
 
-  <test name="integration-tests-new">
+  <test name="domainAndRepositoryTest">
+  	<!-- CurrentVersion -->
+  	<parameter name="currentVersion.username" value="atlas"/>
+  	<parameter name="currentVersion.passwd" value="admin"/>
+  	<!-- Answer -->
+	<parameter name="answer.answer" value="answer of the question"/>
+	<parameter name="answer.question" value="this is my question with answer"/>
+	<!-- Question -->
+	<parameter name="question.question" value="this is my question"/>
+	<parameter name="question.title" value="title for my question"/>
+	<!-- Visitor -->
+	<parameter name="visitor.email" value="office@atlasck.comk"/>
+	<parameter name="visitor.nickname" value="asking user"/>
+
     <packages>
     	<package name="com.atlasck.domain"/>
-      <package name="com.atlasck.repository"/>
+      	<package name="com.atlasck.repository"/>
     </packages>
   </test>
 

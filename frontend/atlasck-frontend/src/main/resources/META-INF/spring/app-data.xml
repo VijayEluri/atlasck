@@ -54,4 +54,8 @@
   <!--repository init area-->
   <bean id="repository.currentVersions" class="com.atlasck.repository.CurrentVersionImpl"
         autowire="constructor"/>
+  <bean id="repository.visitors" class="com.atlasck.repository.VisitorImpl"
+        autowire="constructor"/>
+  <bean id="repository.questions" class="com.atlasck.repository.QuestionImpl"
+        autowire="constructor"/>
 </beans>

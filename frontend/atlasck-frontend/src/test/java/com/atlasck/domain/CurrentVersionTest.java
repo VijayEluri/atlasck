@@ -8,7 +8,7 @@ import static org.testng.Assert.assertEquals;
 public class CurrentVersionTest {
 
 	@Test
-	@Parameters({"username", "passwd"})
+	@Parameters({"currentVersion.username", "currentVersion.passwd"})
 	public void setAndGetAttributes(String username, String passwd) {
 		CurrentVersion currentVersion = new CurrentVersion();
 		currentVersion.setUsername(username);

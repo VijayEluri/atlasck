@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.atlasck.domain.CurrentVersion;
 
 @ContextConfiguration(locations = {"classpath:/META-INF/spring/app-data.xml"})
-public class CurrentVersionTest extends AbstractTransactionalTestNGSpringContextTests{
+public class CurrentVersionTest extends AbstractTest<CurrentVersion> {
 
 	@Autowired
 	private CurrentVersionRepo currentVersionRepo;
@@ -20,13 +20,17 @@ public class CurrentVersionTest extends AbstractTransactionalTestNGSpringContext
 	private CurrentVersion currentVersion;
 
 	@BeforeClass
-	@Parameters({"username", "passwd"})
+	@Parameters({"currentVersion.username", "currentVersion.passwd"})
 	public void init(String username, String passwd) {
-		CurrentVersion currentVersion = new CurrentVersion();
-		currentVersion.setUsername(username);
-		currentVersion.setPasswd(passwd);
 
-		this.currentVersion = currentVersion;
+		try {
+			super.init(username, passwd);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		this.currentVersion = super.object;
 	}
 
 	@Test
@@ -40,6 +44,6 @@ public class CurrentVersionTest extends AbstractTransactionalTestNGSpringContext
 			"If link is persisted it must have been assigned an id");
 
 		Assert.assertEquals(incrementedRecords, actualRecords+1,
-			"After adding 1 link, total users' count must increment by 1");
+			"After adding 1 currentVersion, total currentVersions' count must be incremented by 1");
 	}
 }
