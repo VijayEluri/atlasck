@@ -12,7 +12,6 @@
   	<parameter name="currentVersion.passwd" value="admin"/>
   	<!-- Answer -->
 	<parameter name="answer.answer" value="answer of the question"/>
-	<parameter name="answer.question" value="this is my question with answer"/>
 	<!-- Question -->
 	<parameter name="question.question" value="this is my question"/>
 	<parameter name="question.title" value="title for my question"/>

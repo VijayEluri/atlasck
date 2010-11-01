@@ -7,33 +7,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.atlasck.domain.CurrentVersion;
+import com.atlasck.domain.Answer;
 
 @Repository
 @Transactional
-public class CurrentVersionImpl implements CurrentVersionRepo {
+public class AnswerImpl implements AnswerRepo {
 
 	private SessionFactory sessionFactory;
 
 	@Autowired
-	CurrentVersionImpl (SessionFactory sessionFactory) {
+	AnswerImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
 
 	@Override
 	@Transactional
-	public CurrentVersion get(Integer id) {
-		return (CurrentVersion) sessionFactory.getCurrentSession().get(CurrentVersion.class, id);
+	public Answer get(Integer id) {
+		return (Answer) sessionFactory.getCurrentSession().get(Answer.class, id);
 	}
 
 	@Override
 	@Transactional
 	public List<?> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from CurrentVersion c").list();
+		return sessionFactory.getCurrentSession().createQuery("from Answer a").list();
 	}
 
 	@Override
-	public void add(CurrentVersion currentVersion) {
-		sessionFactory.getCurrentSession().save(currentVersion);
+	public void add(Answer answer) {
+		sessionFactory.getCurrentSession().save(answer);
+
 	}
+
 }

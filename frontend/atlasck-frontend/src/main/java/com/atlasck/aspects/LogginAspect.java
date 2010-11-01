@@ -8,15 +8,15 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-@Aspect
 @Component
+@Aspect
 public class LogginAspect {
 	  //Pointcut definition for all repository transactions that get entities
-	  @Pointcut("execution(* org.linkstorage.repository.*.get*(..))")
+	  @Pointcut("execution(* com.atlasck.repository.*.get*(..))")
 	  public void getterTransaction() {}
 
 	  //Pointcut definition for all repository transactions that add entities
-	  @Pointcut("execution(* org.linkstorage.repository.*.add*(..))")
+	  @Pointcut("execution(* com.atlasck.repository.*.add*(..))")
 	  public void adderTransaction() {}
 
 	  //For common Advice on both Pointcuts we combine them to make a single Pointcut

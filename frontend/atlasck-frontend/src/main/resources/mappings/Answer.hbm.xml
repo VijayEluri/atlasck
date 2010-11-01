@@ -8,7 +8,7 @@
             <column name="id" />
             <generator class="identity" />
         </id>
-        <many-to-one name="question" class="com.atlasck.domain.Question" fetch="select">
+        <many-to-one name="question" class="com.atlasck.domain.Question" fetch="select" cascade="all">
             <column name="questions_id" not-null="true" />
         </many-to-one>
         <property name="answer" type="string">

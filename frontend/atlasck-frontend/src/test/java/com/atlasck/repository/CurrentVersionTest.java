@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.atlasck.domain.CurrentVersion;
 
 @ContextConfiguration(locations = {"classpath:/META-INF/spring/app-data.xml"})
-public class CurrentVersionTest extends AbstractTest<CurrentVersion> {
+public class CurrentVersionTest extends AbstractTransactionalTestNGSpringContextTests {
 
 	@Autowired
 	private CurrentVersionRepo currentVersionRepo;
@@ -22,15 +22,11 @@ public class CurrentVersionTest extends AbstractTest<CurrentVersion> {
 	@BeforeClass
 	@Parameters({"currentVersion.username", "currentVersion.passwd"})
 	public void init(String username, String passwd) {
+		CurrentVersion currentVersion = new CurrentVersion();
+		currentVersion.setUsername(username);
+		currentVersion.setPasswd(passwd);
 
-		try {
-			super.init(username, passwd);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		this.currentVersion = super.object;
+		this.currentVersion = currentVersion;
 	}
 
 	@Test

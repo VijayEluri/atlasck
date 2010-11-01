@@ -58,4 +58,6 @@
         autowire="constructor"/>
   <bean id="repository.questions" class="com.atlasck.repository.QuestionImpl"
         autowire="constructor"/>
+   <bean id="repository.answers" class="com.atlasck.repository.AnswerImpl"
+        autowire="constructor"/>
 </beans>
