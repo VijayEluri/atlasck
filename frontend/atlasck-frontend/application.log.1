@@ -1,0 +1,526 @@
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into atlasck.visitors (nickname, email, ip_address, created_at, updated_at) values (?, ?, ?, ?, ?)
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.atlasck.domain.Visitor.questions
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update atlasck.questions set visitors_id=? where id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update atlasck.questions set visitors_id=null where visitors_id=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update atlasck.questions set visitors_id=null where visitors_id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.atlasck.domain.Question.answers
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update atlasck.answers set questions_id=? where id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update atlasck.answers set questions_id=null where questions_id=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update atlasck.answers set questions_id=null where questions_id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.Answer: select answer0_.id as id3_1_, answer0_.questions_id as questions2_3_1_, answer0_.answer as answer3_1_, answer0_.created_at as created4_3_1_, answer0_.updated_at as updated5_3_1_, question1_.id as id0_0_, question1_.visitors_id as visitors2_0_0_, question1_.title as title0_0_, question1_.question as question0_0_, question1_.visible as visible0_0_, question1_.email_answer as email6_0_0_, question1_.created_at as created7_0_0_, question1_.updated_at as updated8_0_0_ from atlasck.answers answer0_ inner join atlasck.questions question1_ on answer0_.questions_id=question1_.id where answer0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.Answer: select answer0_.id as id3_1_, answer0_.questions_id as questions2_3_1_, answer0_.answer as answer3_1_, answer0_.created_at as created4_3_1_, answer0_.updated_at as updated5_3_1_, question1_.id as id0_0_, question1_.visitors_id as visitors2_0_0_, question1_.title as title0_0_, question1_.question as question0_0_, question1_.visible as visible0_0_, question1_.email_answer as email6_0_0_, question1_.created_at as created7_0_0_, question1_.updated_at as updated8_0_0_ from atlasck.answers answer0_ inner join atlasck.questions question1_ on answer0_.questions_id=question1_.id where answer0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
+DEBUG main org.hibernate.loader.collection.OneToManyLoader - Static select for one-to-many com.atlasck.domain.Visitor.questions: select questions0_.visitors_id as visitors2_1_, questions0_.id as id1_, questions0_.id as id0_0_, questions0_.visitors_id as visitors2_0_0_, questions0_.title as title0_0_, questions0_.question as question0_0_, questions0_.visible as visible0_0_, questions0_.email_answer as email6_0_0_, questions0_.created_at as created7_0_0_, questions0_.updated_at as updated8_0_0_ from atlasck.questions questions0_ where questions0_.visitors_id=?
+DEBUG main org.hibernate.loader.collection.OneToManyLoader - Static select for one-to-many com.atlasck.domain.Question.answers: select answers0_.questions_id as questions2_1_, answers0_.id as id1_, answers0_.id as id3_0_, answers0_.questions_id as questions2_3_0_, answers0_.answer as answer3_0_, answers0_.created_at as created4_3_0_, answers0_.updated_at as updated5_3_0_ from atlasck.answers answers0_ where answers0_.questions_id=?
+DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - registered: ff8081812c13b93d012c13b93dfd0000 (unnamed)
+INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiated session factory
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+INFO main org.springframework.orm.hibernate3.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@5092eb76] of Hibernate SessionFactory for HibernateTransactionManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.currentVersions'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.currentVersions'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.currentVersions' via constructor to bean named 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.currentVersions' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.currentVersions'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.visitors'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.visitors'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.visitors' via constructor to bean named 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.visitors' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.visitors'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.questions'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.questions'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.questions' via constructor to bean named 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.questions' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.questions'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.answers'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.answers'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.answers' via constructor to bean named 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.answers' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.answers'
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@4dc4e792]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1397 ms
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Initializing servlet 'content'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'content': initialization started
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Servlet with name 'content' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Wed Nov 03 23:51:34 EET 2010]; root of context hierarchy]
+INFO main org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'content-servlet': startup date [Wed Nov 03 23:51:36 EET 2010]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/app-mvc.xml]
+DEBUG main org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+DEBUG main org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/web/controllers]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/web/controllers] for files matching pattern [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/web/controllers/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/atlasck/web/controllers/**/*.class] to resources [file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/web/controllers/ContentController.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/web/controllers/ContentController.class]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.BeanNameViewResolver#7d6f3ed7]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]
+DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 16 bean definitions from location pattern [/WEB-INF/spring/app-mvc.xml]
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Bean factory for WebApplicationContext for namespace 'content-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@1286d597: defining beans [contentController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@73b044df
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@6e94124f]
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3b3e3940]
+DEBUG main org.springframework.ui.context.support.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7220b722]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1286d597: defining beans [contentController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@73b044df
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'contentController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'contentController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'contentController' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'contentController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#1'
+DEBUG main org.springframework.beans.BeanUtils - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/index] onto handler [org.springframework.web.servlet.mvc.ParameterizableViewController@169da74]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Looking for URL mappings in application context: WebApplicationContext for namespace 'content-servlet': startup date [Wed Nov 03 23:51:36 EET 2010]; parent: Root WebApplicationContext
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'contentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/content/aboutus] onto handler [com.atlasck.web.controllers.ContentController@22e1469c]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'contentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/content/aboutus.*] onto handler [com.atlasck.web.controllers.ContentController@22e1469c]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'contentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/content/aboutus/] onto handler [com.atlasck.web.controllers.ContentController@22e1469c]
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerAdapter': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerMapping': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'servletConfig': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'messageSource': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+DEBUG main org.hibernate.validator.engine.ResourceBundleMessageInterpolator - ValidationMessages not found. Delegating to org.hibernate.validator.ValidationMessages
+DEBUG main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.PersistenceUtil on classpath. All properties will per default be traversable.
+DEBUG main org.hibernate.validator.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#2'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#2'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#3'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#3'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#4'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#4'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#5'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#5'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#6'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#6'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#7'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#7'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#8'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#8'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Looking for URL mappings in application context: WebApplicationContext for namespace 'content-servlet': startup date [Wed Nov 03 23:51:36 EET 2010]; parent: Root WebApplicationContext
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'contentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/content/aboutus] onto handler [com.atlasck.web.controllers.ContentController@22e1469c]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'contentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/content/aboutus.*] onto handler [com.atlasck.web.controllers.ContentController@22e1469c]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'contentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/content/aboutus/] onto handler [com.atlasck.web.controllers.ContentController@22e1469c]
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerAdapter': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerMapping': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'servletConfig': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'messageSource': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.BeanNameViewResolver#7d6f3ed7'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.BeanNameViewResolver#7d6f3ed7'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'viewResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'viewResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@213eb2bc]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6ad591a6]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@5c419e74]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+DEBUG main org.springframework.web.servlet.DispatcherServlet - No HandlerExceptionResolvers found in servlet 'content': using default
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@c33aa9b]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Published WebApplicationContext of servlet 'content' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.content]
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'content': initialization completed in 491 ms
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Servlet 'content' configured successfully
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/integration/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - No handler found in getLastModified
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/integration/aboutus]
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/atlasck-frontend/integration/aboutus] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/integration/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - No handler found in getLastModified
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/integration/aboutus]
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/atlasck-frontend/integration/aboutus] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/integration/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - No handler found in getLastModified
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/integration/aboutus]
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/atlasck-frontend/integration/aboutus] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/integration/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - No handler found in getLastModified
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/integration/aboutus]
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/atlasck-frontend/integration/aboutus] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/integration/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - No handler found in getLastModified
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/integration/aboutus]
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/atlasck-frontend/integration/aboutus] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/integration/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - No handler found in getLastModified
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/integration/aboutus]
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/atlasck-frontend/integration/aboutus] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
+DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html;q=0.9'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html;q=0.9'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html;q=0.9'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.php] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.php] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.php] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.php] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'application/octet-stream' (based on filename 'aboutus.php')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - No acceptable view found; returning null
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+javax.servlet.ServletException: Could not resolve view with name 'aboutus' in servlet with name 'content'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.js]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.js] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.js] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.js] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.js] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.js]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/javascript' (based on filename 'aboutus.js')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - No acceptable view found; returning null
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+javax.servlet.ServletException: Could not resolve view with name 'aboutus' in servlet with name 'content'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.js]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.js] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.js] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.js] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.js] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.js]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/javascript' (based on filename 'aboutus.js')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - No acceptable view found; returning null
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+javax.servlet.ServletException: Could not resolve view with name 'aboutus' in servlet with name 'content'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'

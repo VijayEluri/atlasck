@@ -1,0 +1,183 @@
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.php] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.php] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.php] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.php] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'application/octet-stream' (based on filename 'aboutus.php')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - No acceptable view found; returning null
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+javax.servlet.ServletException: Could not resolve view with name 'aboutus' in servlet with name 'content'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.php] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.php] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.php] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.php] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'application/octet-stream' (based on filename 'aboutus.php')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - No acceptable view found; returning null
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+javax.servlet.ServletException: Could not resolve view with name 'aboutus' in servlet with name 'content'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.php] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.php] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.php] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.php] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.php]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'application/octet-stream' (based on filename 'aboutus.php')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - No acceptable view found; returning null
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+javax.servlet.ServletException: Could not resolve view with name 'aboutus' in servlet with name 'content'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] (based on Accept header)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' determining Last-Modified value for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/aboutus.html] are [/content/aboutus.*]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/aboutus.html] are {}
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/aboutus.html] to handler 'com.atlasck.web.controllers.ContentController@22e1469c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/content/aboutus.html] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'content' processing GET request for [/atlasck-frontend/content/aboutus.html]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media type is 'text/html' (based on filename 'aboutus.html')
+DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] based on requested media type 'text/html'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'aboutus'; URL [/WEB-INF/views/aboutus.jsp]] in DispatcherServlet with name 'content'
+DEBUG btpool0-0 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/aboutus.jsp] in InternalResourceView 'aboutus'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
