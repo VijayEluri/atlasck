@@ -11,14 +11,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/content/*")
 public class ContentController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
-	@RequestMapping(method=RequestMethod.GET, value="aboutus")
+	@RequestMapping(method=RequestMethod.GET, value="about-us")
 	@ResponseStatus(value=HttpStatus.OK)
 	public ModelAndView getAboutUs(ModelMap modelMap) {
-		return new ModelAndView("aboutus");
+		return new ModelAndView("content/aboutus");
 	}
 }
