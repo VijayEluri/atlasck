@@ -1,0 +1,16 @@
+<ul xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" id="leftMenu">
+	<jsp:output omit-xml-declaration="yes"/>
+
+	<li class="aboutTheCompany active">
+		<a href="">За фирмата</a>
+	</li>
+	<li class="services">
+		<a href="">Услуги</a>
+	</li>
+	<li class="onlineConsultations">
+		<a href="">Онлайн консултации</a>
+	</li>
+	<li class="feedback">
+		<a href="">Обратна връзка</a>
+	</li>
+</ul>
