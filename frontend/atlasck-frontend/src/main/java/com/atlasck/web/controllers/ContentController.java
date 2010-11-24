@@ -15,6 +15,19 @@ public class ContentController {
 
 	@RequestMapping(value="about-us", method=RequestMethod.GET)
 	public String getAboutUs(ModelMap modelMap) {
+		modelMap.addAttribute("actionName", "content.aboutUs");
 		return "content/aboutus";
+	}
+
+	@RequestMapping(value="services", method=RequestMethod.GET)
+	public String getServices(ModelMap modelMap) {
+		modelMap.addAttribute("actionName", "content.services");
+		return "content/services";
+	}
+
+	@RequestMapping(value="feedback", method=RequestMethod.GET)
+	public String getFeedback(ModelMap modelMap) {
+		modelMap.addAttribute("actionName", "content.feedback");
+		return "content/feedback";
 	}
 }

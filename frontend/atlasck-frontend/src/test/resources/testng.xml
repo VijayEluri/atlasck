@@ -25,4 +25,14 @@
     </packages>
   </test>
 
+  <test name="controllerTest">
+  	<parameter name="getAboutUs" value="content/aboutus" />
+  	<parameter name="getServices" value="content/services" />
+  	<parameter name="getFeedback" value="content/feedback" />
+
+  	<packages>
+  		<package name="com.atlasck.web.controllers"/>
+  	</packages>
+  </test>
+
 </suite>

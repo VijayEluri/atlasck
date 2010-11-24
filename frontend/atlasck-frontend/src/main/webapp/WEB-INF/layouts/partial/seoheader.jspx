@@ -2,4 +2,5 @@
 	<jsp:output omit-xml-declaration="yes"/>
 
 	<title>atlasck title</title>
+	<meta name="description" content="This is the atlasck page" />
 </jsp:root>

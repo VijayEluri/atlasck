@@ -7,5 +7,13 @@
 	<classpathentry kind="src" path="src/main/webapp"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/georgi/.m2/repository/org/testng/testng/5.12.1/testng-5.12.1.jar" sourcepath="/home/georgi/.m2/repository/org/testng/testng/5.12.1/testng-5.12.1-sources.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="5.12.1"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,6 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" class="content">
+	<jsp:output omit-xml-declaration="yes"/>
+
+	<h2>Да се свържем със счетоводна кантора Атлас</h2>
+
+</div>

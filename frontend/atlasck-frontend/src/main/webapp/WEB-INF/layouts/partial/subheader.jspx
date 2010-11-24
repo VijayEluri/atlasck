@@ -6,7 +6,9 @@
 	</div>
 
 	<ul class="breadcrumb">
-		<li>За фирмата</li>
-		<li class="aboutTheCompany">За фирмата</li>
+		<c:if test="${actionName == 'content.aboutUs'}">
+		<spring:url value="/content/services" var="content_services_url"/>
+		<li class="aboutTheCompany"><a href="${content_services_url}.html">За фирмата</a></li>
+		</c:if>
 	</ul>
 </div>

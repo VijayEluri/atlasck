@@ -4,4 +4,12 @@
     <definition extends="default" name="content/aboutus">
         <put-attribute name="body" value="/WEB-INF/views/content/aboutus.jspx"/>
     </definition>
+
+    <definition extends="default" name="content/services">
+        <put-attribute name="body" value="/WEB-INF/views/content/services.jspx"/>
+    </definition>
+
+    <definition extends="default" name="content/feedback">
+        <put-attribute name="body" value="/WEB-INF/views/content/feedback.jspx"/>
+    </definition>
 </tiles-definitions>

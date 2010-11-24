@@ -17,15 +17,15 @@
 	</rule>
 	<rule>
 		<from>/</from>
-		<to last="true">/app/index</to>
+		<to last="true">/app/content/about-us.html</to>
 	</rule>
 	<rule>
 		<from>/app/**</from>
 		<to last="true">/app/$1</to>
 	</rule>
 	<rule>
-		<from>/**</from>
-		<to>/app/$1</to>
+		<from>/**.html</from>
+		<to>/app/$1.html</to>
 	</rule>
 	<outbound-rule>
 		<from>/app/**</from>
