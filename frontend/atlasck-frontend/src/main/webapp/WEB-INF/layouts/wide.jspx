@@ -18,31 +18,32 @@
 		<tiles:insertAttribute name="seoheader" />
 
 		<spring:url value="/static/styles/main.css" var="main_css_url"/>
-		<spring:url value="/" var="home_url" />
 		<link rel="stylesheet" type="text/css" media="screen" href="${main_css_url}" />
 	</head>
-   	<body>
+   	<body class="wide">
    		<div id="wrapper">
 
 			<div id="body">
 				<tiles:insertAttribute name="subheader"/>
 
-				<div class="content clearfix">
-					<div id="rightContainer" class="floatRight">
+				<div class="content">
+					<div id="rightContainer">
 						<tiles:insertAttribute name="body"/>
 					</div>
 
-					<div id="leftContainer" class="floatRight">
+					<div id="leftContainer">
 						<tiles:insertAttribute name="leftmenu" />
 					</div>
 
+					<br class="cleaner" />
 				</div>
 			</div>
 
 			<div id="header">
 				<div class="content clearfix">
+					<spring:url value="/" var="home_url" />
 					<a href="${home_url }" title="начална страница към счетоводна кантора атлас">
-						<img src="${home_url }static/images/atlas-ck-logo.jpg" width="300" height="160" class="logo" border="0" alt="Счетоводна кантора АТЛАС"/>
+						<img src="/atlasck-frontend/static/images/atlas-ck-logo.jpg" width="300" height="160" class="logo" border="0" alt="Счетоводна кантора АТЛАС"/>
 					</a>
 
 					<div id="language" class="floatLeft">

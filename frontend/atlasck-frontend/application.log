@@ -1,165 +1,43 @@
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-4 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-4 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-4 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-4 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-4 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-4 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-4 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-4 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-4 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-4 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-4 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-4 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-4 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-11 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@5262667'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-11 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-11 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-11 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-11 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@7e24d517'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
+DEBUG btpool0-19 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-19 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
+DEBUG btpool0-19 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@70b125bd'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-19 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-19 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
+DEBUG btpool0-19 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/feedback.html]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/feedback.html] are [/content/**/feedback.*]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/feedback.html] are {}
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/feedback.html] to handler 'com.atlasck.web.controllers.ContentController@7e24d517'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/feedback.html] is: -1
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/feedback.html]
+DEBUG btpool0-19 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getFeedback(org.springframework.ui.ModelMap)
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/feedback'; URL [content/feedback]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-19 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/feedback'
+DEBUG btpool0-19 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/feedback'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
+DEBUG btpool0-19 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@70b125bd'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-19 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-19 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
+DEBUG btpool0-19 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
+DEBUG btpool0-19 org.springframework.web.servlet.DispatcherServlet - Successfully completed request

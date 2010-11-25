@@ -7,8 +7,8 @@
  	</c:if>
 
 	<li class="aboutTheCompany ${active_class}">
-	 	<spring:url value="/content/about-us" var="content_about_us_url"/>
-		<a href="${content_about_us_url}.html">За фирмата</a>
+	 	<spring:url value="/" var="url"/>
+		<a href="${url}">За фирмата</a>
 	</li>
 
 	<c:set var="active_class" value="" scope="page" />
@@ -17,8 +17,8 @@
  	</c:if>
 
 	<li class="services ${active_class}">
-		<spring:url value="/content/services" var="content_services_url"/>
-		<a href="${content_services_url}.html">Услуги</a>
+		<spring:url value="/content/services" var="url"/>
+		<a href="${url}.html">Услуги</a>
 	</li>
 
 	<c:set var="active_class" value="" scope="page" />
@@ -26,8 +26,14 @@
  		<c:set var="active_class" value="active" scope="page" />
  	</c:if>
 
+	<c:set var="active_class" value="" scope="page" />
+	<c:if test="${actionName == 'advice.list'}">
+ 		<c:set var="active_class" value="active" scope="page" />
+ 	</c:if>
+
 	<li class="onlineConsultations ${active_class}">
-		<a href="">Онлайн консултации</a>
+		<spring:url value="/advice/list" var="url" />
+		<a href="${url}.html">Онлайн консултации</a>
 	</li>
 
 	<c:set var="active_class" value="" scope="page" />
@@ -36,8 +42,8 @@
  	</c:if>
 
 	<li class="feedback ${active_class}">
-		<spring:url value="/content/feedback" var="content_feedback_url" />
-		<a href="${content_feedback_url}.html">Обратна връзка</a>
+		<spring:url value="/content/feedback" var="url" />
+		<a href="${url}.html">Обратна връзка</a>
 	</li>
 
 </ul>

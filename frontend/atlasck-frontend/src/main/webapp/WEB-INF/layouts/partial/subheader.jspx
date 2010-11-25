@@ -7,8 +7,23 @@
 
 	<ul class="breadcrumb">
 		<c:if test="${actionName == 'content.aboutUs'}">
-		<spring:url value="/content/services" var="content_services_url"/>
-		<li class="aboutTheCompany"><a href="${content_services_url}.html">За фирмата</a></li>
+		<spring:url value="/content/about-us" var="url"/>
+		<li><a href="${url}.html" class="aboutTheCompany">За фирмата</a></li>
+		</c:if>
+
+		<c:if test="${actionName == 'content.services'}">
+		<spring:url value="/content/services" var="url"/>
+		<li><a href="${url}.html" class="services">Услуги</a></li>
+		</c:if>
+
+		<c:if test="${actionName == 'content.feedback'}">
+		<spring:url value="/content/feedback" var="url"/>
+		<li><a href="${url}.html" class="feedback">Услуги</a></li>
+		</c:if>
+
+		<c:if test="${actionName == 'advice.list'}">
+		<spring:url value="/advice/list" var="url"/>
+		<li><a href="${url}.html" class="onlineConsultations">Консултации</a></li>
 		</c:if>
 	</ul>
 </div>

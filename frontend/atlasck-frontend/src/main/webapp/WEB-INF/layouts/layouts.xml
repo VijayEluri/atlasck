@@ -12,4 +12,11 @@
 		<put-attribute name="seoheader" value="/WEB-INF/layouts/partial/seoheader.jspx" />
 	</definition>
 
+	<definition name="wide" template="/WEB-INF/layouts/wide.jspx">
+		<put-attribute name="leftmenu" value="/WEB-INF/layouts/partial/leftmenu.jspx" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/partial/footer.jspx" />
+		<put-attribute name="subheader" value="/WEB-INF/layouts/partial/subheader.jspx" />
+		<put-attribute name="seoheader" value="/WEB-INF/layouts/partial/seoheader.jspx" />
+	</definition>
+
 </tiles-definitions>

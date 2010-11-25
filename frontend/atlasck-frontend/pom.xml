@@ -130,13 +130,13 @@
       <artifactId>com.springsource.javax.persistence</artifactId>
       <version>1.0.0</version>
     </dependency>
-	<!-- possible problem with tomcat -->
+	<!-- possible problem with tomcat
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
       <version>2.1</version>
     </dependency>
-    <!-- -->
+    -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>

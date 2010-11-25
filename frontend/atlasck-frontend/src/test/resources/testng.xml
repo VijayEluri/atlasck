@@ -30,6 +30,8 @@
   	<parameter name="getServices" value="content/services" />
   	<parameter name="getFeedback" value="content/feedback" />
 
+  	<parameter name="getAdviceList" value="advice/list" />
+
   	<packages>
   		<package name="com.atlasck.web.controllers"/>
   	</packages>
