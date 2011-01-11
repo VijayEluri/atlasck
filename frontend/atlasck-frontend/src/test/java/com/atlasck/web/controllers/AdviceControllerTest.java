@@ -34,4 +34,28 @@ public class AdviceControllerTest {
 
 		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
 	}
+
+	@Test(alwaysRun = true)
+	@Parameters({"questionForm"})
+	public void create(String page) throws Exception {
+		request.setRequestURI("/advice/question");
+		request.setMethod("POST");
+
+		adviceController = new AdviceController();
+		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
+
+		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
+	}
+
+	@Test(alwaysRun = true)
+	@Parameters({"questionForm"})
+	public void createForm(String page) throws Exception {
+		request.setRequestURI("/advice/question");
+		request.setMethod("GET");
+
+		adviceController = new AdviceController();
+		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
+
+		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
+	}
 }

@@ -1,10 +1,11 @@
-#Thu Nov 25 20:56:15 EET 2010
+#Tue Jan 11 21:11:59 EET 2011
 eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/layouts/partial/footer.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/layouts/partial/leftmenu.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/layouts/partial/seoheader.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/layouts/partial/subheader.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/views/advice/list.jspx=UTF-8
+encoding//src/main/webapp/WEB-INF/views/advice/question.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/views/content/aboutus.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/views/content/feedback.jspx=UTF-8
 encoding//src/main/webapp/WEB-INF/views/content/services.jspx=UTF-8

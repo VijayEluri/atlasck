@@ -5,4 +5,8 @@
         <put-attribute name="body" value="/WEB-INF/views/advice/list.jspx"/>
     </definition>
 
+    <definition extends="wide" name="advice/question">
+        <put-attribute name="body" value="/WEB-INF/views/advice/question.jspx"/>
+    </definition>
+
 </tiles-definitions>
