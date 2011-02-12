@@ -12,13 +12,8 @@
   <context:component-scan base-package="com.atlasck.aspects" />
 
   <!--Enables the use of @AspectJ style of aspects' declarations. AspectJ run-time isn't necessarily involved-->
-  <aop:aspectj-autoproxy/>
-
-  <!--Platform Transaction Manager declared as "transactionManager" will be used.-->
-  <!--"aspectj" mode enables load-time/compile-time weaving of transactional methods, which enables
-   those methods to be intercepted even when called internally.
-   (Unlike Spring generated proxies which will only be intercepted when called from outside)-->
-  <tx:annotation-driven mode="aspectj"/>
+  <aop:aspectj-autoproxy />
+  <tx:annotation-driven mode="aspectj" />
 
   <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
     <property name="dataSource" ref="dataSource"/>
@@ -38,7 +33,7 @@
     </property>
   </bean>
 
-  <context:property-placeholder location="classpath*:/META-INF/properties/*.properties"/>
+  <context:property-placeholder location="classpath:META-INF/properties/*.properties" />
 
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="driverClassName" value="${database.driverClassName}"/>
