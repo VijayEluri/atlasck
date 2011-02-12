@@ -10,27 +10,17 @@
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd
 	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-	<!--controllers are autodetected pojo's annotated with @Controller-->
-	<context:component-scan base-package="com.atlasck.web.controllers" use-default-filters="false">
-	  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-	</context:component-scan>
+	<context:component-scan base-package="com.atlasck" />
+	<context:annotation-config />
 
-	<!--
-		support for @Controller mvc request mapping.
-		also registers formatters and validators for use across @Controller
-	-->
 	<mvc:annotation-driven/>
 
-	<!-- select static view for rendering without going through @Controller -->
 	<mvc:view-controller path="/index"/>
 
-	<!-- Resolves logical view names returned by Controllers to Tiles; a view
-		 name to resolve is treated as the name of a tiles definition -->
 	<bean class="org.springframework.js.ajax.AjaxUrlBasedViewResolver" id="tilesViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView"/>
 	</bean>
 
-	<!-- Configures the Tiles layout system -->
 	<bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer" id="tilesConfigurer">
 		<property name="definitions">
 			<list>

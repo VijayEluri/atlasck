@@ -1,19 +1,274 @@
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@2f600492'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'content/aboutus'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+	)
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=index, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/index.jspx}})
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+
+)
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,tiles-definitions,tiles-definitions)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endDocument()
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - setDocumentLocator(com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy@48b89bc5)
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startDocument()
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - resolveEntity('-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN', 'http://tiles.apache.org/dtds/tiles-config_2_1.dtd')
+DEBUG btpool0-0 org.apache.commons.digester.Digester -  Resolving to alternate DTD 'jar:file:/home/georgi/.m2/repository/org/apache/tiles/com.springsource.org.apache.tiles.core/2.1.3/com.springsource.org.apache.tiles.core-2.1.3.jar!/org/apache/tiles/resources/tiles-config_2_1.dtd'
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,tiles-definitions,tiles-definitions)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+    )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+        )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+    )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=content/aboutus, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/content/aboutus.jspx}})
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+
+    )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+        )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+    )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=content/services, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/content/services.jspx}})
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+
+    )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+        )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@5195da41
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@66780515
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+    )
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=content/feedback, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/content/feedback.jspx}})
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@27f40b69
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
+DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
+)
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,tiles-definitions,tiles-definitions)
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions'
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
+DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
+DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endDocument()
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
+DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='advice/list' extends='wide'.
+DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='advice/question' extends='wide'.
+DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='index' extends='default'.
+DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='content/aboutus' extends='default'.
+DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='content/services' extends='default'.
+DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='content/feedback' extends='default'.
 DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
 DEBUG btpool0-0 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
 DEBUG btpool0-0 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
 DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services] are [/content/**/services/, /content/**/services]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services] to handler 'com.atlasck.web.controllers.ContentController@1330b682'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services] is: -1
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services]
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'content/services'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@1330b682'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@78db81f3'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/list'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@1330b682'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@1330b682'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
 DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
 DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
 DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@2f600492'
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@1330b682'
 DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
 DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
 DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
@@ -21,473 +276,17 @@ DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering vi
 DEBUG btpool0-0 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
 DEBUG btpool0-0 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
 DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@29d6399b'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/list'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-0 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
-DEBUG btpool0-0 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/question.html]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/question.html] are [/advice/**/question.*]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/question.html] are {}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/question.html] to handler 'com.atlasck.web.controllers.AdviceController@29d6399b'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/question.html] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/question.html]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.createForm(org.springframework.ui.ModelMap)
-INFO btpool0-0 com.atlasck.web.controllers.AdviceController - create question form
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/question'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
-javax.servlet.ServletException: Could not resolve view with name 'advice/question' in servlet with name 'atlasck'
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
-	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
-	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
-	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
-	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
-	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
-	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
-	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
-	at org.mortbay.jetty.Server.handle(Server.java:324)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
-	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
-	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/question.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/question.html] are [/advice/**/question.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/question.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/question.html] to handler 'com.atlasck.web.controllers.AdviceController@29d6399b'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/question.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/question.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.createForm(org.springframework.ui.ModelMap)
-INFO btpool0-2 com.atlasck.web.controllers.AdviceController - create question form
-DEBUG btpool0-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/question'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Could not complete request
-javax.servlet.ServletException: Could not resolve view with name 'advice/question' in servlet with name 'atlasck'
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
-	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
-	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
-	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
-	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
-	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
-	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
-	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
-	at org.mortbay.jetty.Server.handle(Server.java:324)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
-	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
-	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/question.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/question.html] are [/advice/**/question.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/question.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/question.html] to handler 'com.atlasck.web.controllers.AdviceController@29d6399b'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/question.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/question.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.createForm(org.springframework.ui.ModelMap)
-INFO btpool0-2 com.atlasck.web.controllers.AdviceController - create question form
-DEBUG btpool0-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/question'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Could not complete request
-javax.servlet.ServletException: Could not resolve view with name 'advice/question' in servlet with name 'atlasck'
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1042)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:798)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
-	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
-	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
-	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
-	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
-	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
-	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
-	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
-	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
-	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
-	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
-	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
-	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
-	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
-	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
-	at org.mortbay.jetty.Server.handle(Server.java:324)
-	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
-	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
-	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
-	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
-	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
-	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
-	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
-INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'atlasck-servlet': startup date [Tue Jan 11 23:46:38 EET 2011]; parent: Root WebApplicationContext
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'atlasck-servlet': startup date [Tue Jan 18 21:26:00 EET 2011]; parent: Root WebApplicationContext
 DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e01c1f2: defining beans [adviceController,contentController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,tilesViewResolver,tilesConfigurer]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7548c02f
+INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6f5f6479: defining beans [adviceController,contentController,visitorImpl,questionImpl,currentVersionImpl,answerImpl,logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,tilesViewResolver,tilesConfigurer]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@669d2f26
 DEBUG Shutdown org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'tilesConfigurer'
 INFO Shutdown org.apache.tiles.servlet.context.ServletUtil - Removing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
 DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)#8': [org.springframework.web.servlet.config.viewControllerHandlerMapping]
 DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
 DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
-INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Jan 11 23:46:32 EET 2011]; root of context hierarchy
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Jan 18 21:25:59 EET 2011]; root of context hierarchy
 DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7548c02f: defining beans [logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.currentVersions,repository.visitors,repository.questions,repository.answers]; root of factory hierarchy
+INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@669d2f26: defining beans [logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.currentVersions,repository.visitors,repository.questions,repository.answers]; root of factory hierarchy
 DEBUG Shutdown org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'sessionFactory'
 INFO Shutdown org.springframework.orm.hibernate3.LocalSessionFactoryBean - Closing Hibernate SessionFactory
 INFO Shutdown org.hibernate.impl.SessionFactoryImpl - closing
-INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
-INFO main org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Jan 11 23:47:57 EET 2011]; root of context hierarchy
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/spring]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/spring] for files matching pattern [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/spring/app-*.xml]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/home/georgi/.m2/repository/org/springframework/webflow/org.springframework.js/2.0.8.RELEASE/org.springframework.js-2.0.8.RELEASE.jar]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:META-INF/spring/app-*.xml] to resources [file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/spring/app-data.xml]]
-INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/spring/app-data.xml]
-DEBUG main org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-2.5.xsd
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-2.5.xsd
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-3.0.xsd] in classpath: org/springframework/aop/config/spring-aop-3.0.xsd
-DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-3.0.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.0.xsd
-DEBUG main org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
-DEBUG main org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/aspects]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/aspects] for files matching pattern [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/aspects/**/*.class]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/atlasck/aspects/**/*.class] to resources [file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/aspects/LogginAspect.class]]
-DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/com/atlasck/aspects/LogginAspect.class]
-DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 16 bean definitions from location pattern [classpath*:META-INF/spring/app-*.xml]
-DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@2e39d325: defining beans [logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.currentVersions,repository.visitors,repository.questions,repository.answers]; root of factory hierarchy
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties] for files matching pattern [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties/*.properties]
-DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:/META-INF/properties/*.properties] to resources [file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties/database.properties], file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties/log4j.properties]]
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
-INFO main org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties/database.properties]
-INFO main org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/target/classes/META-INF/properties/log4j.properties]
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
-DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@453f0a8]
-DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@661e937f]
-DEBUG main org.springframework.ui.context.support.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@40d38976]
-INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2e39d325: defining beans [logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.currentVersions,repository.visitors,repository.questions,repository.answers]; root of factory hierarchy
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logginAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'logginAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'logginAspect' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'logginAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAspect' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.config.internalTransactionAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAspect'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
-INFO main org.hibernate.cfg.Environment - Hibernate 3.3.2.GA
-INFO main org.hibernate.cfg.Environment - hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
-INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
-DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
-DEBUG main org.hibernate.util.DTDEntityResolver - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
-DEBUG main org.hibernate.util.DTDEntityResolver - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
-INFO main org.hibernate.cfg.HbmBinder - Mapping class: com.atlasck.domain.Question -> questions
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: id -> id
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: visitor -> visitors_id
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: title -> title
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: question -> question
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: visible -> visible
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: emailAnswer -> email_answer
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: createdAt -> created_at
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: updatedAt -> updated_at
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: answers
-DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
-DEBUG main org.hibernate.util.DTDEntityResolver - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
-DEBUG main org.hibernate.util.DTDEntityResolver - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
-INFO main org.hibernate.cfg.HbmBinder - Mapping class: com.atlasck.domain.Visitor -> visitors
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: id -> id
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: nickname -> nickname
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: email -> email
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: ipAddress -> ip_address
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: createdAt -> created_at
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: updatedAt -> updated_at
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: questions
-DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
-DEBUG main org.hibernate.util.DTDEntityResolver - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
-DEBUG main org.hibernate.util.DTDEntityResolver - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
-INFO main org.hibernate.cfg.HbmBinder - Mapping class: com.atlasck.domain.CurrentVersion -> current_version
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: id -> id
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: username -> username
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: passwd -> passwd
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: maintenance -> maintenance
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: httpAuth -> http_auth
-DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
-DEBUG main org.hibernate.util.DTDEntityResolver - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
-DEBUG main org.hibernate.util.DTDEntityResolver - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
-INFO main org.hibernate.cfg.HbmBinder - Mapping class: com.atlasck.domain.Answer -> answers
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: id -> id
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: question -> questions_id
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: answer -> answer
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: createdAt -> created_at
-DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: updatedAt -> updated_at
-DEBUG main org.hibernate.cfg.Configuration - processing extends queue
-DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
-DEBUG main org.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.atlasck.domain.Question.answers
-INFO main org.hibernate.cfg.HbmBinder - Mapping collection: com.atlasck.domain.Question.answers -> answers
-DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: questions_id, one-to-many: com.atlasck.domain.Answer
-DEBUG main org.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.atlasck.domain.Visitor.questions
-INFO main org.hibernate.cfg.HbmBinder - Mapping collection: com.atlasck.domain.Visitor.questions -> questions
-DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: visitors_id, one-to-many: com.atlasck.domain.Question
-DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
-DEBUG main org.hibernate.cfg.Configuration - processing association property references
-DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
-DEBUG main org.hibernate.cfg.Configuration - resolving reference to class: com.atlasck.domain.Question
-DEBUG main org.hibernate.cfg.Configuration - resolving reference to class: com.atlasck.domain.Visitor
-INFO main org.springframework.orm.hibernate3.LocalSessionFactoryBean - Building new Hibernate SessionFactory
-DEBUG main org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
-DEBUG main org.hibernate.cfg.Configuration - processing extends queue
-DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
-DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
-DEBUG main org.hibernate.cfg.Configuration - processing association property references
-DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
-DEBUG main org.hibernate.cfg.Configuration - resolving reference to class: com.atlasck.domain.Question
-DEBUG main org.hibernate.cfg.Configuration - resolving reference to class: com.atlasck.domain.Visitor
-INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
-INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.41-3ubuntu12.8
-INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.12 ( Revision: ${bzr.revision-id} )
-INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
-INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
-INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
-INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
-INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
-INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
-DEBUG main org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
-INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
-INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
-INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
-INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
-INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
-INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
-INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
-INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
-INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
-INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
-INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
-INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
-INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
-DEBUG main org.hibernate.impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
-DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/home/georgi/opt/jdk1.6.0_21/jre/lib/amd64, java.vm.version=17.0-b16, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend, java.runtime.version=1.6.0_21-b06, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate3.SpringSessionContext, java.endorsed.dirs=/home/georgi/opt/jdk1.6.0_21/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, webapp.root=/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/src/main/webapp/, line.separator=
-, java.vm.specification.vendor=Sun Microsystems Inc., os.name=Linux, classworlds.conf=/home/georgi/opt/eclipse-jee-helios-linux-gtk-x86_64/workspace/.metadata/.plugins/org.maven.ide.eclipse/launches/m2conf7664464584572885391.tmp, sun.jnu.encoding=UTF-8, java.library.path=/home/georgi/opt/jdk1.6.0_21/jre/lib/amd64/server:/home/georgi/opt/jdk1.6.0_21/jre/lib/amd64:/home/georgi/opt/jdk1.6.0_21/jre/../lib/amd64:/usr/lib64/xulrunner-addons:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot 64-Bit Server Compiler, hibernate.transaction.factory_class=org.springframework.orm.hibernate3.SpringTransactionFactory, os.version=2.6.32-24-generic, user.home=/home/georgi, user.timezone=Europe/Sofia, java.awt.printerjob=sun.print.PSPrinterJob, java.specification.version=1.6, file.encoding=UTF-8, show_sql=true, user.name=georgi, java.class.path=/home/georgi/opt/eclipse-jee-helios-linux-gtk-x86_64/plugins/org.maven.ide.eclipse.maven_embedder_0.10.2.20100623-1649/jars/plexus-classworlds-2.2.2.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.0, sun.arch.data.model=64, java.home=/home/georgi/opt/jdk1.6.0_21/jre, java.specification.vendor=Sun Microsystems Inc., user.language=en, java.vm.info=mixed mode, java.version=1.6.0_21, java.ext.dirs=/home/georgi/opt/jdk1.6.0_21/jre/lib/ext:/usr/java/packages/lib/ext, securerandom.source=file:/dev/./urandom, sun.boot.class.path=/home/georgi/opt/jdk1.6.0_21/jre/lib/resources.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/rt.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/sunrsasign.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/jsse.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/jce.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/charsets.jar:/home/georgi/opt/jdk1.6.0_21/jre/classes, java.vendor=Sun Microsystems Inc., maven.home=/home/georgi/dev/project/com/uvwebs/atlasck/frontend/atlasck-frontend/EMBEDDED, file.separator=/, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=, dialect=org.hibernate.dialect.MySQLInnoDBDialect}
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.atlasck.domain.Answer
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from atlasck.answers where id =?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select answer_.id, answer_.questions_id as questions2_3_, answer_.answer as answer3_, answer_.created_at as created4_3_, answer_.updated_at as updated5_3_ from atlasck.answers answer_ where answer_.id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into atlasck.answers (questions_id, answer, created_at, updated_at, id) values (?, ?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update atlasck.answers set questions_id=?, answer=?, created_at=?, updated_at=? where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from atlasck.answers where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into atlasck.answers (questions_id, answer, created_at, updated_at) values (?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.atlasck.domain.Question
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from atlasck.questions where id =?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select question_.id, question_.visitors_id as visitors2_0_, question_.title as title0_, question_.question as question0_, question_.visible as visible0_, question_.email_answer as email6_0_, question_.created_at as created7_0_, question_.updated_at as updated8_0_ from atlasck.questions question_ where question_.id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into atlasck.questions (visitors_id, title, question, visible, email_answer, created_at, updated_at, id) values (?, ?, ?, ?, ?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update atlasck.questions set visitors_id=?, title=?, question=?, visible=?, email_answer=?, created_at=?, updated_at=? where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from atlasck.questions where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into atlasck.questions (visitors_id, title, question, visible, email_answer, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.atlasck.domain.CurrentVersion
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from atlasck.current_version where id =?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select currentver_.id, currentver_.username as username2_, currentver_.passwd as passwd2_, currentver_.maintenance as maintena4_2_, currentver_.http_auth as http5_2_ from atlasck.current_version currentver_ where currentver_.id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into atlasck.current_version (username, passwd, maintenance, http_auth, id) values (?, ?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update atlasck.current_version set username=?, passwd=?, maintenance=?, http_auth=? where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from atlasck.current_version where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into atlasck.current_version (username, passwd, maintenance, http_auth) values (?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.atlasck.domain.Visitor
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from atlasck.visitors where id =?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select visitor_.id, visitor_.nickname as nickname1_, visitor_.email as email1_, visitor_.ip_address as ip4_1_, visitor_.created_at as created5_1_, visitor_.updated_at as updated6_1_ from atlasck.visitors visitor_ where visitor_.id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into atlasck.visitors (nickname, email, ip_address, created_at, updated_at, id) values (?, ?, ?, ?, ?, ?)
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update atlasck.visitors set nickname=?, email=?, ip_address=?, created_at=?, updated_at=? where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from atlasck.visitors where id=?
-DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into atlasck.visitors (nickname, email, ip_address, created_at, updated_at) values (?, ?, ?, ?, ?)
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.atlasck.domain.Visitor.questions
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update atlasck.questions set visitors_id=? where id=?
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update atlasck.questions set visitors_id=null where visitors_id=? and id=?
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update atlasck.questions set visitors_id=null where visitors_id=?
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.atlasck.domain.Question.answers
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update atlasck.answers set questions_id=? where id=?
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update atlasck.answers set questions_id=null where questions_id=? and id=?
-DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update atlasck.answers set questions_id=null where questions_id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Answer: select answer0_.id as id3_0_, answer0_.questions_id as questions2_3_0_, answer0_.answer as answer3_0_, answer0_.created_at as created4_3_0_, answer0_.updated_at as updated5_3_0_ from atlasck.answers answer0_ where answer0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.Answer: select answer0_.id as id3_1_, answer0_.questions_id as questions2_3_1_, answer0_.answer as answer3_1_, answer0_.created_at as created4_3_1_, answer0_.updated_at as updated5_3_1_, question1_.id as id0_0_, question1_.visitors_id as visitors2_0_0_, question1_.title as title0_0_, question1_.question as question0_0_, question1_.visible as visible0_0_, question1_.email_answer as email6_0_0_, question1_.created_at as created7_0_0_, question1_.updated_at as updated8_0_0_ from atlasck.answers answer0_ inner join atlasck.questions question1_ on answer0_.questions_id=question1_.id where answer0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.Answer: select answer0_.id as id3_1_, answer0_.questions_id as questions2_3_1_, answer0_.answer as answer3_1_, answer0_.created_at as created4_3_1_, answer0_.updated_at as updated5_3_1_, question1_.id as id0_0_, question1_.visitors_id as visitors2_0_0_, question1_.title as title0_0_, question1_.question as question0_0_, question1_.visible as visible0_0_, question1_.email_answer as email6_0_0_, question1_.created_at as created7_0_0_, question1_.updated_at as updated8_0_0_ from atlasck.answers answer0_ inner join atlasck.questions question1_ on answer0_.questions_id=question1_.id where answer0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.Question: select question0_.id as id0_0_, question0_.visitors_id as visitors2_0_0_, question0_.title as title0_0_, question0_.question as question0_0_, question0_.visible as visible0_0_, question0_.email_answer as email6_0_0_, question0_.created_at as created7_0_0_, question0_.updated_at as updated8_0_0_ from atlasck.questions question0_ where question0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.CurrentVersion: select currentver0_.id as id2_0_, currentver0_.username as username2_0_, currentver0_.passwd as passwd2_0_, currentver0_.maintenance as maintena4_2_0_, currentver0_.http_auth as http5_2_0_ from atlasck.current_version currentver0_ where currentver0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=? for update
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
-DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.atlasck.domain.Visitor: select visitor0_.id as id1_0_, visitor0_.nickname as nickname1_0_, visitor0_.email as email1_0_, visitor0_.ip_address as ip4_1_0_, visitor0_.created_at as created5_1_0_, visitor0_.updated_at as updated6_1_0_ from atlasck.visitors visitor0_ where visitor0_.id=?
-DEBUG main org.hibernate.loader.collection.OneToManyLoader - Static select for one-to-many com.atlasck.domain.Visitor.questions: select questions0_.visitors_id as visitors2_1_, questions0_.id as id1_, questions0_.id as id0_0_, questions0_.visitors_id as visitors2_0_0_, questions0_.title as title0_0_, questions0_.question as question0_0_, questions0_.visible as visible0_0_, questions0_.email_answer as email6_0_0_, questions0_.created_at as created7_0_0_, questions0_.updated_at as updated8_0_0_ from atlasck.questions questions0_ where questions0_.visitors_id=?
-DEBUG main org.hibernate.loader.collection.OneToManyLoader - Static select for one-to-many com.atlasck.domain.Question.answers: select answers0_.questions_id as questions2_1_, answers0_.id as id1_, answers0_.id as id3_0_, answers0_.questions_id as questions2_3_0_, answers0_.answer as answer3_0_, answers0_.created_at as created4_3_0_, answers0_.updated_at as updated5_3_0_ from atlasck.answers answers0_ where answers0_.questions_id=?
-DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
-DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - registered: ff8081812d770cb7012d770cb8520000 (unnamed)
-INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
-DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiated session factory
-DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named HQL queries
-DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named SQL queries
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
-INFO main org.springframework.orm.hibernate3.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6cb1cb25] of Hibernate SessionFactory for HibernateTransactionManager
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.currentVersions'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.currentVersions'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.currentVersions' via constructor to bean named 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.currentVersions' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.currentVersions'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.visitors'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.visitors'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.visitors' via constructor to bean named 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.visitors' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.visitors'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.questions'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.questions'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.questions' via constructor to bean named 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.questions' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.questions'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.answers'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.answers'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.answers' via constructor to bean named 'sessionFactory'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.answers' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.answers'
-DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@7418e252]
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-DEBUG main org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1321 ms
-DEBUG main org.springframework.web.filter.CharacterEncodingFilter - Initializing filter 'CharacterEncodingFilter'
-DEBUG main org.springframework.web.filter.CharacterEncodingFilter - Filter 'CharacterEncodingFilter' configured successfully

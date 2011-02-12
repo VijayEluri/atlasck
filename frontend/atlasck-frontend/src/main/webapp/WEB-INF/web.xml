@@ -19,6 +19,15 @@
   <listener>
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
   </listener>
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath*:META-INF/spring/app-*.xml</param-value>
+  </context-param>
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
 
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
@@ -43,17 +52,6 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
-  <!--All spring configuration files need to be loaded in context. Although we have single file but
-  with the growing configuration stuff we need to break down configuration files too-->
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>classpath*:META-INF/spring/app-*.xml</param-value>
-  </context-param>
-
-  <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener>
-
   <servlet>
     <!--Spring's front controller or dispatcher which will be responsible to handle every web request
     and dispatch it to a specific web controller-->
@@ -63,6 +61,7 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>/WEB-INF/spring/app-mvc.xml</param-value>
     </init-param>
+    <load-on-startup>1</load-on-startup>
   </servlet>
 
   <!--Let every request be handled by Spring's Dispatcher servlet and it'll decide which web controller to call -->
@@ -85,10 +84,5 @@
 	<session-config>
 		<session-timeout>10</session-timeout>
 	</session-config>
-
-	<welcome-file-list>
-		<welcome-file>index.jspx</welcome-file>
-	</welcome-file-list>
-
 
 </web-app>
