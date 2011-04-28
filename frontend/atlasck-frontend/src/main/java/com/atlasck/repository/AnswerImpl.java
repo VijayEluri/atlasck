@@ -9,6 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.atlasck.domain.Answer;
 
+/**
+ * Answers repository
+ *
+ * @author Georgi Lambov
+ */
 @Repository
 @Transactional
 public class AnswerImpl implements AnswerRepo {
@@ -37,5 +42,4 @@ public class AnswerImpl implements AnswerRepo {
 		sessionFactory.getCurrentSession().save(answer);
 
 	}
-
 }

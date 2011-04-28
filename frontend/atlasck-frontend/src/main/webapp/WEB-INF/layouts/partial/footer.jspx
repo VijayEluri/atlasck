@@ -1,5 +1,11 @@
-<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" id="footer">
+<div
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:tiles="http://tiles.apache.org/tags-tiles"
+	xmlns:spring="http://www.springframework.org/tags"
+	id="footer">
 	<jsp:output omit-xml-declaration="yes"/>
+
 	<div id="footerCopyRight">
 		<div class="floatLeft">created by: uvWebs.com</div>
 		<div class="floatRight"><strong>счетоводна кантора Атлас</strong><![CDATA[&nbsp; &bull; &nbsp;]]> <a href="mailto:office@atlasck.com"><![CDATA[office@atlasck.com]]></a></div>
@@ -20,18 +26,6 @@
 			<li><a href="${content_feedback_url}.html">Обратна връзка</a></li>
 		</ul>
 
-		<div id="footerBox">
-			<div class="left alignMiddle">
-				Счетоводна кантора 'АТЛАС' е създадена и развива дейност от 1994г. Фирмата се управлява от Радка Георгиева - дипломиран експерт счетоводител от 1993г. Кантората е специализирана в обслужване на малки
-			</div>
-			<div class="center alignMiddle">
-				asdfasdf
-			</div>
-			<div class="right alignMiddle">
-				Счетоводна кантора 'АТЛАС' е създадена и развива дейност от 1994г. Фирмата се управлява от Радка Георгиева - дипломиран експерт счетоводител от 1993г. Кантората е специализирана в обслужване на малки
-			</div>
-
-		</div>
-
+		<!-- Place for seo footer -->
 	</div>
 </div>

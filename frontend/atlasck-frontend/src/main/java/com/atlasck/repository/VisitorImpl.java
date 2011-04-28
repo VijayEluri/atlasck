@@ -11,7 +11,7 @@ import com.atlasck.domain.Visitor;
 
 @Repository
 @Transactional
-public class VisitorImpl implements VisitorRepo{
+public class VisitorImpl implements VisitorRepo {
 
 	private SessionFactory sessionFactory;
 

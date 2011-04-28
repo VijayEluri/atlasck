@@ -1,558 +1,895 @@
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=advice/question, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/advice/question.jspx}})
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-
-)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,tiles-definitions,tiles-definitions)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endDocument()
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - setDocumentLocator(com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy@588980b7)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startDocument()
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - resolveEntity('-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN', 'http://tiles.apache.org/dtds/tiles-config_2_1.dtd')
-DEBUG btpool0-0 org.apache.commons.digester.Digester -  Resolving to alternate DTD 'jar:file:/home/georgi/.m2/repository/org/apache/tiles/com.springsource.org.apache.tiles.core/2.1.3/com.springsource.org.apache.tiles.core-2.1.3.jar!/org/apache/tiles/resources/tiles-config_2_1.dtd'
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,tiles-definitions,tiles-definitions)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-
-	)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-		)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-	)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=index, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/index.jspx}})
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-
-)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,tiles-definitions,tiles-definitions)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endDocument()
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - setDocumentLocator(com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy@153b0106)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startDocument()
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - resolveEntity('-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN', 'http://tiles.apache.org/dtds/tiles-config_2_1.dtd')
-DEBUG btpool0-0 org.apache.commons.digester.Digester -  Resolving to alternate DTD 'jar:file:/home/georgi/.m2/repository/org/apache/tiles/com.springsource.org.apache.tiles.core/2.1.3/com.springsource.org.apache.tiles.core-2.1.3.jar!/org/apache/tiles/resources/tiles-config_2_1.dtd'
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,tiles-definitions,tiles-definitions)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-        )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=content/aboutus, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/content/aboutus.jspx}})
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-        )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=content/services, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/content/services.jspx}})
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition}New org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-        )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - startElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Pushing body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   New match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute}New org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire begin() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,put-attribute,put-attribute)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition/put-attribute'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for CallMethodRule[methodName=setBody, paramCount=0, paramTypes={java.lang.String}]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [CallMethodRule]{tiles-definitions/definition/put-attribute} Call org.apache.tiles.Attribute.setBody(/java.lang.String)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$PutAttributeRule@47f5e1ea
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillAttributeRule@23134c4b
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Attribute, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition/put-attribute} Pop org.apache.tiles.Attribute
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-    )
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,definition,definition)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions/definition'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire body() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for SetNextRule[methodName=addDefinition, paramType=org.apache.tiles.Definition]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [SetNextRule]{tiles-definitions/definition} Call org.apache.tiles.definition.digester.DigesterDefinitionsReader.addDefinition({name=content/feedback, template=null, role=null, preparerInstance=null, attributes={body=/WEB-INF/views/content/feedback.jspx}})
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for org.apache.tiles.definition.digester.DigesterDefinitionsReader$FillDefinitionRule@3c8f03a5
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Fire end() for ObjectCreateRule[className=org.apache.tiles.Definition, attributeName=null]
-DEBUG btpool0-0 org.apache.commons.digester.Digester - [ObjectCreateRule]{tiles-definitions/definition} Pop org.apache.tiles.Definition
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - ignorableWhitespace(
-)
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endElement(,tiles-definitions,tiles-definitions)
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   match='tiles-definitions'
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   bodyText=''
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   No rules found matching 'tiles-definitions'.
-DEBUG btpool0-0 org.apache.commons.digester.Digester -   Popping body text ''
-DEBUG btpool0-0 org.apache.commons.digester.Digester.sax - endDocument()
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO - File null not found, continue
-DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='advice/list' extends='wide'.
-DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='advice/question' extends='wide'.
-DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='index' extends='default'.
-DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='content/aboutus' extends='default'.
-DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='content/services' extends='default'.
-DEBUG btpool0-0 org.apache.tiles.definition.dao.ResolvingLocaleUrlDefinitionDAO - Resolve definition for child name='content/feedback' extends='default'.
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-0 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-0 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services]
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services] are [/content/**/services/, /content/**/services]
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services] are {}
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services] is: -1
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services]
-DEBUG btpool0-5 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-5 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'content/services'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-5 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-5 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-5 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-5 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-5 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-5 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-5 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-5 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-5 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-5 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@14f4189a'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/list'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
 DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
 DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.ContentController@32114a41] and 2 interceptors
 DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+ERROR btpool0-2 org.apache.tiles.jsp.taglib.RenderTag - IO Error executing tag: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seofooter' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.apache.tiles.impl.CannotRenderException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:691)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.util.TilesIOException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:243)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	... 42 more
+Caused by: org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	... 47 more
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seofooter' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
 DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.ContentController@32114a41] and 2 interceptors
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+ERROR btpool0-2 org.apache.tiles.jsp.taglib.RenderTag - IO Error executing tag: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seofooter' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.apache.tiles.impl.CannotRenderException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:691)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.util.TilesIOException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:243)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	... 42 more
+Caused by: org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	... 47 more
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seofooter' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.ContentController@32114a41] and 2 interceptors
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+ERROR btpool0-2 org.apache.tiles.jsp.taglib.RenderTag - IO Error executing tag: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seoheader' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.apache.tiles.impl.CannotRenderException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:691)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.util.TilesIOException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:243)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	... 42 more
+Caused by: org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	... 47 more
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seoheader' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.ContentController@32114a41] and 2 interceptors
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+ERROR btpool0-2 org.apache.tiles.jsp.taglib.RenderTag - IO Error executing tag: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seofooter' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.apache.tiles.impl.CannotRenderException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:691)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:643)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:626)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:322)
+	at org.springframework.web.servlet.view.tiles2.TilesView.renderMergedOutputModel(TilesView.java:124)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:817)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1084)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:360)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: org.apache.tiles.util.TilesIOException: ServletException including path '/WEB-INF/layouts/default.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:243)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:222)
+	at org.apache.tiles.renderer.impl.TemplateAttributeRenderer.write(TemplateAttributeRenderer.java:44)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:689)
+	... 42 more
+Caused by: org.apache.tiles.util.TilesIOException: JSPException including path '/WEB-INF/layouts/partial/footer.jspx'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:232)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:105)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:96)
+	at org.apache.tiles.renderer.impl.UntypedAttributeRenderer.write(UntypedAttributeRenderer.java:61)
+	at org.apache.tiles.renderer.impl.AbstractBaseAttributeRenderer.render(AbstractBaseAttributeRenderer.java:103)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:669)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:337)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:234)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:211)
+	at org.apache.tiles.jsp.taglib.RenderTag.doEndTag(RenderTag.java:220)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspx_meth_tiles_insertAttribute_4(org.apache.jsp.WEB_002dINF.layouts.default_jspx:286)
+	at org.apache.jsp.WEB_002dINF.layouts.default_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.default_jspx:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:285)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:241)
+	... 47 more
+Caused by: org.apache.tiles.jsp.taglib.NoSuchAttributeException: Attribute 'seofooter' not found.
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.computeAttribute(InsertAttributeTag.java:253)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.startContext(InsertAttributeTag.java:221)
+	at org.apache.tiles.jsp.taglib.RenderTag.doStartTag(RenderTag.java:210)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.doStartTag(InsertAttributeTag.java:199)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspx_meth_tiles_insertAttribute_0(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:240)
+	at org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx._jspService(org.apache.jsp.WEB_002dINF.layouts.partial.footer_jspx:105)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:682)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:103)
+	... 72 more
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.ContentController@32114a41] and 2 interceptors
+DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
 DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
 DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
 DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
 DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
 DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@14f4189a'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/feedback.html] are [/content/**/feedback.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/feedback.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/feedback.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/feedback.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getFeedback(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'content/feedback'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/feedback'; URL [content/feedback]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/feedback'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/feedback'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@14f4189a'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@14f4189a'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/feedback.html] are [/content/**/feedback.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/feedback.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/feedback.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/feedback.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getFeedback(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/feedback'; URL [content/feedback]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/feedback'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/feedback'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/services.html] are [/content/**/services.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/services.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/services.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/services.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/services.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getServices(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/services'; URL [content/services]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/services'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/services'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/feedback.html] are [/content/**/feedback.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/feedback.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/feedback.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/feedback.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getFeedback(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/feedback'; URL [content/feedback]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/feedback'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/feedback'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to handler 'com.atlasck.web.controllers.AdviceController@14f4189a'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/feedback.html] are [/content/**/feedback.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/feedback.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/feedback.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/feedback.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/feedback.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getFeedback(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/feedback'; URL [content/feedback]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/feedback'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/feedback'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' determining Last-Modified value for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
-DEBUG btpool0-2 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to handler 'com.atlasck.web.controllers.ContentController@257b3135'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
-DEBUG btpool0-2 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
-DEBUG btpool0-2 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
-DEBUG btpool0-2 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
-DEBUG btpool0-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'atlasck-servlet': startup date [Sat Feb 12 07:31:16 EET 2011]; parent: Root WebApplicationContext
-DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ef85fd3: defining beans [adviceController,contentController,visitorImpl,questionImpl,currentVersionImpl,answerImpl,logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,tilesViewResolver,tilesConfigurer]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@bb51061
-DEBUG Shutdown org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'tilesConfigurer'
-INFO Shutdown org.apache.tiles.servlet.context.ServletUtil - Removing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
-DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)#8': [org.springframework.web.servlet.config.viewControllerHandlerMapping]
-DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
-DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
-INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat Feb 12 07:31:14 EET 2011]; root of context hierarchy
-DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@bb51061: defining beans [logginAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.currentVersions,repository.visitors,repository.questions,repository.answers]; root of factory hierarchy
-DEBUG Shutdown org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'sessionFactory'
-INFO Shutdown org.springframework.orm.hibernate3.LocalSessionFactoryBean - Closing Hibernate SessionFactory
-INFO Shutdown org.hibernate.impl.SessionFactoryImpl - closing
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/content/about-us.html]
+DEBUG btpool0-3 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/content/about-us.html] are [/content/**/about-us.*]
+DEBUG btpool0-3 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/content/about-us.html] are {}
+DEBUG btpool0-3 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/content/about-us.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.ContentController@32114a41] and 2 interceptors
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/content/about-us.html] is: -1
+DEBUG btpool0-3 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.ContentController.getAboutUs(org.springframework.ui.ModelMap)
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'content/aboutus'; URL [content/aboutus]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-3 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'content/aboutus'
+DEBUG btpool0-3 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'content/aboutus'
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'atlasck' processing GET request for [/atlasck-frontend/app/advice/list.html]
+DEBUG btpool0-3 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/advice/list.html] are [/advice/**/list.*]
+DEBUG btpool0-3 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/advice/list.html] are {}
+DEBUG btpool0-3 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/advice/list.html] to HandlerExecutionChain with handler [com.atlasck.web.controllers.AdviceController@673ceab3] and 2 interceptors
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/atlasck-frontend/app/advice/list.html] is: -1
+DEBUG btpool0-3 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public java.lang.String com.atlasck.web.controllers.AdviceController.list(org.springframework.ui.ModelMap)
+DEBUG btpool0-3 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'advice/list'
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.tiles2.TilesView: name 'advice/list'; URL [advice/list]] in DispatcherServlet with name 'atlasck'
+DEBUG btpool0-3 org.springframework.web.servlet.view.tiles2.TilesView - Added model object 'actionName' of type [java.lang.String] to request in view with name 'advice/list'
+DEBUG btpool0-3 org.apache.tiles.impl.BasicTilesContainer - Render request recieved for definition 'advice/list'
+DEBUG btpool0-3 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
