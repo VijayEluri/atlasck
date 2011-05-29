@@ -312,3 +312,45 @@ html[xmlns] .clearfix {
 	padding-right: 2px;
 	padding-left: 2px;
 }
+
+/**
+  Forms
+*/
+
+input, textarea {
+	border: 1px solid #ccc;
+	padding: 5px;
+	outline: none
+	}
+
+input[type="text"], textarea {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	width: 299px;
+	}
+
+input[type="checkbox"] {
+	position: relative;
+	left: 10px;
+	top: 2px;
+	}
+
+input[type="submit"] {
+	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	background: #ccc;
+	}
+
+label, form .error {
+	display: block
+	}
+
+form .error {
+	color:#cc0020;
+	}
+
+form ul li {
+	padding-bottom:20px;
+	}

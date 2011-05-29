@@ -1,22 +1,37 @@
-<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0" class="content">
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:form="http://www.springframework.org/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	version="2.0" class="content">
 	<jsp:output omit-xml-declaration="yes"/>
 
-	<form:form method="post" id="q" modelAttribute="question">
+	<form:form method="post" id="q" modelAttribute="question" name="question">
 
-		<form:label path="title">асдфасдфS</form:label>
-     	<form:input path="title" />
-     	<form:errors path="title"/>
-		<br /> <br />
+		<ul>
+			<li>
+				<form:label path="visitor.email">Емейл</form:label>
+				<form:errors path="visitor.email" class="error" />
+		     	<form:input path="visitor.email"/>
+			</li>
 
-		<form:label path="question"></form:label>
-     	<form:input path="question" />
-     	<form:errors path="question"/>
-		<br /> <br />
+			<li>
+				<form:label path="title">Заглавие на въпроса</form:label>
+		     	<form:errors path="title" class="error" />
+		     	<form:input path="title" />
+			</li>
 
-		<form:label path="visitor.email"></form:label>
-     	<form:input path="visitor.email" />
-     	<form:errors path="visitor.email"/>
-		<br /> <br />
+			<li>
+				<form:label path="question">Въпрос</form:label>
+				<form:errors path="question" class="error" />
+				<form:textarea path="question" cols="30" rows="6"/>
+			</li>
+
+			<li>
+				<form:label path="emailAnswer" cssStyle="display:inline">Отговор на e-mail адрес</form:label>
+				<form:checkbox path="emailAnswer"/>
+			</li>
+		</ul>
+
 
 		<input type="submit" />
 

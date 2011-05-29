@@ -1,7 +1,9 @@
 package com.atlasck.repository;
 
+import java.util.Date;
 import java.util.List;
 
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -10,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.atlasck.domain.Visitor;
 
 @Repository
-@Transactional
 public class VisitorImpl implements VisitorRepo {
 
 	private SessionFactory sessionFactory;
@@ -33,8 +34,31 @@ public class VisitorImpl implements VisitorRepo {
 	}
 
 	@Override
+	@Transactional
 	public void add(Visitor visitor) {
+
+		if(visitor.getCreatedAt() == null) {
+			visitor.setCreatedAt(new Date());
+		}
+
+		visitor.setUpdatedAt(new Date());
+
 		sessionFactory.getCurrentSession().save(visitor);
+	}
+
+	@Override
+	@Transactional
+	public Visitor getVisitorByEmail(String email) {
+
+		final String QUERY = "from Visitor v where v.email = :email";
+		Query q = sessionFactory.getCurrentSession().createQuery(QUERY);
+		q.setParameter("email", email);
+
+		if(q.list().size() == 0) {
+			return null;
+		}
+
+		return (Visitor) q.list().get(0);
 	}
 
 }

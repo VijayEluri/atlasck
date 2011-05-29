@@ -31,7 +31,7 @@ public class VisitorTest extends AbstractTransactionalTestNGSpringContextTests {
 
 	@Test
 	@Transactional
-	public void addVisitorTest() {
+	public void addVisitor() {
 		int actualRecords = visitorRepo.getAll().size();
 		visitorRepo.add(visitor);
 		int incrementedRecords = visitorRepo.getAll().size();
@@ -41,5 +41,9 @@ public class VisitorTest extends AbstractTransactionalTestNGSpringContextTests {
 
 		Assert.assertEquals(incrementedRecords, actualRecords+1,
 				"After adding 1 visitor, total visitors' count must be incremented by 1");
+
+		//TODO split the test cases in two different methods
+		Visitor user = visitorRepo.getVisitorByEmail(visitor.getEmail());
+		Assert.assertNotNull(user.getId(), "If visitor is presented, it must have been assigned an id");
 	}
 }

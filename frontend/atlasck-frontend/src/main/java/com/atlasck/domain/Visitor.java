@@ -20,6 +20,7 @@ public class Visitor implements java.io.Serializable {
 
 	@NotEmpty
 	@Email
+	//TODO email should be unique
 	private String email;
 
 	private String ipAddress;
