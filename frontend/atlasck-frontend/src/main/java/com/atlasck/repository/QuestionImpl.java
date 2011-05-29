@@ -1,5 +1,6 @@
 package com.atlasck.repository;
 
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
@@ -34,6 +35,12 @@ public class QuestionImpl implements QuestionRepo {
 
 	@Override
 	public void add(Question question) {
+
+		//TODO move that to aspects
+		Date d = new Date();
+		if(question.getCreatedAt() == null) question.setCreatedAt(d);
+		question.setUpdatedAt(d);
+
 		sessionFactory.getCurrentSession().save(question);
 	}
 

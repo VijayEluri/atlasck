@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.atlasck.domain.Visitor;
 
 @Repository
+@Transactional
 public class VisitorImpl implements VisitorRepo {
 
 	private SessionFactory sessionFactory;
@@ -36,12 +37,10 @@ public class VisitorImpl implements VisitorRepo {
 	@Override
 	@Transactional
 	public void add(Visitor visitor) {
-
-		if(visitor.getCreatedAt() == null) {
-			visitor.setCreatedAt(new Date());
-		}
-
-		visitor.setUpdatedAt(new Date());
+		//TODO move that to aspects
+		Date d = new Date();
+		if(visitor.getCreatedAt() == null) visitor.setCreatedAt(d);
+		visitor.setUpdatedAt(d);
 
 		sessionFactory.getCurrentSession().save(visitor);
 	}

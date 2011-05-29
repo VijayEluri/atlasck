@@ -39,17 +39,22 @@ public class AdviceController {
 		modelMap.addAttribute("actionName", "advice.list");
 
 		if(question == null) throw new IllegalArgumentException();
+
 		if(result.hasErrors()) {
-			modelMap.addAttribute("questions", question);
+			modelMap.addAttribute("question", question);
+			modelMap.addAttribute("result", result);
 			return "advice/question";
 		}
 
-		//TODO if visitor exists shouldn't not be created again
-		Visitor visitor = question.getVisitor();
-		visitor.setEmail(question.getVisitor().getEmail());
-		visitor.setNickname(question.getVisitor().getEmail());
-		visitorRepo.add(visitor);
+		Visitor visitor = visitorRepo.getVisitorByEmail(question.getVisitor().getEmail());
+		if(visitor == null) {
+			visitor = question.getVisitor();
+			visitor.setEmail(question.getVisitor().getEmail());
+			visitor.setNickname(question.getVisitor().getEmail());
+			visitorRepo.add(visitor);
+		}
 
+		question.setVisitor(visitor);
 		questionRepo.add(question);
 		return "advice/question";
 	}
