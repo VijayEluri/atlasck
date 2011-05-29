@@ -1,5 +1,6 @@
 package com.atlasck.web.controllers;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.apache.commons.logging.Log;
@@ -35,7 +36,9 @@ public class AdviceController {
 	}
 
 	@RequestMapping(value="question", method=RequestMethod.POST)
-	public String create(ModelMap modelMap, @Valid Question question, BindingResult result) {
+	public String create(ModelMap modelMap, @Valid Question question,
+			BindingResult result, HttpServletRequest req) {
+
 		modelMap.addAttribute("actionName", "advice.list");
 
 		if(question == null) throw new IllegalArgumentException();
@@ -47,15 +50,18 @@ public class AdviceController {
 		}
 
 		Visitor visitor = visitorRepo.getVisitorByEmail(question.getVisitor().getEmail());
-		if(visitor == null) {
+		if(visitor.getId() == null) {
 			visitor = question.getVisitor();
 			visitor.setEmail(question.getVisitor().getEmail());
 			visitor.setNickname(question.getVisitor().getEmail());
+			visitor.setIpAddress(req.getRemoteAddr());
 			visitorRepo.add(visitor);
 		}
 
+		//TODO add update of the IP Address
 		question.setVisitor(visitor);
 		questionRepo.add(question);
+
 		return "advice/question";
 	}
 

@@ -53,9 +53,7 @@ public class VisitorImpl implements VisitorRepo {
 		Query q = sessionFactory.getCurrentSession().createQuery(QUERY);
 		q.setParameter("email", email);
 
-		if(q.list().size() == 0) {
-			return null;
-		}
+		if(q.list().size() == 0) return new Visitor();
 
 		return (Visitor) q.list().get(0);
 	}
