@@ -42,7 +42,7 @@
 			<div id="header">
 				<div class="content clearfix">
 					<a href="${home_url}" title="начална страница към счетоводна кантора атлас">
-						<img src="${home_url}static/images/atlas-ck-logo.jpg" width="300" height="160" class="logo" border="0" alt="Счетоводна кантора АТЛАС"/>
+						<img src="/atlasck-frontend/static/images/atlas-ck-logo.jpg" width="300" height="160" class="logo" border="0" alt="Счетоводна кантора АТЛАС"/>
 					</a>
 
 					<div id="language" class="floatLeft">
