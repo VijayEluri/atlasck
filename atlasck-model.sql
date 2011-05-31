@@ -15,7 +15,8 @@ CREATE TABLE visitors (
   ip_address VARCHAR(255) NULL,
   created_at DATETIME NULL,
   updated_at DATETIME NULL,
-  PRIMARY KEY(id)
+  PRIMARY KEY(id),
+  UNIQUE INDEX visitors_email_unique(email)
 )
 TYPE=InnoDB;
 
