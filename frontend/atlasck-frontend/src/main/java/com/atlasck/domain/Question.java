@@ -19,10 +19,10 @@ public class Question implements java.io.Serializable {
 	private Integer id;
 	private Visitor visitor;
 
-	@NotEmpty
+	@NotEmpty(message="{validation.not_empty}")
 	private String title;
 
-	@NotEmpty
+	@NotEmpty(message="{validation.not_empty}")
 	private String question;
 
 	private Boolean visible;

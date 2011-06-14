@@ -14,18 +14,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
-import com.atlasck.repository.QuestionRepo;
 import com.atlasck.repository.VisitorRepo;
+import com.atlasck.service.AdviceManager;
 
 @Controller
 @RequestMapping("/advice/**")
 public class AdviceController {
 
-	@Autowired
-	private QuestionRepo questionRepo;
+	private VisitorRepo visitorRepo;
+	private AdviceManager adviceManager;
+
+	public AdviceController() {}
 
 	@Autowired
-	private VisitorRepo visitorRepo;
+	public AdviceController(VisitorRepo visitorRepo) {
+		this.visitorRepo = visitorRepo;
+	}
+
+	@Autowired
+	public AdviceController(VisitorRepo visitorRepo, AdviceManager adviceManager) {
+		this.visitorRepo = visitorRepo;
+		this.adviceManager = adviceManager;
+	}
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
@@ -50,17 +60,9 @@ public class AdviceController {
 		}
 
 		Visitor visitor = visitorRepo.getVisitorByEmail(question.getVisitor().getEmail());
-		if(visitor.getId() == null) {
-			visitor = question.getVisitor();
-			visitor.setEmail(question.getVisitor().getEmail());
-			visitor.setNickname(question.getVisitor().getEmail());
-			visitor.setIpAddress(req.getRemoteAddr());
-			visitorRepo.add(visitor);
-		}
+		visitor.setIpAddress(req.getRemoteAddr());
 
-		//TODO add update of the IP Address
-		question.setVisitor(visitor);
-		questionRepo.add(question);
+		adviceManager.add(question, visitor);
 
 		return "advice/question";
 	}

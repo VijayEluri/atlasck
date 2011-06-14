@@ -18,8 +18,8 @@ public class Visitor implements java.io.Serializable {
 	private Integer id;
 	private String nickname;
 
-	@NotEmpty
-	@Email
+	@NotEmpty(message="{validation.not_empty}")
+	@Email(message="{validation.email.not_valid}")
 	private String email;
 
 	private String ipAddress;

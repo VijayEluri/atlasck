@@ -10,11 +10,14 @@
   	<!-- CurrentVersion -->
   	<parameter name="currentVersion.username" value="atlas"/>
   	<parameter name="currentVersion.passwd" value="admin"/>
+
   	<!-- Answer -->
 	<parameter name="answer.answer" value="answer of the question"/>
+
 	<!-- Question -->
 	<parameter name="question.question" value="this is my question"/>
 	<parameter name="question.title" value="title for my question"/>
+
 	<!-- Visitor -->
 	<parameter name="visitor.email" value="office@atlasck.comk"/>
 	<parameter name="visitor.nickname" value="asking user"/>

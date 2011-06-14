@@ -23,19 +23,16 @@ public class VisitorImpl implements VisitorRepo {
 	}
 
 	@Override
-	@Transactional
 	public Visitor get(Integer id) {
 		return (Visitor) sessionFactory.getCurrentSession().get(Visitor.class, id);
 	}
 
 	@Override
-	@Transactional
 	public List<?> getAll() {
 		return sessionFactory.getCurrentSession().createQuery("from Visitor v").list();
 	}
 
 	@Override
-	@Transactional
 	public void add(Visitor visitor) {
 		//TODO move that to aspects
 		Date d = new Date();
@@ -46,7 +43,6 @@ public class VisitorImpl implements VisitorRepo {
 	}
 
 	@Override
-	@Transactional
 	public Visitor getVisitorByEmail(String email) {
 
 		final String QUERY = "from Visitor v where v.email = :email";
@@ -58,4 +54,8 @@ public class VisitorImpl implements VisitorRepo {
 		return (Visitor) q.list().get(0);
 	}
 
+	@Override
+	public void update(Visitor visitor) {
+		sessionFactory.getCurrentSession().update(visitor);
+	}
 }

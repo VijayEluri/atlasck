@@ -10,10 +10,18 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
   <context:component-scan base-package="com.atlasck.aspects" />
+  <context:property-placeholder location="classpath:META-INF/properties/*.properties" />
 
   <!--Enables the use of @AspectJ style of aspects' declarations. AspectJ run-time isn't necessarily involved-->
   <aop:aspectj-autoproxy />
   <tx:annotation-driven mode="aspectj" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+	    <property name="driverClassName" value="${database.driverClassName}"/>
+	    <property name="url" value="${database.url}"/>
+	    <property name="username" value="${database.username}"/>
+	    <property name="password" value="${database.password}"/>
+  	</bean>
 
   <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
     <property name="dataSource" ref="dataSource"/>
@@ -33,26 +41,14 @@
     </property>
   </bean>
 
-  <context:property-placeholder location="classpath:META-INF/properties/*.properties" />
-
-  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-    <property name="driverClassName" value="${database.driverClassName}"/>
-    <property name="url" value="${database.url}"/>
-    <property name="username" value="${database.username}"/>
-    <property name="password" value="${database.password}"/>
-  </bean>
-
   <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
     <property name="sessionFactory" ref="sessionFactory"/>
   </bean>
 
   <!--repository init area-->
-  <bean id="repository.currentVersions" class="com.atlasck.repository.CurrentVersionImpl"
-        autowire="constructor"/>
-  <bean id="repository.visitors" class="com.atlasck.repository.VisitorImpl"
-        autowire="constructor"/>
-  <bean id="repository.questions" class="com.atlasck.repository.QuestionImpl"
-        autowire="constructor"/>
-   <bean id="repository.answers" class="com.atlasck.repository.AnswerImpl"
-        autowire="constructor"/>
+  <bean id="currentVersionRepo" class="com.atlasck.repository.CurrentVersionImpl" autowire="constructor"/>
+  <bean id="visitorRepo" class="com.atlasck.repository.VisitorImpl" autowire="constructor"/>
+  <bean id="questionRepo" class="com.atlasck.repository.QuestionImpl" autowire="constructor"/>
+  <bean id="answerRepo" class="com.atlasck.repository.AnswerImpl" autowire="constructor"/>
+
 </beans>

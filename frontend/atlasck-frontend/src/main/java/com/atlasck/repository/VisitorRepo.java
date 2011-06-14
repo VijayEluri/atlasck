@@ -10,4 +10,10 @@ public interface VisitorRepo extends AbstractRepo<Visitor> {
 	 * @return
 	 */
 	Visitor getVisitorByEmail(String email);
+
+	/**
+	 * Upedates user's object
+	 * @param visitor
+	 */
+	void update(Visitor visitor);
 }
