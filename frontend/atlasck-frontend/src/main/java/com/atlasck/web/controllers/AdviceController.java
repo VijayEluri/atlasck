@@ -21,21 +21,8 @@ import com.atlasck.service.AdviceManager;
 @RequestMapping("/advice/**")
 public class AdviceController {
 
-	private VisitorRepo visitorRepo;
-	private AdviceManager adviceManager;
-
-	public AdviceController() {}
-
-	@Autowired
-	public AdviceController(VisitorRepo visitorRepo) {
-		this.visitorRepo = visitorRepo;
-	}
-
-	@Autowired
-	public AdviceController(VisitorRepo visitorRepo, AdviceManager adviceManager) {
-		this.visitorRepo = visitorRepo;
-		this.adviceManager = adviceManager;
-	}
+	@Autowired private VisitorRepo visitorRepo;
+	@Autowired private AdviceManager adviceManager;
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
@@ -78,4 +65,11 @@ public class AdviceController {
 		return "advice/question";
 	}
 
+	public void setVisitorRepo(VisitorRepo visitorRepo) {
+		this.visitorRepo = visitorRepo;
+	}
+
+	public void setAdviceManager(AdviceManager adviceManager) {
+		this.adviceManager = adviceManager;
+	}
 }

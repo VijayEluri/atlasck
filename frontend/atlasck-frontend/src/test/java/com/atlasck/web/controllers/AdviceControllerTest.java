@@ -1,13 +1,22 @@
 package com.atlasck.web.controllers;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import org.easymock.EasyMock;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.DataBinder;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -21,6 +30,12 @@ import com.atlasck.service.AdviceManager;
 @Test
 @ContextConfiguration(locations = {"classpath:/META-INF/spring/app-data.xml", "classpath:/META-INF/spring/app-manager.xml"})
 public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
+
+	@Autowired private VisitorRepo visitorRepo;
+	@Autowired private AdviceManager adviceManager;
+	@Autowired private QuestionRepo questionRepo;
+	@Autowired private SessionFactory sessionFactory;
+
 	private MockHttpServletRequest request;
 	private MockHttpServletResponse response;
 	private AdviceController adviceController;
@@ -28,10 +43,6 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 
 	private Question question;
 	private Visitor visitor;
-
-	@Autowired private VisitorRepo visitorRepo;
-	@Autowired private AdviceManager adviceManager;
-	@Autowired private QuestionRepo questionRepo;
 
 	@BeforeMethod
 	public void init() {
@@ -70,6 +81,7 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 		request.setRequestURI("/advice/question");
 		request.setMethod("POST");
 		request.setContentType("application/x-www-form-urlencoded");
+
 		request.setParameter("visitor.email", "test-user@localhost.com");
 		request.setParameter("title", "test question's title");
 		request.setParameter("question", "this is the test actual test questions");
@@ -77,14 +89,19 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 
 		long actualRecords = questionRepo.getAll().size();
 
-		adviceController = new AdviceController(visitorRepo, adviceManager);
+		adviceController = new AdviceController();
+		adviceController.setVisitorRepo(visitorRepo);
+		adviceController.setAdviceManager(adviceManager);
 
-		//TODO advice controller model map and custom method calls research
-		/* ModelMap modelMap = new ModelMap("question", question);
-			DataBinder dataBinder = new DataBinder(modelMap);
-			BindingResult result = dataBinder.getBindingResult();
-			adviceController.create(modelMap, question, result, request);
-		*/
+
+		ModelMap modelMap = new ModelMap();
+		modelMap.addAttribute(question);
+		DataBinder dataBinder = new DataBinder(modelMap);
+		BindingResult result = dataBinder.getBindingResult();
+		//adviceController.create(modelMap, question, result, request);
+
+		System.out.println("+++++++++++++++++++++++++++++++><<<<" + result.hasErrors());
+
 		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
 
 		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
@@ -105,5 +122,10 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
 
 		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
+	}
+
+	@AfterClass
+	public void clean() {
+		//TODO clear database
 	}
 }
