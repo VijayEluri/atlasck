@@ -17,6 +17,11 @@ import com.atlasck.domain.Visitor;
 import com.atlasck.repository.VisitorRepo;
 import com.atlasck.service.AdviceManager;
 
+/**
+ * Advice model actions
+ * 
+ * @author Georgi Lambov
+ */
 @Controller
 @RequestMapping("/advice/**")
 public class AdviceController {
@@ -26,12 +31,27 @@ public class AdviceController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
+	/**
+	 * Shows answers to questions
+	 * 
+	 * @param modelMap
+	 * @return
+	 */
 	@RequestMapping(value="list", method=RequestMethod.GET)
 	public String list(ModelMap modelMap) {
 		modelMap.addAttribute("actionName", "advice.list");
 		return "advice/list";
 	}
 
+	/**
+	 * Sends questions to the system
+	 * 
+	 * @param modelMap
+	 * @param question
+	 * @param result
+	 * @param req
+	 * @return
+	 */
 	@RequestMapping(value="question", method=RequestMethod.POST)
 	public String create(ModelMap modelMap, @Valid Question question,
 			BindingResult result, HttpServletRequest req) {
@@ -54,6 +74,12 @@ public class AdviceController {
 		return "advice/question";
 	}
 
+	/**
+	 * Displays advice form
+	 * 
+	 * @param modelMap
+	 * @return
+	 */
 	@RequestMapping(value="question", method=RequestMethod.GET)
 	public String createForm(ModelMap modelMap) {
 		modelMap.addAttribute("actionName", "advice.list");

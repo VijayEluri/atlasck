@@ -11,6 +11,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.atlasck.domain.Visitor;
 
+/**
+ * 
+ * @author Georgi Lambov
+ *
+ */
 @Repository
 @Transactional
 public class VisitorImpl implements VisitorRepo {

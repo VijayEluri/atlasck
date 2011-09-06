@@ -5,6 +5,11 @@ import org.springframework.validation.Validator;
 
 import com.atlasck.domain.Question;
 
+/**
+ * 
+ * @author Georgi Lambov
+ *
+ */
 public class QuestionValidator implements Validator {
 
 	@Override

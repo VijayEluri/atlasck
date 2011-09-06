@@ -9,8 +9,9 @@ import com.atlasck.repository.QuestionRepo;
 import com.atlasck.repository.VisitorRepo;
 
 /**
+ * Implements Advice specific logic
  *
- * @author georgi
+ * @author Georgi Lambov
  *
  */
 @Service("adviceManager")
@@ -20,9 +21,8 @@ public class AdviceManager {
 	@Autowired QuestionRepo questionRepo;
 
 	/**
-	 * Adds question from visitor. If visitor not exists
-	 * new visitor is created. If visitor exists system updates
-	 * visitor's data.
+	 * Adds question and record visitor's data to the system.
+	 * 
 	 * @param visitor
 	 */
 	public void add(Question question, Visitor visitor) {

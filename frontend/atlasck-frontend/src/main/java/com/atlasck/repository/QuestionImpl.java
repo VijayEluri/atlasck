@@ -10,6 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.atlasck.domain.Question;
 
+/**
+ * 
+ * @author Georgi Lambov
+ *
+ */
 @Repository
 @Transactional
 public class QuestionImpl implements QuestionRepo {

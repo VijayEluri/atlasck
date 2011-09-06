@@ -9,6 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.atlasck.domain.CurrentVersion;
 
+/**
+ * 
+ * @author Georgi Lambov
+ *
+ */
 @Repository
 @Transactional
 public class CurrentVersionImpl implements CurrentVersionRepo {
