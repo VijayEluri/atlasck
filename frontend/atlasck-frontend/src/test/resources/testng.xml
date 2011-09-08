@@ -19,7 +19,7 @@
 	<parameter name="question.title" value="title for my question"/>
 
 	<!-- Visitor -->
-	<parameter name="visitor.email" value="office@atlasck.comk"/>
+	<parameter name="visitor.email" value="office@atlasck.com"/>
 	<parameter name="visitor.nickname" value="asking user"/>
 
     <packages>

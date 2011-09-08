@@ -40,6 +40,9 @@ public class AdviceController {
 	@RequestMapping(value="list", method=RequestMethod.GET)
 	public String list(ModelMap modelMap) {
 		modelMap.addAttribute("actionName", "advice.list");
+		
+		
+		
 		return "advice/list";
 	}
 
