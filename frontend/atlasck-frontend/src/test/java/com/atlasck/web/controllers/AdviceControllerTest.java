@@ -100,8 +100,6 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 		BindingResult result = dataBinder.getBindingResult();
 		//adviceController.create(modelMap, question, result, request);
 
-		System.out.println("+++++++++++++++++++++++++++++++><<<<" + result.hasErrors());
-
 		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
 
 		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);

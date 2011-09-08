@@ -1,10 +1,13 @@
 package com.atlasck.repository;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 import org.springframework.transaction.annotation.Transactional;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -14,6 +17,7 @@ import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
 
 @ContextConfiguration(locations = {"classpath:/META-INF/spring/app-data.xml"})
+@Test(singleThreaded = true)
 public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 
 	@Autowired
@@ -21,7 +25,7 @@ public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 
 	@Autowired
 	private AnswerRepo answerRepo;
-
+	
 	private Answer answer;
 	private Question question;
 	private Visitor visitor;
@@ -46,9 +50,8 @@ public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 		this.answer = answer;
 	}
 
-	@Test
-	@Transactional
-	public void addAnswerTest() {
+	@Test(groups = {"add_answer"})
+	public void addAnswer() {
 		int actualRecords = answerRepo.getAll().size();
 
 		visitorRepo.add(visitor);
@@ -59,9 +62,22 @@ public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 		int incrementedRecords = answerRepo.getAll().size();
 
 		Assert.assertNotNull(answer.getId(),
-			"If question is presented, it must have been assigned an id");
+			"If answer is presented, it must have been assigned an id");
 
 		Assert.assertEquals(incrementedRecords, actualRecords+1,
-			"After adding 1 question, total questions' count must be incremented by 1");
+			"After adding 1 question, total answers' count must be incremented by 1");
+	}
+	
+	@AfterMethod(groups = {"add_answer"})
+	public void retrieveAllAnswers() {
+		Assert.assertEquals(answerRepo.getAll().size(), 1, "Total answers should be one");
+		
+		//TODO Refactor to support type safty
+		List<Answer> answers = (List<Answer>) answerRepo.getAll();
+		
+		for(Answer answer : answers) {
+			Assert.assertEquals(question.getTitle(), answer.getQuestion().getTitle(),
+					"Reference object should return set quetion title");
+		}
 	}
 }
