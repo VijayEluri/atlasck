@@ -23,6 +23,7 @@ import org.testng.annotations.Test;
 
 import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
+import com.atlasck.repository.AnswerRepo;
 import com.atlasck.repository.QuestionRepo;
 import com.atlasck.repository.VisitorRepo;
 import com.atlasck.service.AdviceManager;
@@ -34,6 +35,7 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 	@Autowired private VisitorRepo visitorRepo;
 	@Autowired private AdviceManager adviceManager;
 	@Autowired private QuestionRepo questionRepo;
+	@Autowired private AnswerRepo answerRepo;
 	@Autowired private SessionFactory sessionFactory;
 
 	private MockHttpServletRequest request;
@@ -61,19 +63,20 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 		question.setVisitor(visitor);
 	}
 
-	@Test(alwaysRun = true)
+	@Test
 	@Parameters({"getAdviceList"})
 	public void list(String page) throws Exception {
 		request.setRequestURI("/advice/list");
 		request.setMethod("GET");
 
 		adviceController = new AdviceController();
+		adviceController.setAnswerRepo(answerRepo);
 		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
 
 		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
 	}
 
-	@Test(alwaysRun = true)
+	@Test
 	@Parameters({"questionForm"})
 	public void create(String page) throws Exception {
 
@@ -110,7 +113,7 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 			"After adding of one user question, total count must be incremented by on");
 	}
 
-	@Test(alwaysRun = true)
+	@Test
 	@Parameters({"questionForm"})
 	public void createForm(String page) throws Exception {
 		request.setRequestURI("/advice/question");

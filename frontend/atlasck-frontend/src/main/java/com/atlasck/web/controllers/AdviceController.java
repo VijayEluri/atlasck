@@ -1,5 +1,7 @@
 package com.atlasck.web.controllers;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
@@ -12,8 +14,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.atlasck.domain.Answer;
 import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
+import com.atlasck.repository.AnswerRepo;
 import com.atlasck.repository.VisitorRepo;
 import com.atlasck.service.AdviceManager;
 
@@ -27,6 +31,8 @@ import com.atlasck.service.AdviceManager;
 public class AdviceController {
 
 	@Autowired private VisitorRepo visitorRepo;
+	@Autowired private AnswerRepo answerRepo;
+	
 	@Autowired private AdviceManager adviceManager;
 
 	protected final Log logger = LogFactory.getLog(getClass());
@@ -41,7 +47,8 @@ public class AdviceController {
 	public String list(ModelMap modelMap) {
 		modelMap.addAttribute("actionName", "advice.list");
 		
-		
+		List<Answer> answers = answerRepo.getAll();
+	
 		
 		return "advice/list";
 	}
@@ -94,11 +101,16 @@ public class AdviceController {
 		return "advice/question";
 	}
 
+	//TODO refactor following setters in the constructor
 	public void setVisitorRepo(VisitorRepo visitorRepo) {
 		this.visitorRepo = visitorRepo;
 	}
 
 	public void setAdviceManager(AdviceManager adviceManager) {
 		this.adviceManager = adviceManager;
+	}
+	
+	public void setAnswerRepo(AnswerRepo answerRepo) {
+		this.answerRepo = answerRepo;
 	}
 }

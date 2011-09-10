@@ -1,5 +1,7 @@
 package com.atlasck.repository;
 
+import java.util.List;
+
 import com.atlasck.domain.Answer;
 
 /**
@@ -9,4 +11,6 @@ import com.atlasck.domain.Answer;
  * 
  */
 public interface AnswerRepo extends AbstractRepo<Answer> {
+	
+	List<Answer> getAll();
 }

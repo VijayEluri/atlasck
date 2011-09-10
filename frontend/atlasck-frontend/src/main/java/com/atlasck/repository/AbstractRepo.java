@@ -15,6 +15,6 @@ public interface AbstractRepo<E> {
 	E get(Integer id);
 
 	List<?> getAll();
-
+	
 	void add(E e);
 }
