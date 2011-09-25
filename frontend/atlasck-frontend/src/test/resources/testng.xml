@@ -1,10 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="1" name="AtlasFrontendIntegration-suite" annotations="JDK">
-
-  <!--base defaults which i'll be passing to my test methods-->
-
-  <!--view names that return from LinkController methods
-  <parameter name="getCurrentVersion" value="currentVersion"/>-->
+<suite verbose="1" name="AtlasFrontendIntegrationSuite" annotations="JDK">
 
   <test name="domainAndRepositoryTest">
   	<!-- CurrentVersion -->

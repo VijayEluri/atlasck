@@ -2,5 +2,6 @@
 	<jsp:output omit-xml-declaration="yes"/>
 
 	<title>Счетоводна катора Атлас</title>
-	<meta name="description" content="This is the atlasck page" />
+	<meta name="title" content="Счетоводна катора Атлас" />
+	<meta name="description" content="Безплатни онлайн консултации от счетоводна кантора Атлас. Задайте Вашите въпроси и получете отговор." />
 </jsp:root>

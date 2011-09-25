@@ -262,6 +262,13 @@ html[xmlns] .clearfix {
 	border-bottom:5px solid #fff;
 	}
 
+ul#answersList li {
+	padding-top: 20px;
+}
+
+ul#answersList li blockquote {
+	color: ;
+}
 
 /* Footer */
 #footerCopyRight {
@@ -348,9 +355,14 @@ label, form .error {
 	}
 
 form .error {
-	color:#cc0020;
+	color: #cc0020;
 	}
 
 form ul li {
-	padding-bottom:20px;
+	padding-bottom: 20px;
+	}
+
+small {
+	font-family: inherit;
+	font-size: 13px
 	}

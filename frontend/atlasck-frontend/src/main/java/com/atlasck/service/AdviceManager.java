@@ -22,7 +22,7 @@ public class AdviceManager {
 
 	/**
 	 * Adds question and record visitor's data to the system.
-	 * 
+	 *
 	 * @param visitor
 	 */
 	public void add(Question question, Visitor visitor) {

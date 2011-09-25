@@ -1,4 +1,37 @@
-<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" class="content">
+<div
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	class="content">
 
-	<h2>Page content</h2>
+	<h2>Счетоводни Онлайн Консултации</h2>
+	<br />
+
+	<p>
+		В онлайн консултациите на <strong>счетоводна кантора Атлас</strong> можете да участвате напълно безплатно. Зададените от Вас
+		въпроси с техните оговори са публични.
+	</p>
+
+	<spring:url value="/advice/question" var="url"/>
+	<a href="${url}.html">Публикувай въпрос</a>
+
+	<ul id="answersList">
+		<c:forEach var="answer" items="${answers}">
+			<li>
+				Въпрос
+				<strong>${answer.question.title}</strong>
+				<blockquote>${answer.question.question}</blockquote>
+				<small>
+				от ${answer.question.visitor.nickname} на ${answer.question.createdAt}
+				</small>
+			</li>
+			<li>
+				Отговор
+				<blockquote>
+				${answer.answer}
+				</blockquote>
+			</li>
+		</c:forEach>
+	</ul>
+
 </div>

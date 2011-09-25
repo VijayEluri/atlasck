@@ -17,7 +17,7 @@ import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
 
 @ContextConfiguration(locations = {"classpath:/META-INF/spring/app-data.xml"})
-@Test(singleThreaded = true)
+@Test
 public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 
 	@Autowired
@@ -25,7 +25,10 @@ public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 
 	@Autowired
 	private AnswerRepo answerRepo;
-	
+
+	@Autowired
+	private QuestionRepo questionRepo;
+
 	private Answer answer;
 	private Question question;
 	private Visitor visitor;
@@ -51,11 +54,14 @@ public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 	}
 
 	@Test(groups = {"add_answer"})
+	@Transactional
 	public void addAnswer() {
 		int actualRecords = answerRepo.getAll().size();
 
 		visitorRepo.add(visitor);
 		question.setVisitor(visitor);
+		questionRepo.add(question);
+
 		answer.setQuestion(question);
 		answerRepo.add(answer);
 
@@ -67,17 +73,19 @@ public class AnswerTest extends AbstractTransactionalTestNGSpringContextTests {
 		Assert.assertEquals(incrementedRecords, actualRecords+1,
 			"After adding 1 question, total answers' count must be incremented by 1");
 	}
-	
+
 	@AfterMethod(groups = {"add_answer"})
-	public void retrieveAllAnswers() {
-		Assert.assertEquals(answerRepo.getAll().size(), 1, "Total answers should be one");
-		
-		//TODO Refactor to support type safty
+	@Transactional
+	public void retrieveAnswersForAddedQuestion() {
+
 		List<Answer> answers = (List<Answer>) answerRepo.getAll();
-		
+
 		for(Answer answer : answers) {
-			Assert.assertEquals(question.getTitle(), answer.getQuestion().getTitle(),
+
+			if (answer.getId() == this.answer.getId()) {
+				Assert.assertEquals(question.getTitle(), answer.getQuestion().getTitle(),
 					"Reference object should return set quetion title");
+			}
 		}
 	}
 }

@@ -18,12 +18,13 @@ import com.atlasck.domain.Answer;
 import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
 import com.atlasck.repository.AnswerRepo;
+import com.atlasck.repository.QuestionRepo;
 import com.atlasck.repository.VisitorRepo;
 import com.atlasck.service.AdviceManager;
 
 /**
  * Advice model actions
- * 
+ *
  * @author Georgi Lambov
  */
 @Controller
@@ -32,30 +33,40 @@ public class AdviceController {
 
 	@Autowired private VisitorRepo visitorRepo;
 	@Autowired private AnswerRepo answerRepo;
-	
+	@Autowired private QuestionRepo questionRepo;
+
 	@Autowired private AdviceManager adviceManager;
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/**
 	 * Shows answers to questions
-	 * 
+	 *
 	 * @param modelMap
 	 * @return
 	 */
 	@RequestMapping(value="list", method=RequestMethod.GET)
 	public String list(ModelMap modelMap) {
 		modelMap.addAttribute("actionName", "advice.list");
-		
+
 		List<Answer> answers = answerRepo.getAll();
-	
-		
+		modelMap.addAttribute("answers", answers);
+
+		for(Answer answer: answers) {
+			//TODO relation object and lazy initialization
+			Question question = questionRepo.get(answer.getQuestion().getId());
+			Visitor visitor = visitorRepo.get(question.getVisitor().getId());
+			question.setVisitor(visitor);
+
+			answer.setQuestion(question);
+		}
+
 		return "advice/list";
 	}
 
 	/**
 	 * Sends questions to the system
-	 * 
+	 *
 	 * @param modelMap
 	 * @param question
 	 * @param result
@@ -86,7 +97,7 @@ public class AdviceController {
 
 	/**
 	 * Displays advice form
-	 * 
+	 *
 	 * @param modelMap
 	 * @return
 	 */
@@ -109,8 +120,12 @@ public class AdviceController {
 	public void setAdviceManager(AdviceManager adviceManager) {
 		this.adviceManager = adviceManager;
 	}
-	
+
 	public void setAnswerRepo(AnswerRepo answerRepo) {
 		this.answerRepo = answerRepo;
+	}
+
+	public void setQuestionRepo(QuestionRepo questionRepo) {
+		this.questionRepo = questionRepo;
 	}
 }

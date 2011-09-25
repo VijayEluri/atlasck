@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.atlasck.domain.Visitor;
 
 /**
- * 
+ *
  * @author Georgi Lambov
  *
  */

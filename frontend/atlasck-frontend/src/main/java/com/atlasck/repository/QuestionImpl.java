@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.atlasck.domain.Question;
 
 /**
- * 
+ *
  * @author Georgi Lambov
  *
  */
@@ -27,13 +27,11 @@ public class QuestionImpl implements QuestionRepo {
 	}
 
 	@Override
-	@Transactional
 	public Question get(Integer id) {
 		return (Question) sessionFactory.getCurrentSession().get(Question.class, id);
 	}
 
 	@Override
-	@Transactional
 	public List<?> getAll() {
 		return sessionFactory.getCurrentSession().createQuery("from Question q").list();
 	}

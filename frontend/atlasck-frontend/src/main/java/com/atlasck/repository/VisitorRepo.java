@@ -3,7 +3,7 @@ package com.atlasck.repository;
 import com.atlasck.domain.Visitor;
 
 /**
- * 
+ *
  * @author Georgi Lambov
  *
  */

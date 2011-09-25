@@ -1,9 +1,5 @@
 package com.atlasck.web.controllers;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.easymock.EasyMock;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockHttpServletRequest;
@@ -36,7 +32,6 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 	@Autowired private AdviceManager adviceManager;
 	@Autowired private QuestionRepo questionRepo;
 	@Autowired private AnswerRepo answerRepo;
-	@Autowired private SessionFactory sessionFactory;
 
 	private MockHttpServletRequest request;
 	private MockHttpServletResponse response;
@@ -71,6 +66,8 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 
 		adviceController = new AdviceController();
 		adviceController.setAnswerRepo(answerRepo);
+		adviceController.setQuestionRepo(questionRepo);
+		adviceController.setVisitorRepo(visitorRepo);
 		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
 
 		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
