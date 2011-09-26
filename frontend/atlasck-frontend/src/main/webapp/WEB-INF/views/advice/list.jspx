@@ -2,6 +2,7 @@
 	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:jsp="http://java.sun.com/JSP/Page"
 	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
 	class="content">
 
 	<h2>Счетоводни Онлайн Консултации</h2>
@@ -18,19 +19,24 @@
 	<ul id="answersList">
 		<c:forEach var="answer" items="${answers}">
 			<li>
-				Въпрос
+				<small class="question">Въпрос</small>
 				<strong>${answer.question.title}</strong>
-				<blockquote>${answer.question.question}</blockquote>
+				<br />
 				<small>
-				от ${answer.question.visitor.nickname} на ${answer.question.createdAt}
+				от ${answer.question.visitor.nickname} на
+				<fmt:formatDate type="date" value="${answer. createdAt}" pattern="dd.MM.yyyy"/>
 				</small>
+				<blockquote>${answer.question.question}</blockquote>
+
 			</li>
-			<li>
-				Отговор
+			<li class="answer">
+				<small class="answer">Отговор</small>
+
 				<blockquote>
 				${answer.answer}
 				</blockquote>
 			</li>
+
 		</c:forEach>
 	</ul>
 

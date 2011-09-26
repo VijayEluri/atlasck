@@ -27,6 +27,11 @@ body {
 
 b, strong { font-weight:bold }
 
+small {
+	font-family: inherit;
+	font-size: 13px
+	}
+
 a, a:active {  outline: none; color:#333; text-decoration:none }
 
 .clearfix:after {
@@ -262,13 +267,16 @@ html[xmlns] .clearfix {
 	border-bottom:5px solid #fff;
 	}
 
-ul#answersList li {
-	padding-top: 20px;
+#answersList li { padding-top: 20px }
+#answersList li.answer { padding-top: 10px }
+
+small.question, small.answer {
+	font-weight: bold;
+	padding-right:10px;
 }
 
-ul#answersList li blockquote {
-	color: ;
-}
+small.question { color: #A6AD84 }
+small.answer { color:#d65c6b }
 
 /* Footer */
 #footerCopyRight {
@@ -350,19 +358,7 @@ input[type="submit"] {
 	background: #ccc;
 	}
 
-label, form .error {
-	display: block
-	}
+label, form .error { display: block }
+form .error { color: #d65c6b }
 
-form .error {
-	color: #cc0020;
-	}
-
-form ul li {
-	padding-bottom: 20px;
-	}
-
-small {
-	font-family: inherit;
-	font-size: 13px
-	}
+form ul li { padding-bottom: 20px }
