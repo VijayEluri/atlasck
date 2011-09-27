@@ -6,15 +6,15 @@
 	class="content">
 
 	<h2>Счетоводни Онлайн Консултации</h2>
-	<br />
 
+	<spring:url value="/advice/question" var="url" scope="html"/>
 	<p>
-		В онлайн консултациите на <strong>счетоводна кантора Атлас</strong> можете да участвате напълно безплатно. Зададените от Вас
-		въпроси с техните оговори са публични.
+		В онлайн консултациите на <strong>счетоводна кантора Атлас</strong> можете да участвате напълно безплатно
+		като <a href="${url}.html">зададете въпрос</a>.
+		Отправените от Вас въпроси с техните отговори са публични.
 	</p>
 
-	<spring:url value="/advice/question" var="url"/>
-	<a href="${url}.html">Публикувай въпрос</a>
+	<a href="${url}.html">Задай въпрос</a>
 
 	<ul id="answersList">
 		<c:forEach var="answer" items="${answers}">

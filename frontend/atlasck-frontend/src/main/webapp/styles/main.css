@@ -185,11 +185,16 @@ html[xmlns] .clearfix {
 #rightContainer .content h2 {
 	font-weight:normal;
 	font-size:26px;
+	padding-bottom: 10px;
 	color:#A6AD84
 	}
 
 .wide #rightContainer .content h2 {
 	text-align:center
+	}
+
+#rightContainer a {
+	color: #878787
 	}
 
 #leftMenu li {
@@ -267,17 +272,6 @@ html[xmlns] .clearfix {
 	border-bottom:5px solid #fff;
 	}
 
-#answersList li { padding-top: 20px }
-#answersList li.answer { padding-top: 10px }
-
-small.question, small.answer {
-	font-weight: bold;
-	padding-right:10px;
-}
-
-small.question { color: #A6AD84 }
-small.answer { color:#d65c6b }
-
 /* Footer */
 #footerCopyRight {
 	background:url(/atlasck-frontend/static/images/bgr-footer.png) 0 0 no-repeat;
@@ -305,7 +299,12 @@ small.answer { color:#d65c6b }
 	}
 
 #footer .breadcrumb {
-	bottom:7px;
+	bottom:7px;ul.content li {
+	padding-left: 10px;
+	list-style-position: inside;
+	list-style-type: disc
+	}
+
 	position:absolute;
 	text-align:center;
 	width:100%
@@ -339,7 +338,12 @@ input, textarea {
 	}
 
 input[type="text"], textarea {
-	font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;ul.content li {
+	padding-left: 10px;
+	list-style-position: inside;
+	list-style-type: disc
+	}
+
 	font-size: 14px;
 	color: #333;
 	width: 299px;
@@ -361,4 +365,22 @@ input[type="submit"] {
 label, form .error { display: block }
 form .error { color: #d65c6b }
 
-form ul li { padding-bottom: 20px }
+form ul li, ul, p { padding-bottom: 20px }
+
+/*List style*/
+#services li {
+	padding-left: 10px;
+	list-style-position: inside;
+	list-style-type: disc
+	}
+
+#answersList li { padding-top: 20px }
+#answersList li.answer { padding-top: 5px }
+
+small.question, small.answer {
+	font-weight: bold;
+	padding-right:10px;
+	}
+
+small.question { color: #A6AD84 }
+small.answer { color:#d65c6b }
