@@ -6,7 +6,6 @@
 	<jsp:output omit-xml-declaration="yes"/>
 
 	<form:form method="post" id="q" modelAttribute="question" name="question">
-
 		<ul>
 			<li>
 				<form:label path="visitor.email">Емейл</form:label>
@@ -23,7 +22,7 @@
 			<li>
 				<form:label path="question">Въпрос</form:label>
 				<form:errors path="question" class="error" />
-				<form:textarea path="question" cols="30" rows="6"/>
+				<form:textarea path="question" cols="30" rows="6" htmlEscape="true"/>
 			</li>
 
 			<li>
@@ -34,7 +33,6 @@
 
 
 		<input type="submit" />
-
 	</form:form>
 
 </div>

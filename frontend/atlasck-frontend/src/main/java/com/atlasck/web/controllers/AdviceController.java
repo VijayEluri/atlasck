@@ -87,9 +87,9 @@ public class AdviceController {
 			return "advice/question";
 		}
 
+		//TODO check for escaping on save
 		Visitor visitor = visitorRepo.getVisitorByEmail(question.getVisitor().getEmail());
 		visitor.setIpAddress(req.getRemoteAddr());
-
 		adviceManager.add(question, visitor);
 
 		return "advice/question";

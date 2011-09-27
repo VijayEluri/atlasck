@@ -20,13 +20,17 @@
 		<c:forEach var="answer" items="${answers}">
 			<li>
 				<small class="question">Въпрос</small>
-				<strong>${answer.question.title}</strong>
+				<strong>
+					<spring:escapeBody htmlEscape="true">${answer.question.title}</spring:escapeBody>
+				</strong>
 				<br />
 				<small>
 				от ${answer.question.visitor.nickname} на
-				<fmt:formatDate type="date" value="${answer. createdAt}" pattern="dd.MM.yyyy"/>
+				<fmt:formatDate type="date" value="${answer.createdAt}" pattern="dd.MM.yyyy"/>
 				</small>
-				<blockquote>${answer.question.question}</blockquote>
+				<blockquote>
+					<spring:escapeBody htmlEscape="true">${answer.question.question}</spring:escapeBody>
+				</blockquote>
 
 			</li>
 			<li class="answer">
