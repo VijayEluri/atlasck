@@ -5,6 +5,13 @@
 	version="2.0" class="content">
 	<jsp:output omit-xml-declaration="yes"/>
 
+	<h2>Задайте въпрос</h2>
+	<p>
+	За да изпратите въпросът Ви е неходимо да попълните всички полета във формата.
+	Вашият въпрос ще получи отговор единсвено ако е удобрен. <strong>Счетоводна кантора Атлас</strong> запазва правото си
+	да коригира въпросът Ви преди да публикува отговор.
+	</p>
+
 	<form:form method="post" id="q" modelAttribute="question" name="question">
 		<ul>
 			<li>

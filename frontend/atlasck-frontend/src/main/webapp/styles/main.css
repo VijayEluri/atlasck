@@ -193,10 +193,6 @@ html[xmlns] .clearfix {
 	text-align:center
 	}
 
-#rightContainer a {
-	color: #878787
-	}
-
 #leftMenu li {
 	margin:0 auto;
 	width:206px;
@@ -284,7 +280,7 @@ html[xmlns] .clearfix {
 	color:#aeaeae
 	}
 
-#footerCopyRight .floatRight a {
+#footerCopyRight .floatRight a, #rightContainer a {
 	color:#805e42
 	}
 
