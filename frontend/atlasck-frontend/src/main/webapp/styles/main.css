@@ -214,12 +214,22 @@ html[xmlns] .clearfix {
 	background:#D79056
 	}
 
+.wide #leftMenu .aboutTheCompany.active {
+	background: #fff;
+	border-bottom: 3px solid #D79056;
+	}
+
 #leftMenu .aboutTheCompany.active a, #subheader .breadcrumb li.aboutTheCompany, #subheader .breadcrumb a.aboutTheCompany {
 	color:#D79056
 	}
 
 #leftMenu .services.active {
 	background:#56B7D7
+	}
+
+.wide #leftMenu .services.active {
+	background:#fff;
+	border-bottom:3px solid #56B7D7
 	}
 
 #leftMenu .services.active a, #subheader .breadcrumb li.services, #subheader .breadcrumb a.services {
@@ -241,6 +251,11 @@ html[xmlns] .clearfix {
 
 #leftMenu .feedback.active {
 	background:#D75656
+	}
+
+#leftMenu .feedback.active {
+	background: #fff;
+	border-bottom: 3px solid #D75656
 	}
 
 #leftMenu .feedback.active a, #subheader .breadcrumb li.feedback,  #subheader .breadcrumb a.feedback {
@@ -334,15 +349,14 @@ input, textarea {
 	}
 
 input[type="text"], textarea {
-	font-family: Arial, sans-serif;ul.content li {
-	padding-left: 10px;
-	list-style-position: inside;
-	list-style-type: disc
-	}
-
+	font-family: Arial, sans-serif;
 	font-size: 14px;
 	color: #333;
 	width: 299px;
+	}
+
+textarea {
+	width: 95%
 	}
 
 input[type="checkbox"] {

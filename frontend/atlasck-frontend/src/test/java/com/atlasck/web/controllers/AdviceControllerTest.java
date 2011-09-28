@@ -1,6 +1,5 @@
 package com.atlasck.web.controllers;
 
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
@@ -74,7 +73,7 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 	}
 
 	@Test
-	@Parameters({"questionForm"})
+	@Parameters({"questionSent"})
 	public void create(String page) throws Exception {
 
 		//TODO init request from model map

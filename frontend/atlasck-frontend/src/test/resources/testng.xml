@@ -30,6 +30,7 @@
 
   	<parameter name="getAdviceList" value="advice/list" />
 	<parameter name="questionForm" value="advice/question" />
+	<parameter name="questionSent" value="advice/question/sent" />
 
   	<packages>
   		<package name="com.atlasck.web.controllers"/>
