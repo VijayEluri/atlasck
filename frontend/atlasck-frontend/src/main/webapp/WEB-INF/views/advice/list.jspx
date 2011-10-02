@@ -14,15 +14,17 @@
 		Отправените от Вас въпроси с техните отговори са публични.
 	</p>
 
-	<a href="${url}.html">Задай въпрос</a>
+	<p>
+		<a href="${url}.html" class="onlineConsultations">Консултирайте се</a>
+	</p>
 
 	<ul id="answersList">
 		<c:forEach var="answer" items="${answers}">
 			<li>
 				<small class="question">Въпрос</small>
-				<strong>
+				<b>
 					<spring:escapeBody htmlEscape="true">${answer.question.title}</spring:escapeBody>
-				</strong>
+				</b>
 				<br />
 				<small>
 				от ${answer.question.visitor.nickname} на

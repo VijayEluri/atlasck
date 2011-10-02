@@ -6,20 +6,20 @@
 	id="footer">
 	<jsp:output omit-xml-declaration="yes"/>
 
+	<spring:url value="/" var="content_about_us_url"/>
+	<spring:url value="/content/services" var="content_services_url"/>
+	<spring:url value="/advice/list" var="advice_list_url"/>
+	<spring:url value="/content/feedback" var="content_feedback_url"/>
+
 	<div id="footerCopyRight">
-		<div class="floatLeft">created by: uvWebs.com</div>
-		<div class="floatRight"><strong>счетоводна кантора Атлас</strong><![CDATA[&nbsp; &bull; &nbsp;]]> <a href="mailto:office@atlasck.com"><![CDATA[office@atlasck.com]]></a></div>
+		<div class="floatLeft">изготвено от: uvWebs.com</div>
+		<div class="floatRight"><strong><a href="${content_about_us_url}" class="aboutTheCompany">счетоводна кантора Атлас</a></strong><![CDATA[&nbsp; &bull; &nbsp;]]> <a href="mailto:office@atlasck.com"><![CDATA[office@atlasck.com]]></a></div>
 
 		<br class="cleaner" />
 	</div>
 
 	<div class="content">
 		<ul class="breadcrumb">
-			<spring:url value="/" var="content_about_us_url"/>
-			<spring:url value="/content/services" var="content_services_url"/>
-			<spring:url value="/advice/list" var="advice_list_url"/>
-			<spring:url value="/content/feedback" var="content_feedback_url"/>
-
 			<li><a href="${content_about_us_url}">За фирмата</a></li>
 			<li><a href="${content_services_url}.html">Услуги</a></li>
 			<li><a href="${advice_list_url}.html">Онлайн консултации</a></li>

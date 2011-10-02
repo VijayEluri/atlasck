@@ -5,6 +5,7 @@
 		<h1>одит <![CDATA[&mdash]]>; финансови консултации <![CDATA[&mdash]]>; онлайн консултации</h1>
 	</div>
 
+	<!--
 	<ul class="breadcrumb">
 		<c:if test="${actionName == 'content.aboutUs'}">
 		<spring:url value="/content/about-us" var="url"/>
@@ -26,4 +27,6 @@
 		<li><a href="${url}.html" class="onlineConsultations">Консултации</a></li>
 		</c:if>
 	</ul>
+	 -->
+
 </div>

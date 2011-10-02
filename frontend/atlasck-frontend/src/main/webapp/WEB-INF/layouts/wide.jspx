@@ -25,7 +25,6 @@
 
 			<div id="body">
 				<tiles:insertAttribute name="subheader"/>
-
 				<div class="content">
 					<div id="rightContainer">
 						<tiles:insertAttribute name="body"/>

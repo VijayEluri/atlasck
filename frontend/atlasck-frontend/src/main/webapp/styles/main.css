@@ -245,7 +245,8 @@ html[xmlns] .clearfix {
 	border-bottom:3px solid #BD56D7
 	}
 
-#leftMenu .onlineConsultations.active a, #subheader .breadcrumb li.onlineConsultations,  #subheader .breadcrumb a.onlineConsultations {
+#leftMenu .onlineConsultations.active a, #subheader .breadcrumb li.onlineConsultations,  #subheader .breadcrumb a.onlineConsultations,
+#rightContainer a.onlineConsultations {
 	color:#BD56D7
 	}
 
@@ -283,6 +284,12 @@ html[xmlns] .clearfix {
 	border-bottom:5px solid #fff;
 	}
 
+#rightContainer a.onlineConsultations {
+	background:url(/atlasck-frontend/static/images/pointer.png) right 2px no-repeat;
+	padding-right: 32px;
+	font-size:18px
+	}
+
 /* Footer */
 #footerCopyRight {
 	background:url(/atlasck-frontend/static/images/bgr-footer.png) 0 0 no-repeat;
@@ -304,18 +311,13 @@ html[xmlns] .clearfix {
 	width:670px;
 	}
 
-#footerCopyRight strong, #footerCopyRight .floatRight {
+#footerCopyRight strong, #footerCopyRight .floatRight,  #footerCopyRight a.aboutTheCompany {
 	font-weight:normal;
 	color:#a6ad84
 	}
 
 #footer .breadcrumb {
-	bottom:7px;ul.content li {
-	padding-left: 10px;
-	list-style-position: inside;
-	list-style-type: disc
-	}
-
+	bottom:7px;
 	position:absolute;
 	text-align:center;
 	width:100%
