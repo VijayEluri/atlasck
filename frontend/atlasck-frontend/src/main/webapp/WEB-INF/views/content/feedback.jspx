@@ -2,5 +2,16 @@
 	<jsp:output omit-xml-declaration="yes"/>
 
 	<h2>Да се свържем със счетоводна кантора Атлас</h2>
+	<p><![CDATA[&nbsp;]]></p>
+
+	<ul>
+		<li>Счетоводна кантора Атлас</li>
+		<li>град Варна 9000</li>
+		<li>улица "Съборни" номер 19А, етаж 1</li>
+		<li>Радка Георгиева</li>
+		<li>телефон (факс) 052/601-229</li>
+		<li>мобилен 0888/837-853</li>
+		<li>е- мейл <a href="mailto:office@atlasck.com">ckatlas@gmail.com</a>, <![CDATA[&nbsp;]]> <a href="mailto:office@atlasck.com">office@atlasck.com</a></li>
+	</ul>
 
 </div>
