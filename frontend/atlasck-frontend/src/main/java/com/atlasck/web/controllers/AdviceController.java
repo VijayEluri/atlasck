@@ -39,6 +39,8 @@ public class AdviceController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
+	public static final String IS_QUESTION_POSTED = "question_posted";
+
 	/**
 	 * Shows answers to questions
 	 *
@@ -92,9 +94,7 @@ public class AdviceController {
 		visitor.setIpAddress(req.getRemoteAddr());
 		adviceManager.add(question, visitor);
 
-
-
-		return "advice/question/sent";
+		return "redirect:/advice/question-sent.html";
 	}
 
 	/**
@@ -104,27 +104,28 @@ public class AdviceController {
 	 * @return
 	 */
 	@RequestMapping(value="question", method=RequestMethod.GET)
-	public String createForm(ModelMap modelMap, HttpServletRequest request) {
+	public String create(ModelMap modelMap, HttpServletRequest request) {
 		modelMap.addAttribute("actionName", "advice.list");
 
 		Question question = new Question();
 		question.setVisitor(new Visitor());
 		modelMap.addAttribute("question", question);
 
-		request.getSession().setAttribute("question_posted", true);
+		request.getSession().setAttribute(IS_QUESTION_POSTED, true);
 
 		return "advice/question";
 	}
 
-	@RequestMapping(value="question/sent", method=RequestMethod.GET)
-	public String successfullForm(ModelMap modelMap, HttpServletRequest request) {
+	@RequestMapping(value="question-sent", method=RequestMethod.GET)
+	public String successfulForm(ModelMap modelMap, HttpServletRequest request) {
 		modelMap.addAttribute("actionName", "advice.list");
 
-		if(request.getSession().getAttribute("question_posted") != null) {
+		if(request.getSession().getAttribute(IS_QUESTION_POSTED) != null) {
+			request.getSession().removeAttribute(IS_QUESTION_POSTED);
 			return "advice/question-sent";
 		}
 
-		return "advice/list";
+		return "redirect:/advice/list.html";
 	}
 
 	//TODO refactor following setters in the constructor

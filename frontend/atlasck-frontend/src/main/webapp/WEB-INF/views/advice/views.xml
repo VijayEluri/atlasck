@@ -9,8 +9,7 @@
         <put-attribute name="body" value="/WEB-INF/views/advice/question.jspx"/>
     </definition>
 
-    <define extends="wide" name="advice/question/sent">
-    	<put-attribute name="body" value="/WEB-INF/views/advice/question-sent.jspx"
-    </define>
-
+    <definition extends="wide" name="advice/question-sent">
+    	<put-attribute name="body" value="/WEB-INF/views/advice/question-sent.jspx"/>
+    </definition>
 </tiles-definitions>

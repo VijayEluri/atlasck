@@ -100,13 +100,35 @@ public class AdviceControllerTest extends AbstractTestNGSpringContextTests {
 		//adviceController.create(modelMap, question, result, request);
 
 		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
-
-		Assert.assertEquals(modelAndView.getViewName(), page, "returned view name should be " + page);
+		Assert.assertEquals(modelAndView.getViewName(), "redirect:/" + page + ".html", "returned view name should be " + page);
 
 		long incrementedRecords = questionRepo.getAll().size();
 
 		Assert.assertEquals(incrementedRecords, actualRecords+1,
 			"After adding of one user question, total count must be incremented by on");
+	}
+
+	@Test
+	@Parameters({"questionSent", "getAdviceList"})
+	public void successfulSent(String questionPostedPage, String questionNotPostedPage) throws Exception {
+		request.setRequestURI("/advice/question-sent");
+		request.setMethod("GET");
+
+		adviceController = new AdviceController();
+
+		request.getSession().setAttribute(AdviceController.IS_QUESTION_POSTED, true);
+		ModelAndView modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
+		Assert.assertEquals(modelAndView.getViewName(), "advice/question-sent",
+				"Returned view name should be " + "advice/question-sent");
+
+		request.getSession().removeAttribute(AdviceController.IS_QUESTION_POSTED);
+
+		Assert.assertNull(request.getSession().getAttribute(AdviceController.IS_QUESTION_POSTED),
+				"Question posted attribute should be null");
+
+		modelAndView = methodHandlerAdapter.handle(request, response, adviceController);
+		Assert.assertEquals(modelAndView.getViewName(), "redirect:/" + questionNotPostedPage + ".html",
+				"Returned view name should be " + questionNotPostedPage);
 	}
 
 	@Test
