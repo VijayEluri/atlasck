@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_atlasck_backend_domain_Visitors" modelAttribute="visitors" path="/visitorses" versionField="none" z="aYykFkhOmgJqMnF+f7qeRSUjqXc=">
+        <field:simple field="questionss" id="c_com_atlasck_backend_domain_Visitors_questionss" messageCode="entity_reference_not_managed" messageCodeAttribute="Questions" z="LjKf2HKq6HOSXm/NBmi9sPE5hU8="/>
+        <field:input field="nickname" id="c_com_atlasck_backend_domain_Visitors_nickname" required="true" z="w+gyhzCH6FfEPvmWkb2ou6Ddc98="/>
+        <field:input field="email" id="c_com_atlasck_backend_domain_Visitors_email" required="true" validationMessageCode="field_invalid_email" z="nspaUBuf6PR1USm3kigQJsjpSOc="/>
+        <field:input field="ipAddress" id="c_com_atlasck_backend_domain_Visitors_ipAddress" z="7wSsiHYuXz5Pa9KBJQypZH+zA/w="/>
+        <field:datetime dateTimePattern="${visitors_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Visitors_createdAt" z="2Vr+Ey344eh+ZvUvIb1Q/RgFzSA="/>
+        <field:datetime dateTimePattern="${visitors_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Visitors_updatedAt" z="JEqUggqwDGG1fSfG3a53FYtDXgw="/>
+    </form:update>
+</div>

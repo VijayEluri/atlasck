@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_atlasck_backend_domain_Answers" object="${answers}" path="/answerses" z="nCd7EmgAgUzqpqmp3xOj6ViVpCY=">
+        <field:display field="questionsId" id="s_com_atlasck_backend_domain_Answers_questionsId" object="${answers}" z="7IO0S9HIH0Vanc/iw17jDICI/l8="/>
+        <field:display field="answer" id="s_com_atlasck_backend_domain_Answers_answer" object="${answers}" z="+Zmo1tJGPAVnkzoa5PgtH7BA0fg="/>
+        <field:display date="true" dateTimePattern="${answers_createdat_date_format}" field="createdAt" id="s_com_atlasck_backend_domain_Answers_createdAt" object="${answers}" z="xQDBsig/On5Ut27pcd4rnuQig2Q="/>
+        <field:display date="true" dateTimePattern="${answers_updatedat_date_format}" field="updatedAt" id="s_com_atlasck_backend_domain_Answers_updatedAt" object="${answers}" z="Q5N1wm1+1BISQDedeHErNhQOzto="/>
+    </page:show>
+</div>

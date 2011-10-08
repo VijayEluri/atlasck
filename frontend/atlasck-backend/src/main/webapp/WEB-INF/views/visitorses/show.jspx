@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_atlasck_backend_domain_Visitors" object="${visitors}" path="/visitorses" z="1F5ezrZydZBGzVlS/iNH6XynuAM=">
+        <field:display field="nickname" id="s_com_atlasck_backend_domain_Visitors_nickname" object="${visitors}" z="gywRkwbeZJxtadIVWg8QNKqSkUE="/>
+        <field:display field="email" id="s_com_atlasck_backend_domain_Visitors_email" object="${visitors}" z="sAKDV4zRER/gEjS5O8SgnUeqdFI="/>
+        <field:display field="ipAddress" id="s_com_atlasck_backend_domain_Visitors_ipAddress" object="${visitors}" z="pr1u+XfC6dzjAB+gol2cc/knn/g="/>
+        <field:display date="true" dateTimePattern="${visitors_createdat_date_format}" field="createdAt" id="s_com_atlasck_backend_domain_Visitors_createdAt" object="${visitors}" z="eZ+TS5nWM91maH3PK0FS1XMVPeM="/>
+        <field:display date="true" dateTimePattern="${visitors_updatedat_date_format}" field="updatedAt" id="s_com_atlasck_backend_domain_Visitors_updatedAt" object="${visitors}" z="azZwWHvFcqHPl+CUVIWvp/tjjfI="/>
+    </page:show>
+</div>

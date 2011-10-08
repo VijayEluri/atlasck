@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_atlasck_backend_domain_CurrentVersion" items="${currentversions}" z="7/7cVzGCAuafTu4OvAb7X/Wgq8Y=">
+        <table:table data="${currentversions}" id="l_com_atlasck_backend_domain_CurrentVersion" path="/currentversions" z="ULNAIYvwnlEXeTziWTUlj+/F/Ng=">
+            <table:column id="c_com_atlasck_backend_domain_CurrentVersion_username" property="username" z="Huue1jfOmGX5LZ8BE2BUKLQmCBw="/>
+            <table:column id="c_com_atlasck_backend_domain_CurrentVersion_passwd" property="passwd" z="smM7EpxyZzCByYsNZhjdmut1h70="/>
+            <table:column id="c_com_atlasck_backend_domain_CurrentVersion_maintenance" property="maintenance" z="+L3ZCodJrswBAiGmJy501bIyJyc="/>
+            <table:column id="c_com_atlasck_backend_domain_CurrentVersion_httpAuth" property="httpAuth" z="Ys12h9hiPVdPM8GHCdNIrDXR8e0="/>
+        </table:table>
+    </page:list>
+</div>

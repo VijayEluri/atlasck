@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_atlasck_backend_domain_Questions" object="${questions}" path="/questionses" z="2+kuSV3gSXLjdTcyBgxbWv/+FQQ=">
+        <field:display field="visitorsId" id="s_com_atlasck_backend_domain_Questions_visitorsId" object="${questions}" z="7uC4SpbFO6feDIgWT2zJTeMrEH8="/>
+        <field:display field="title" id="s_com_atlasck_backend_domain_Questions_title" object="${questions}" z="dIY/a7/cdRXV0wE7yWfvmrD0MuA="/>
+        <field:display field="question" id="s_com_atlasck_backend_domain_Questions_question" object="${questions}" z="hcQ7plTahWVcjE3s4uGhyuJmnCs="/>
+        <field:display field="visible" id="s_com_atlasck_backend_domain_Questions_visible" object="${questions}" z="khriw74BTG1XyaJwQTZwEDjWv1k="/>
+        <field:display field="emailAnswer" id="s_com_atlasck_backend_domain_Questions_emailAnswer" object="${questions}" z="ACtR4u+DIS9tVCS8mSuo4EkdyiQ="/>
+        <field:display date="true" dateTimePattern="${questions_createdat_date_format}" field="createdAt" id="s_com_atlasck_backend_domain_Questions_createdAt" object="${questions}" z="QVgUUFUXIgSCF/IE3xG4m+gefbo="/>
+        <field:display date="true" dateTimePattern="${questions_updatedat_date_format}" field="updatedAt" id="s_com_atlasck_backend_domain_Questions_updatedAt" object="${questions}" z="S5mBQHPZM1cx4vxONsVmo4Pgvog="/>
+    </page:show>
+</div>
