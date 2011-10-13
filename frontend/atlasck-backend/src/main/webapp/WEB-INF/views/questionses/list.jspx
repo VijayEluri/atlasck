@@ -7,9 +7,9 @@
             <table:column id="c_com_atlasck_backend_domain_Questions_answerss" property="answerss" z="++aDisTJaRUU30Z/mTl8JWHh46A="/>
             <table:column id="c_com_atlasck_backend_domain_Questions_visitorsId" property="visitorsId" z="W4EYa6IuljCQCq1Et2KmdggyOJc="/>
             <table:column id="c_com_atlasck_backend_domain_Questions_title" property="title" z="OooT03kr4dR4OPXGON4T+5JF5Bo="/>
-            <table:column id="c_com_atlasck_backend_domain_Questions_question" property="question" z="onC0MS2oFSY3VIpOAucN1I/V47g="/>
             <table:column id="c_com_atlasck_backend_domain_Questions_visible" property="visible" z="82vVwM+MCBChR+zo9EVM9CHqKL0="/>
             <table:column id="c_com_atlasck_backend_domain_Questions_emailAnswer" property="emailAnswer" z="nScmxDlLZItLqFscq5t5VY0laE4="/>
+            <table:column date="true" dateTimePattern="${questions_createdat_date_format}" id="c_com_atlasck_backend_domain_Questions_createdAt" property="createdAt" z="Po/kcPzEMRue+Konk4azUUokqDM="/>
         </table:table>
     </page:list>
 </div>

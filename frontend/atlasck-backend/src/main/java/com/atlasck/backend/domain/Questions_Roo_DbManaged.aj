@@ -19,107 +19,96 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 
 privileged aspect Questions_Roo_DbManaged {
-
+    
     @OneToMany(mappedBy = "questionsId")
     private Set<Answers> Questions.answerss;
-
+    
     @ManyToOne
     @JoinColumn(name = "visitors_id", referencedColumnName = "id", nullable = false)
     private Visitors Questions.visitorsId;
-
+    
     @Column(name = "title", length = 255)
     @NotNull
     private String Questions.title;
-
-    @Column(name = "question", columnDefinition="TEXT")
-    private String Questions.question;
-
+    
     @Column(name = "visible")
     private Boolean Questions.visible;
-
+    
     @Column(name = "email_answer")
     private Boolean Questions.emailAnswer;
-
+    
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date Questions.createdAt;
-
+    
     @Column(name = "updated_at")
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date Questions.updatedAt;
-
+    
     public Set<Answers> Questions.getAnswerss() {
         return this.answerss;
     }
-
+    
     public void Questions.setAnswerss(Set<Answers> answerss) {
         this.answerss = answerss;
     }
-
+    
     public Visitors Questions.getVisitorsId() {
         return this.visitorsId;
     }
-
+    
     public void Questions.setVisitorsId(Visitors visitorsId) {
         this.visitorsId = visitorsId;
     }
-
+    
     public String Questions.getTitle() {
         return this.title;
     }
-
+    
     public void Questions.setTitle(String title) {
         this.title = title;
     }
-
-    public String Questions.getQuestion() {
-        return this.question;
-    }
-
-    public void Questions.setQuestion(String question) {
-        this.question = question;
-    }
-
+    
     public Boolean Questions.getVisible() {
         return this.visible;
     }
-
+    
     public boolean Questions.isVisible() {
         return this.visible != null && this.visible;
     }
-
+    
     public void Questions.setVisible(Boolean visible) {
         this.visible = visible;
     }
-
+    
     public Boolean Questions.getEmailAnswer() {
         return this.emailAnswer;
     }
-
+    
     public boolean Questions.isEmailAnswer() {
         return this.emailAnswer != null && this.emailAnswer;
     }
-
+    
     public void Questions.setEmailAnswer(Boolean emailAnswer) {
         this.emailAnswer = emailAnswer;
     }
-
+    
     public Date Questions.getCreatedAt() {
         return this.createdAt;
     }
-
+    
     public void Questions.setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
-
+    
     public Date Questions.getUpdatedAt() {
         return this.updatedAt;
     }
-
+    
     public void Questions.setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
-
+    
 }

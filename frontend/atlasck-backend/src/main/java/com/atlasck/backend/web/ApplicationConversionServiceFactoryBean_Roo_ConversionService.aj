@@ -27,7 +27,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class com.atlasck.backend.web.ApplicationConversionServiceFactoryBean.AnswersConverter implements Converter<Answers, String> {
         public String convert(Answers answers) {
-            return new StringBuilder().append(answers.getAnswer()).append(" ").append(answers.getCreatedAt()).append(" ").append(answers.getUpdatedAt()).toString();
+            return new StringBuilder().append(answers.getCreatedAt()).append(" ").append(answers.getUpdatedAt()).append(" ").append(answers.getAnswer()).toString();
         }
         
     }
@@ -41,7 +41,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class com.atlasck.backend.web.ApplicationConversionServiceFactoryBean.QuestionsConverter implements Converter<Questions, String> {
         public String convert(Questions questions) {
-            return new StringBuilder().append(questions.getTitle()).append(" ").append(questions.getQuestion()).append(" ").append(questions.getCreatedAt()).append(" ").append(questions.getUpdatedAt()).toString();
+            return new StringBuilder().append(questions.getTitle()).append(" ").append(questions.getCreatedAt()).append(" ").append(questions.getUpdatedAt()).append(" ").append(questions.getQuestion()).toString();
         }
         
     }

@@ -12,7 +12,6 @@ privileged aspect Questions_Roo_ToString {
         sb.append("Answerss: ").append(getAnswerss() == null ? "null" : getAnswerss().size()).append(", ");
         sb.append("CreatedAt: ").append(getCreatedAt()).append(", ");
         sb.append("EmailAnswer: ").append(getEmailAnswer()).append(", ");
-        sb.append("Id: ").append(getId()).append(", ");
         sb.append("Question: ").append(getQuestion()).append(", ");
         sb.append("Title: ").append(getTitle()).append(", ");
         sb.append("UpdatedAt: ").append(getUpdatedAt()).append(", ");

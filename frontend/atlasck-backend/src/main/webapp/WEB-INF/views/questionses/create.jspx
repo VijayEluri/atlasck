@@ -6,9 +6,9 @@
         <field:simple field="answerss" id="c_com_atlasck_backend_domain_Questions_answerss" messageCode="entity_reference_not_managed" messageCodeAttribute="Answers" z="UjBiOQi+b3gxNmmCRlz/5cRdeiQ="/>
         <field:select field="visitorsId" id="c_com_atlasck_backend_domain_Questions_visitorsId" itemValue="id" items="${visitorses}" path="/visitorses" z="i9BbYUFuHUxX9fslbNxIaZz6gaA="/>
         <field:input field="title" id="c_com_atlasck_backend_domain_Questions_title" required="true" z="VKvtvXrE+s+RAurvgaOdeVmF1WM="/>
-        <field:textarea field="question" id="c_com_atlasck_backend_domain_Questions_question" z="ponjyPVWT+IbIeYk777fCnBKudw="/>
+        <field:textarea field="question" id="c_com_atlasck_backend_domain_Questions_question" z="user-managed"/>
         <field:checkbox field="visible" id="c_com_atlasck_backend_domain_Questions_visible" z="Dth9ACzeX1wBsfEW+KQqceGC+NY="/>
-        <field:checkbox field="emailAnswer" id="c_com_atlasck_backend_domain_Questions_emailAnswer" z="chO2zHbpRT7oh9INO1/qGAU8tV4="/>
+        <field:checkbox field="emailAnswer" id="c_com_atlasck_backend_domain_Questions_emailAnswer" z="user-managed"/>
         <field:datetime dateTimePattern="${questions_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Questions_createdAt" z="YUfQxfCzfjRqohxFyHPqKnWt8tc="/>
         <field:datetime dateTimePattern="${questions_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Questions_updatedAt" z="x6dRpo6D75+YGUaz9rvhrEm1718="/>
     </form:create>
