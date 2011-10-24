@@ -6,7 +6,7 @@ package com.atlasck.backend.domain;
 import java.lang.String;
 
 privileged aspect Answers_Roo_ToString {
-    
+
     public String Answers.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Answer: ").append(getAnswer()).append(", ");
@@ -16,5 +16,5 @@ privileged aspect Answers_Roo_ToString {
         sb.append("UpdatedAt: ").append(getUpdatedAt());
         return sb.toString();
     }
-    
+
 }

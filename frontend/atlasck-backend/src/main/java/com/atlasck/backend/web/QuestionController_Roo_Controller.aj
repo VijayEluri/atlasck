@@ -24,37 +24,37 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
-privileged aspect QuestionsController_Roo_Controller {
+privileged aspect QuestionController_Roo_Controller {
     
     @RequestMapping(method = RequestMethod.POST)
-    public String QuestionsController.create(@Valid Questions questions, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String QuestionController.create(@Valid Questions questions, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("questions", questions);
             addDateTimeFormatPatterns(uiModel);
-            return "questionses/create";
+            return "question/create";
         }
         uiModel.asMap().clear();
         questions.persist();
-        return "redirect:/questionses/" + encodeUrlPathSegment(questions.getId().toString(), httpServletRequest);
+        return "redirect:/question/" + encodeUrlPathSegment(questions.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(params = "form", method = RequestMethod.GET)
-    public String QuestionsController.createForm(Model uiModel) {
+    public String QuestionController.createForm(Model uiModel) {
         uiModel.addAttribute("questions", new Questions());
         addDateTimeFormatPatterns(uiModel);
-        return "questionses/create";
+        return "question/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String QuestionsController.show(@PathVariable("id") Integer id, Model uiModel) {
+    public String QuestionController.show(@PathVariable("id") Integer id, Model uiModel) {
         addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("questions", Questions.findQuestions(id));
         uiModel.addAttribute("itemId", id);
-        return "questionses/show";
+        return "question/show";
     }
     
     @RequestMapping(method = RequestMethod.GET)
-    public String QuestionsController.list(@RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
+    public String QuestionController.list(@RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
         if (page != null || size != null) {
             int sizeNo = size == null ? 10 : size.intValue();
             uiModel.addAttribute("questionses", Questions.findQuestionsEntries(page == null ? 0 : (page.intValue() - 1) * sizeNo, sizeNo));
@@ -64,58 +64,58 @@ privileged aspect QuestionsController_Roo_Controller {
             uiModel.addAttribute("questionses", Questions.findAllQuestionses());
         }
         addDateTimeFormatPatterns(uiModel);
-        return "questionses/list";
+        return "question/list";
     }
     
     @RequestMapping(method = RequestMethod.PUT)
-    public String QuestionsController.update(@Valid Questions questions, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String QuestionController.update(@Valid Questions questions, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("questions", questions);
             addDateTimeFormatPatterns(uiModel);
-            return "questionses/update";
+            return "question/update";
         }
         uiModel.asMap().clear();
         questions.merge();
-        return "redirect:/questionses/" + encodeUrlPathSegment(questions.getId().toString(), httpServletRequest);
+        return "redirect:/question/" + encodeUrlPathSegment(questions.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
-    public String QuestionsController.updateForm(@PathVariable("id") Integer id, Model uiModel) {
+    public String QuestionController.updateForm(@PathVariable("id") Integer id, Model uiModel) {
         uiModel.addAttribute("questions", Questions.findQuestions(id));
         addDateTimeFormatPatterns(uiModel);
-        return "questionses/update";
+        return "question/update";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public String QuestionsController.delete(@PathVariable("id") Integer id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
+    public String QuestionController.delete(@PathVariable("id") Integer id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
         Questions.findQuestions(id).remove();
         uiModel.asMap().clear();
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
-        return "redirect:/questionses";
+        return "redirect:/question";
     }
     
     @ModelAttribute("answerses")
-    public Collection<Answers> QuestionsController.populateAnswerses() {
+    public Collection<Answers> QuestionController.populateAnswerses() {
         return Answers.findAllAnswerses();
     }
     
     @ModelAttribute("questionses")
-    public Collection<Questions> QuestionsController.populateQuestionses() {
+    public Collection<Questions> QuestionController.populateQuestionses() {
         return Questions.findAllQuestionses();
     }
     
     @ModelAttribute("visitorses")
-    public Collection<Visitors> QuestionsController.populateVisitorses() {
+    public Collection<Visitors> QuestionController.populateVisitorses() {
         return Visitors.findAllVisitorses();
     }
     
-    void QuestionsController.addDateTimeFormatPatterns(Model uiModel) {
+    void QuestionController.addDateTimeFormatPatterns(Model uiModel) {
         uiModel.addAttribute("questions_createdat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("questions_updatedat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
-    String QuestionsController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
+    String QuestionController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
         String enc = httpServletRequest.getCharacterEncoding();
         if (enc == null) {
             enc = WebUtils.DEFAULT_CHARACTER_ENCODING;

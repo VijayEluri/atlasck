@@ -2,7 +2,7 @@
 <div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_com_atlasck_backend_domain_CurrentVersion" object="${currentversion}" path="/currentversions" z="2JQEF9HaVCOg0TSMnlJw5gMCKlw=">
+    <page:show id="ps_com_atlasck_backend_domain_CurrentVersion" object="${currentversion}" path="/current-version" z="Jkl58ctZrvFi4OrIu3oRp4egtLM=">
         <field:display field="username" id="s_com_atlasck_backend_domain_CurrentVersion_username" object="${currentversion}" z="9jHn3yz3c83kRtcp8BedgqR/L3Y="/>
         <field:display field="passwd" id="s_com_atlasck_backend_domain_CurrentVersion_passwd" object="${currentversion}" z="rCJt5MuGB8jZkxxBWywd/RM52hQ="/>
         <field:display field="maintenance" id="s_com_atlasck_backend_domain_CurrentVersion_maintenance" object="${currentversion}" z="UreF/NdHkCL1yXjZTG+RHk4ZyjA="/>

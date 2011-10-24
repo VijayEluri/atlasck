@@ -23,37 +23,37 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
-privileged aspect AnswersController_Roo_Controller {
+privileged aspect AnswerController_Roo_Controller {
     
     @RequestMapping(method = RequestMethod.POST)
-    public String AnswersController.create(@Valid Answers answers, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String AnswerController.create(@Valid Answers answers, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("answers", answers);
             addDateTimeFormatPatterns(uiModel);
-            return "answerses/create";
+            return "answer/create";
         }
         uiModel.asMap().clear();
         answers.persist();
-        return "redirect:/answerses/" + encodeUrlPathSegment(answers.getId().toString(), httpServletRequest);
+        return "redirect:/answer/" + encodeUrlPathSegment(answers.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(params = "form", method = RequestMethod.GET)
-    public String AnswersController.createForm(Model uiModel) {
+    public String AnswerController.createForm(Model uiModel) {
         uiModel.addAttribute("answers", new Answers());
         addDateTimeFormatPatterns(uiModel);
-        return "answerses/create";
+        return "answer/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String AnswersController.show(@PathVariable("id") Integer id, Model uiModel) {
+    public String AnswerController.show(@PathVariable("id") Integer id, Model uiModel) {
         addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("answers", Answers.findAnswers(id));
         uiModel.addAttribute("itemId", id);
-        return "answerses/show";
+        return "answer/show";
     }
     
     @RequestMapping(method = RequestMethod.GET)
-    public String AnswersController.list(@RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
+    public String AnswerController.list(@RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
         if (page != null || size != null) {
             int sizeNo = size == null ? 10 : size.intValue();
             uiModel.addAttribute("answerses", Answers.findAnswersEntries(page == null ? 0 : (page.intValue() - 1) * sizeNo, sizeNo));
@@ -63,53 +63,53 @@ privileged aspect AnswersController_Roo_Controller {
             uiModel.addAttribute("answerses", Answers.findAllAnswerses());
         }
         addDateTimeFormatPatterns(uiModel);
-        return "answerses/list";
+        return "answer/list";
     }
     
     @RequestMapping(method = RequestMethod.PUT)
-    public String AnswersController.update(@Valid Answers answers, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String AnswerController.update(@Valid Answers answers, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("answers", answers);
             addDateTimeFormatPatterns(uiModel);
-            return "answerses/update";
+            return "answer/update";
         }
         uiModel.asMap().clear();
         answers.merge();
-        return "redirect:/answerses/" + encodeUrlPathSegment(answers.getId().toString(), httpServletRequest);
+        return "redirect:/answer/" + encodeUrlPathSegment(answers.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
-    public String AnswersController.updateForm(@PathVariable("id") Integer id, Model uiModel) {
+    public String AnswerController.updateForm(@PathVariable("id") Integer id, Model uiModel) {
         uiModel.addAttribute("answers", Answers.findAnswers(id));
         addDateTimeFormatPatterns(uiModel);
-        return "answerses/update";
+        return "answer/update";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public String AnswersController.delete(@PathVariable("id") Integer id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
+    public String AnswerController.delete(@PathVariable("id") Integer id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
         Answers.findAnswers(id).remove();
         uiModel.asMap().clear();
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
-        return "redirect:/answerses";
+        return "redirect:/answer";
     }
     
     @ModelAttribute("answerses")
-    public Collection<Answers> AnswersController.populateAnswerses() {
+    public Collection<Answers> AnswerController.populateAnswerses() {
         return Answers.findAllAnswerses();
     }
     
     @ModelAttribute("questionses")
-    public Collection<Questions> AnswersController.populateQuestionses() {
+    public Collection<Questions> AnswerController.populateQuestionses() {
         return Questions.findAllQuestionses();
     }
     
-    void AnswersController.addDateTimeFormatPatterns(Model uiModel) {
+    void AnswerController.addDateTimeFormatPatterns(Model uiModel) {
         uiModel.addAttribute("answers_createdat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("answers_updatedat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
-    String AnswersController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
+    String AnswerController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
         String enc = httpServletRequest.getCharacterEncoding();
         if (enc == null) {
             enc = WebUtils.DEFAULT_CHARACTER_ENCODING;

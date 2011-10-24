@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect Visitors_Roo_Entity {
     
-    declare @type: Visitors: @Entity;
+    declare @type: Visitors: @Entity(name = "Visitor");
     
     declare @type: Visitors: @Table(name = "visitors", schema = "atlasck");
     
@@ -82,11 +82,11 @@ privileged aspect Visitors_Roo_Entity {
     }
     
     public static long Visitors.countVisitorses() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM Visitors o", Long.class).getSingleResult();
+        return entityManager().createQuery("SELECT COUNT(o) FROM Visitor o", Long.class).getSingleResult();
     }
     
     public static List<Visitors> Visitors.findAllVisitorses() {
-        return entityManager().createQuery("SELECT o FROM Visitors o", Visitors.class).getResultList();
+        return entityManager().createQuery("SELECT o FROM Visitor o", Visitors.class).getResultList();
     }
     
     public static Visitors Visitors.findVisitors(Integer id) {
@@ -95,7 +95,7 @@ privileged aspect Visitors_Roo_Entity {
     }
     
     public static List<Visitors> Visitors.findVisitorsEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM Visitors o", Visitors.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+        return entityManager().createQuery("SELECT o FROM Visitor o", Visitors.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

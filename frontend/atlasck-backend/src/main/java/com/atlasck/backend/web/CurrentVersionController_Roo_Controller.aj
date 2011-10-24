@@ -26,24 +26,24 @@ privileged aspect CurrentVersionController_Roo_Controller {
     public String CurrentVersionController.create(@Valid CurrentVersion currentVersion, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("currentVersion", currentVersion);
-            return "currentversions/create";
+            return "current-version/create";
         }
         uiModel.asMap().clear();
         currentVersion.persist();
-        return "redirect:/currentversions/" + encodeUrlPathSegment(currentVersion.getId().toString(), httpServletRequest);
+        return "redirect:/current-version/" + encodeUrlPathSegment(currentVersion.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String CurrentVersionController.createForm(Model uiModel) {
         uiModel.addAttribute("currentVersion", new CurrentVersion());
-        return "currentversions/create";
+        return "current-version/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String CurrentVersionController.show(@PathVariable("id") Integer id, Model uiModel) {
         uiModel.addAttribute("currentversion", CurrentVersion.findCurrentVersion(id));
         uiModel.addAttribute("itemId", id);
-        return "currentversions/show";
+        return "current-version/show";
     }
     
     @RequestMapping(method = RequestMethod.GET)
@@ -56,24 +56,24 @@ privileged aspect CurrentVersionController_Roo_Controller {
         } else {
             uiModel.addAttribute("currentversions", CurrentVersion.findAllCurrentVersions());
         }
-        return "currentversions/list";
+        return "current-version/list";
     }
     
     @RequestMapping(method = RequestMethod.PUT)
     public String CurrentVersionController.update(@Valid CurrentVersion currentVersion, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("currentVersion", currentVersion);
-            return "currentversions/update";
+            return "current-version/update";
         }
         uiModel.asMap().clear();
         currentVersion.merge();
-        return "redirect:/currentversions/" + encodeUrlPathSegment(currentVersion.getId().toString(), httpServletRequest);
+        return "redirect:/current-version/" + encodeUrlPathSegment(currentVersion.getId().toString(), httpServletRequest);
     }
     
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
     public String CurrentVersionController.updateForm(@PathVariable("id") Integer id, Model uiModel) {
         uiModel.addAttribute("currentVersion", CurrentVersion.findCurrentVersion(id));
-        return "currentversions/update";
+        return "current-version/update";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
@@ -82,7 +82,7 @@ privileged aspect CurrentVersionController_Roo_Controller {
         uiModel.asMap().clear();
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
-        return "redirect:/currentversions";
+        return "redirect:/current-version";
     }
     
     @ModelAttribute("currentversions")

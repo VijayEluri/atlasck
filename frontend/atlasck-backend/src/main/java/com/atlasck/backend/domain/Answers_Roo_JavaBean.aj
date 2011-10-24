@@ -6,13 +6,13 @@ package com.atlasck.backend.domain;
 import java.lang.String;
 
 privileged aspect Answers_Roo_JavaBean {
-
+    
     public String Answers.getAnswer() {
         return this.answer;
     }
-
+    
     public void Answers.setAnswer(String answer) {
         this.answer = answer;
     }
-
+    
 }

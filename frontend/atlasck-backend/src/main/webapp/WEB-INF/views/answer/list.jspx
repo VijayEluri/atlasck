@@ -3,7 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_atlasck_backend_domain_Answers" items="${answerses}" z="Nnw8QnrrJgwz09R7idEgQwnMYvM=">
-        <table:table data="${answerses}" id="l_com_atlasck_backend_domain_Answers" path="/answerses" z="b4rHMMyxvhR1qsakmhk2Z4ej+2A=">
+        <table:table data="${answerses}" id="l_com_atlasck_backend_domain_Answers" path="/answer" z="MmdHI5pVfQU0LGsbiYYH1uDe8XQ=">
             <table:column id="c_com_atlasck_backend_domain_Answers_answer" property="answer" z="qDn9rW/Lf6LCYfUpLMlJGnzjb3M="/>
             <table:column id="c_com_atlasck_backend_domain_Answers_questionsId" property="questionsId" z="9DA1CsGwLYJ/NdjTKiKe6I0Kn08="/>
             <table:column date="true" dateTimePattern="${answers_createdat_date_format}" id="c_com_atlasck_backend_domain_Answers_createdAt" property="createdAt" z="xJk6N0+l964fzlI9uBPEVUpJCW0="/>

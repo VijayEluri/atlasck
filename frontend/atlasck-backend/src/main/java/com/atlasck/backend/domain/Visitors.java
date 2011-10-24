@@ -7,7 +7,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooEntity(versionField = "", table = "visitors", schema = "atlasck")
+@RooEntity(versionField = "", table = "visitors", schema = "atlasck", entityName="Visitor")
 @RooDbManaged(automaticallyDelete = true)
 public class Visitors {
+
 }
