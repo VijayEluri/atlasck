@@ -3,10 +3,10 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_atlasck_backend_domain_Answers" modelAttribute="answers" path="/answer" render="${empty dependencies}" z="jmZu6dbv+aN5n3pXhMC6yxDMJmo=">
-        <field:input field="answer" id="c_com_atlasck_backend_domain_Answers_answer" z="hBocvR3ivfVpof6iiXwnKa/2D7w="/>
-        <field:select field="questionsId" id="c_com_atlasck_backend_domain_Answers_questionsId" itemValue="id" items="${questionses}" path="/question" z="qh4wrZXBmAh60P5sii47ash5k1Q="/>
-        <field:datetime render="false" dateTimePattern="${answers_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Answers_createdAt" z="user-managed"/>
-        <field:datetime render="false" dateTimePattern="${answers_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Answers_updatedAt" z="user-managed"/>
+        <field:editor field="answer" id="c_com_atlasck_backend_domain_Answers_answer" z="user-managed"/>
+        <field:select field="questionsId" id="c_com_atlasck_backend_domain_Answers_questionsId" itemValue="id" items="${questionses}" path="/questionses" z="STbfwMJOMbcCMojnuEYZOjcug48="/>
+        <field:datetime dateTimePattern="${answers_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Answers_createdAt" render="false" z="user-managed"/>
+        <field:datetime dateTimePattern="${answers_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Answers_updatedAt" render="false" z="user-managed"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_atlasck_backend_domain_Answers" render="${not empty dependencies}" z="LN0nQ5e8PhiX1YjKAUF/DBtKLoc="/>
 </div>

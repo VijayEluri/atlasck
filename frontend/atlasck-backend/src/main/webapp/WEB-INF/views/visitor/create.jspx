@@ -7,8 +7,8 @@
         <field:input field="nickname" id="c_com_atlasck_backend_domain_Visitors_nickname" required="true" z="w+gyhzCH6FfEPvmWkb2ou6Ddc98="/>
         <field:input field="email" id="c_com_atlasck_backend_domain_Visitors_email" required="true" validationMessageCode="field_invalid_email" z="user-managed"/>
         <field:input field="ipAddress" id="c_com_atlasck_backend_domain_Visitors_ipAddress" z="7wSsiHYuXz5Pa9KBJQypZH+zA/w="/>
-        <field:datetime render="false" dateTimePattern="${visitors_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Visitors_createdAt" z="2Vr+Ey344eh+ZvUvIb1Q/RgFzSA="/>
-        <field:datetime render="false" dateTimePattern="${visitors_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Visitors_updatedAt" z="JEqUggqwDGG1fSfG3a53FYtDXgw="/>
+        <field:datetime dateTimePattern="${visitors_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Visitors_createdAt" render="false" z="user-managed"/>
+        <field:datetime dateTimePattern="${visitors_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Visitors_updatedAt" render="false" z="user-managed"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_atlasck_backend_domain_Visitors" render="${not empty dependencies}" z="AQT5McSBmhqI77HEz/c+o4r8aFw="/>
 </div>

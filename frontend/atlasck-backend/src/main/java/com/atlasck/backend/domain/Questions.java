@@ -1,6 +1,10 @@
 package com.atlasck.backend.domain;
 
+import java.util.Date;
+
 import javax.persistence.Column;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.entity.RooEntity;
@@ -15,4 +19,15 @@ public class Questions {
 
 	@Column(name = "question", columnDefinition="TEXT")
     private String question;
+
+	@PreUpdate
+	@PrePersist
+	public void updateTimestamps() {
+		setUpdatedAt(new Date());
+
+		//TODO createdAt only on create record
+		if(getCreatedAt() == null) {
+			setCreatedAt(new Date());
+		}
+	}
 }
