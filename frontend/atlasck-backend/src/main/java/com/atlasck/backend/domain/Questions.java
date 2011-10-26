@@ -11,6 +11,8 @@ import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 
+import com.sun.xml.internal.bind.v2.TODO;
+
 @RooJavaBean
 @RooToString
 @RooEntity(versionField = "", table = "questions", schema = "atlasck")
@@ -29,5 +31,14 @@ public class Questions {
 		if(getCreatedAt() == null) {
 			setCreatedAt(new Date());
 		}
+	}
+
+	/**
+	 * List witht questions without answers
+	 *
+	 * {@link TODO needs to be implemented}
+	 */
+	public void findQuestionsWithoutAnswer() {
+
 	}
 }

@@ -99,11 +99,6 @@ privileged aspect AnswerController_Roo_Controller {
         return Answers.findAllAnswerses();
     }
     
-    @ModelAttribute("questionses")
-    public Collection<Questions> AnswerController.populateQuestionses() {
-        return Questions.findAllQuestionses();
-    }
-    
     void AnswerController.addDateTimeFormatPatterns(Model uiModel) {
         uiModel.addAttribute("answers_createdat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("answers_updatedat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
