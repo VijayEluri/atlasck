@@ -11,7 +11,7 @@
 	<p>
 		В онлайн консултациите на <strong>счетоводна кантора Атлас</strong> можете да участвате напълно безплатно
 		като <a href="${url}.html">зададете въпрос</a>.
-		Отправените от Вас въпроси с техните отговори са публични.
+		Отправените от Вас въпроси и техните отговори са публични.
 	</p>
 
 	<p>
@@ -22,9 +22,7 @@
 		<c:forEach var="answer" items="${answers}">
 			<li>
 				<small class="question">Въпрос</small>
-				<b>
-					<spring:escapeBody htmlEscape="true">${answer.question.title}</spring:escapeBody>
-				</b>
+				<spring:escapeBody htmlEscape="true">${answer.question.title}</spring:escapeBody>
 				<br />
 				<small>
 				от ${answer.question.visitor.nickname} на
