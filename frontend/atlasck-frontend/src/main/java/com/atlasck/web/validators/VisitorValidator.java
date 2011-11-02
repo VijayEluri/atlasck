@@ -7,7 +7,7 @@ import org.springframework.validation.Validator;
 import com.atlasck.domain.Visitor;
 
 /**
- * 
+ *
  * @author Georgi Lambov
  *
  */

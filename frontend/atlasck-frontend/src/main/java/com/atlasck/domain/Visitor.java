@@ -16,6 +16,8 @@ public class Visitor implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private Integer id;
+
+	@NotEmpty(message="{validation.not_empty}")
 	private String nickname;
 
 	@NotEmpty(message="{validation.not_empty}")

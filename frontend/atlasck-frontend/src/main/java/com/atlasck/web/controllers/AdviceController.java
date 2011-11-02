@@ -91,6 +91,7 @@ public class AdviceController {
 
 		//TODO check for escaping on save
 		Visitor visitor = visitorRepo.getVisitorByEmail(question.getVisitor().getEmail());
+		visitor.setNickname(question.getVisitor().getNickname());
 		visitor.setIpAddress(req.getRemoteAddr());
 		adviceManager.add(question, visitor);
 

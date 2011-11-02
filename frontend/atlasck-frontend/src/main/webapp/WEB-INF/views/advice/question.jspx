@@ -15,6 +15,12 @@
 	<form:form method="post" id="q" modelAttribute="question" name="question">
 		<ul>
 			<li>
+				<form:label path="visitor.nickname">Име</form:label>
+				<form:errors path="visitor.nickname" class="error" />
+		     	<form:input path="visitor.nickname"/>
+			</li>
+
+			<li>
 				<form:label path="visitor.email">Имейл</form:label>
 				<form:errors path="visitor.email" class="error" />
 		     	<form:input path="visitor.email"/>
