@@ -46,13 +46,11 @@ public class Questions {
 	 */
     public List<Questions> findQuestionsWithoutAnswer() {
 
-    	/*CriteriaBuilder criteriaBuilder = entityManager().getCriteriaBuilder();
+    	CriteriaBuilder criteriaBuilder = entityManager().getCriteriaBuilder();
         CriteriaQuery<Questions> criteriaQuery = criteriaBuilder.createQuery(Questions.class);
         Root<Questions> from = criteriaQuery.from(Questions.class);
         CriteriaQuery<Questions> select = criteriaQuery.select(from);
         TypedQuery<Questions> typedQuery = entityManager().createQuery(select);
-        return typedQuery.getResultList();*/
-
-    	Query query = entityManager.createQuery("SELECT o FROM Questions AS o WHERE MEMBER OF o.answerss AND ");
+        return typedQuery.getResultList();
     }
 }
