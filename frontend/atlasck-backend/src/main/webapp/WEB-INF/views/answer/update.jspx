@@ -3,9 +3,9 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_atlasck_backend_domain_Answers" modelAttribute="answers" path="/answer" versionField="none" z="55gQPnF928C3gz2gKxvICoKDb/A=">
-        <field:input field="answer" id="c_com_atlasck_backend_domain_Answers_answer" z="hBocvR3ivfVpof6iiXwnKa/2D7w="/>
+        <field:editor field="answer" id="c_com_atlasck_backend_domain_Answers_answer" z="user-managed"/>
         <field:datetime dateTimePattern="${answers_createdat_date_format}" field="createdAt" id="c_com_atlasck_backend_domain_Answers_createdAt" render="false" z="user-managed"/>
         <field:datetime dateTimePattern="${answers_updatedat_date_format}" field="updatedAt" id="c_com_atlasck_backend_domain_Answers_updatedAt" render="false" z="user-managed"/>
-        <field:select field="questionsId" id="c_com_atlasck_backend_domain_Answers_questionsId" itemValue="id" items="${questionses}" path="/questionses" z="STbfwMJOMbcCMojnuEYZOjcug48="/>
+        <field:select field="questionsId" id="c_com_atlasck_backend_domain_Answers_questionsId" itemValue="id" items="${questionses}" path="/question" z="qh4wrZXBmAh60P5sii47ash5k1Q="/>
     </form:update>
 </div>

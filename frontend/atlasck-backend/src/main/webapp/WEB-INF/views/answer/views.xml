@@ -13,4 +13,7 @@
 <definition extends="default" name="answer/update">
         <put-attribute name="body" value="/WEB-INF/views/answer/update.jspx"/>
     </definition>
+<definition extends="default" name="answer/findAnswersesByQuestionsId">
+        <put-attribute name="body" value="/WEB-INF/views/answer/findAnswersesByQuestionsId.jspx"/>
+    </definition>
 </tiles-definitions>

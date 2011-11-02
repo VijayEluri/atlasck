@@ -4,7 +4,6 @@
 package com.atlasck.backend.web;
 
 import com.atlasck.backend.domain.Answers;
-import com.atlasck.backend.domain.CurrentVersion;
 import com.atlasck.backend.domain.Questions;
 import com.atlasck.backend.domain.Visitors;
 import java.lang.String;
@@ -15,7 +14,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(new AnswersConverter());
-        registry.addConverter(new CurrentVersionConverter());
         registry.addConverter(new QuestionsConverter());
         registry.addConverter(new VisitorsConverter());
     }
@@ -28,13 +26,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     static class com.atlasck.backend.web.ApplicationConversionServiceFactoryBean.AnswersConverter implements Converter<Answers, String> {
         public String convert(Answers answers) {
             return new StringBuilder().append(answers.getCreatedAt()).append(" ").append(answers.getUpdatedAt()).append(" ").append(answers.getAnswer()).toString();
-        }
-        
-    }
-    
-    static class com.atlasck.backend.web.ApplicationConversionServiceFactoryBean.CurrentVersionConverter implements Converter<CurrentVersion, String> {
-        public String convert(CurrentVersion currentVersion) {
-            return new StringBuilder().append(currentVersion.getUsername()).append(" ").append(currentVersion.getPasswd()).toString();
         }
         
     }

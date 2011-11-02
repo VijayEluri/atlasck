@@ -17,6 +17,8 @@ public class AnswerController {
 
 	@ModelAttribute("questionses")
     public Collection<Questions> populateQuestionses() {
-        return Questions.findAllQuestionses();
+		Questions question = new Questions();
+
+        return question.findQuestionsWithoutAnswer();
     }
 }

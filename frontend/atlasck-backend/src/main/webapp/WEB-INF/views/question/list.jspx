@@ -4,11 +4,11 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_atlasck_backend_domain_Questions" items="${questionses}" z="sTxithhdvr5dv0cX5WxWg8jJj08=">
         <table:table data="${questionses}" id="l_com_atlasck_backend_domain_Questions" path="/question" z="QTwwUDrB/6jR7XJrDPufRNd2VDI=">
-            <table:column id="c_com_atlasck_backend_domain_Questions_answerss" property="answerss" z="++aDisTJaRUU30Z/mTl8JWHh46A="/>
+            <table:column id="c_com_atlasck_backend_domain_Questions_answerss" property="answerss" z="user-managed"/>
+            <table:column id="c_com_atlasck_backend_domain_Questions_visible" property="visible" render="false" z="user-managed"/>
+            <table:column id="c_com_atlasck_backend_domain_Questions_emailAnswer" property="emailAnswer" render="false" z="user-managed"/>
             <table:column id="c_com_atlasck_backend_domain_Questions_visitorsId" property="visitorsId" z="W4EYa6IuljCQCq1Et2KmdggyOJc="/>
             <table:column id="c_com_atlasck_backend_domain_Questions_title" property="title" z="OooT03kr4dR4OPXGON4T+5JF5Bo="/>
-            <table:column id="c_com_atlasck_backend_domain_Questions_visible" property="visible" z="82vVwM+MCBChR+zo9EVM9CHqKL0="/>
-            <table:column id="c_com_atlasck_backend_domain_Questions_emailAnswer" property="emailAnswer" z="nScmxDlLZItLqFscq5t5VY0laE4="/>
             <table:column date="true" dateTimePattern="${questions_createdat_date_format}" id="c_com_atlasck_backend_domain_Questions_createdAt" property="createdAt" z="Po/kcPzEMRue+Konk4azUUokqDM="/>
         </table:table>
     </page:list>

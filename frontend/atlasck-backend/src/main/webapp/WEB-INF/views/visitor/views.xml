@@ -13,4 +13,7 @@
 <definition extends="default" name="visitor/update">
         <put-attribute name="body" value="/WEB-INF/views/visitor/update.jspx"/>
     </definition>
+<definition extends="default" name="visitor/findVisitorsesByNicknameEquals">
+        <put-attribute name="body" value="/WEB-INF/views/visitor/findVisitorsesByNicknameEquals.jspx"/>
+    </definition>
 </tiles-definitions>
