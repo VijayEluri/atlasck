@@ -6,7 +6,7 @@ CREATE TABLE current_version (
   http_auth BOOL NULL DEFAULT false,
   PRIMARY KEY(id)
 )
-TYPE=InnoDB;
+ENGINE=InnoDB;
 
 CREATE TABLE visitors (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -18,7 +18,7 @@ CREATE TABLE visitors (
   PRIMARY KEY(id),
   UNIQUE INDEX visitors_email_unique(email)
 )
-TYPE=InnoDB;
+ENGINE=InnoDB;
 
 CREATE TABLE questions (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -36,7 +36,7 @@ CREATE TABLE questions (
       ON DELETE RESTRICT
       ON UPDATE RESTRICT
 )
-TYPE=InnoDB;
+ENGINE=InnoDB;
 
 CREATE TABLE answers (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -51,5 +51,5 @@ CREATE TABLE answers (
       ON DELETE CASCADE
       ON UPDATE CASCADE
 )
-TYPE=InnoDB;
+ENGINE=InnoDB;
 
