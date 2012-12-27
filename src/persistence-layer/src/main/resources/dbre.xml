@@ -4,67 +4,57 @@
     <option key="activeRecord" value="true"/>
     <option key="includeNonPortableAttributes" value="false"/>
     <option key="testAutomatically" value="true"/>
-    <table name="answers">
+    <table name="answer">
         <column name="id" primaryKey="true" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
-        <column name="questions_id" primaryKey="false" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
+        <column name="question" primaryKey="false" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
         <column name="answer" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="created_at" primaryKey="false" required="false" scale="0" size="19" type="93,DATETIME"/>
-        <column name="updated_at" primaryKey="false" required="false" scale="0" size="19" type="93,DATETIME"/>
-        <foreign-key foreignTable="questions" name="answers_ibfk_1" onDelete="cascade" onUpdate="cascade">
+        <column name="created_at" primaryKey="false" required="true" scale="0" size="19" type="93,DATETIME"/>
+        <column name="updated_at" primaryKey="false" required="true" scale="0" size="19" type="93,DATETIME"/>
+        <foreign-key foreignTable="question" name="answers_ibfk_1" onDelete="cascade" onUpdate="cascade">
             <option key="exported" value="false"/>
-            <reference foreign="id" local="questions_id"/>
+            <reference foreign="id" local="question"/>
         </foreign-key>
         <unique name="PRIMARY">
             <unique-column name="id"/>
         </unique>
         <index name="answers_FKIndex1">
-            <index-column name="questions_id"/>
+            <index-column name="question"/>
         </index>
     </table>
-    <table name="current_version">
+    <table name="question">
         <column name="id" primaryKey="true" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
-        <column name="username" primaryKey="false" required="false" scale="0" size="255" type="12,VARCHAR"/>
-        <column name="passwd" primaryKey="false" required="false" scale="0" size="255" type="12,VARCHAR"/>
-        <column name="maintenance" primaryKey="false" required="false" scale="0" size="0" type="-7,BIT"/>
-        <column name="http_auth" primaryKey="false" required="false" scale="0" size="0" type="-7,BIT"/>
-        <unique name="PRIMARY">
-            <unique-column name="id"/>
-        </unique>
-    </table>
-    <table name="questions">
-        <column name="id" primaryKey="true" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
-        <column name="visitors_id" primaryKey="false" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
+        <column name="visitor" primaryKey="false" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
         <column name="title" primaryKey="false" required="true" scale="0" size="255" type="12,VARCHAR"/>
         <column name="question" primaryKey="false" required="true" scale="0" size="65535" type="-1,TEXT"/>
         <column name="visible" primaryKey="false" required="false" scale="0" size="0" type="-7,BIT"/>
         <column name="email_answer" primaryKey="false" required="false" scale="0" size="0" type="-7,BIT"/>
-        <column name="created_at" primaryKey="false" required="false" scale="0" size="19" type="93,DATETIME"/>
-        <column name="updated_at" primaryKey="false" required="false" scale="0" size="19" type="93,DATETIME"/>
-        <foreign-key foreignTable="visitors" name="questions_ibfk_1" onDelete="none" onUpdate="none">
+        <column name="created_at" primaryKey="false" required="true" scale="0" size="19" type="93,DATETIME"/>
+        <column name="updated_at" primaryKey="false" required="true" scale="0" size="19" type="93,DATETIME"/>
+        <foreign-key foreignTable="visitor" name="questions_ibfk_1" onDelete="none" onUpdate="none">
             <option key="exported" value="false"/>
-            <reference foreign="id" local="visitors_id"/>
+            <reference foreign="id" local="visitor"/>
         </foreign-key>
-        <foreign-key foreignTable="answers" name="answers_ibfk_1" onDelete="cascade" onUpdate="cascade">
+        <foreign-key foreignTable="answer" name="answers_ibfk_1" onDelete="cascade" onUpdate="cascade">
             <option key="exported" value="true"/>
-            <reference foreign="questions_id" local="id"/>
+            <reference foreign="question" local="id"/>
         </foreign-key>
         <unique name="PRIMARY">
             <unique-column name="id"/>
         </unique>
         <index name="questions_FKIndex1">
-            <index-column name="visitors_id"/>
+            <index-column name="visitor"/>
         </index>
     </table>
-    <table name="visitors">
+    <table name="visitor">
         <column name="id" primaryKey="true" required="true" scale="0" size="10" type="4,INT UNSIGNED"/>
         <column name="nickname" primaryKey="false" required="true" scale="0" size="255" type="12,VARCHAR"/>
         <column name="email" primaryKey="false" required="true" scale="0" size="255" type="12,VARCHAR"/>
-        <column name="ip_address" primaryKey="false" required="false" scale="0" size="255" type="12,VARCHAR"/>
-        <column name="created_at" primaryKey="false" required="false" scale="0" size="19" type="93,DATETIME"/>
-        <column name="updated_at" primaryKey="false" required="false" scale="0" size="19" type="93,DATETIME"/>
-        <foreign-key foreignTable="questions" name="questions_ibfk_1" onDelete="none" onUpdate="none">
+        <column name="ip_address" primaryKey="false" required="true" scale="0" size="255" type="12,VARCHAR"/>
+        <column name="created_at" primaryKey="false" required="true" scale="0" size="19" type="93,DATETIME"/>
+        <column name="updated_at" primaryKey="false" required="true" scale="0" size="19" type="93,DATETIME"/>
+        <foreign-key foreignTable="question" name="questions_ibfk_1" onDelete="none" onUpdate="none">
             <option key="exported" value="true"/>
-            <reference foreign="visitors_id" local="id"/>
+            <reference foreign="visitor" local="id"/>
         </foreign-key>
         <unique name="PRIMARY">
             <unique-column name="id"/>
@@ -72,5 +62,8 @@
         <unique name="visitors_email_unique">
             <unique-column name="email"/>
         </unique>
+        <index name="nickname">
+            <index-column name="nickname"/>
+        </index>
     </table>
 </database>
