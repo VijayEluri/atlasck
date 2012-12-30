@@ -13,7 +13,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooDbManaged(automaticallyDelete = true)
 public class Question {
 
-    @Column(name = "question", columnDefinition = "TEXT")
+    @Column(name = "body", columnDefinition = "TEXT")
     @NotNull
-    private String question;
+    private String body;
 }

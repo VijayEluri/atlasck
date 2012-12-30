@@ -7,12 +7,12 @@ import com.atlasck.domain.Question;
 
 privileged aspect Question_Roo_JavaBean {
     
-    public String Question.getQuestion() {
-        return this.question;
+    public String Question.getBody() {
+        return this.body;
     }
     
-    public void Question.setQuestion(String question) {
-        this.question = question;
+    public void Question.setBody(String body) {
+        this.body = body;
     }
     
 }

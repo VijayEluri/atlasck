@@ -33,14 +33,19 @@ privileged aspect QuestionDataOnDemand_Roo_DataOnDemand {
     
     public Question QuestionDataOnDemand.getNewTransientQuestion(int index) {
         Question obj = new Question();
+        setBody(obj, index);
         setCreatedAt(obj, index);
         setEmailAnswer(obj, index);
-        setQuestion(obj, index);
         setTitle(obj, index);
         setUpdatedAt(obj, index);
         setVisible(obj, index);
         setVisitor(obj, index);
         return obj;
+    }
+    
+    public void QuestionDataOnDemand.setBody(Question obj, int index) {
+        String body = "body_" + index;
+        obj.setBody(body);
     }
     
     public void QuestionDataOnDemand.setCreatedAt(Question obj, int index) {
@@ -51,11 +56,6 @@ privileged aspect QuestionDataOnDemand_Roo_DataOnDemand {
     public void QuestionDataOnDemand.setEmailAnswer(Question obj, int index) {
         Boolean emailAnswer = Boolean.TRUE;
         obj.setEmailAnswer(emailAnswer);
-    }
-    
-    public void QuestionDataOnDemand.setQuestion(Question obj, int index) {
-        String question = "question_" + index;
-        obj.setQuestion(question);
     }
     
     public void QuestionDataOnDemand.setTitle(Question obj, int index) {

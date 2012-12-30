@@ -27,18 +27,12 @@ privileged aspect Visitor_Roo_DbManaged {
     @NotNull
     private String Visitor.email;
     
-    @Column(name = "ip_address", length = 255)
-    @NotNull
-    private String Visitor.ipAddress;
-    
     @Column(name = "created_at")
-    @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date Visitor.createdAt;
     
     @Column(name = "updated_at")
-    @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date Visitor.updatedAt;
@@ -65,14 +59,6 @@ privileged aspect Visitor_Roo_DbManaged {
     
     public void Visitor.setEmail(String email) {
         this.email = email;
-    }
-    
-    public String Visitor.getIpAddress() {
-        return ipAddress;
-    }
-    
-    public void Visitor.setIpAddress(String ipAddress) {
-        this.ipAddress = ipAddress;
     }
     
     public Date Visitor.getCreatedAt() {

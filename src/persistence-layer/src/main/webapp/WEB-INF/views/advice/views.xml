@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition extends="wide" name="advice/list">
+		<put-attribute name="body" value="/WEB-INF/views/advice/list.jspx" />
+	</definition>
+
+	<definition extends="wide" name="advice/question">
+		<put-attribute name="body"
+			value="/WEB-INF/views/advice/question.jspx" />
+	</definition>
+
+	<definition extends="wide" name="advice/question-sent">
+		<put-attribute name="body"
+			value="/WEB-INF/views/advice/question-sent.jspx" />
+	</definition>
+</tiles-definitions>

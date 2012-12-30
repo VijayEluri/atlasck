@@ -1,0 +1,17 @@
+<jsp:root xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+	<jsp:output omit-xml-declaration="yes"/>
+
+	<div id="footerBox">
+		<div class="left alignMiddle">
+			Счетоводна кантора 'АТЛАС' е създадена и развива дейност от 1994г. Фирмата се управлява от Радка Георгиева - дипломиран експерт счетоводител от 1993г. Кантората е специализирана в обслужване на малки
+		</div>
+		<div class="center alignMiddle">
+			asdfasdf
+		</div>
+		<div class="right alignMiddle">
+			Счетоводна кантора 'АТЛАС' е създадена и развива дейност от 1994г. Фирмата се управлява от Радка Георгиева - дипломиран експерт счетоводител от 1993г. Кантората е специализирана в обслужване на малки
+		</div>
+
+	</div>
+
+</jsp:root>

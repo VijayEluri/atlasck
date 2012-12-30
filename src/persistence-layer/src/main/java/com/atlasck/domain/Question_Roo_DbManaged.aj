@@ -38,13 +38,11 @@ privileged aspect Question_Roo_DbManaged {
     private Boolean Question.emailAnswer;
     
     @Column(name = "created_at")
-    @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date Question.createdAt;
     
     @Column(name = "updated_at")
-    @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date Question.updatedAt;

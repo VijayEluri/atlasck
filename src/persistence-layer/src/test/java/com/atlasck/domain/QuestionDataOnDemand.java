@@ -11,7 +11,7 @@ public class QuestionDataOnDemand {
 	
 	public Question createNewCustomQuestion() {
 		Question question = new Question();
-		question.setQuestion("my question");
+		question.setBody("my question");
 		question.setVisitor(visitorDod.getRandomVisitor());
 		question.setTitle("question title");
 		question.setVisible(true);
