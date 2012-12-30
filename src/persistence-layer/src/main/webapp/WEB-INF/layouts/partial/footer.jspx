@@ -12,7 +12,7 @@
 	<spring:url value="/content/feedback" var="content_feedback_url"/>
 
 	<div id="footerCopyRight">
-		<div class="floatLeft">изготвено от: uvWebs.com</div>
+		<div class="floatLeft"><a href="${content_about_us_url}">skatlas.com</a></div>
 		<div class="floatRight"><strong><a href="${content_about_us_url}" class="aboutTheCompany">счетоводна кантора Атлас</a></strong><![CDATA[&nbsp; &bull; &nbsp;]]> <a href="mailto:office@atlasck.com"><![CDATA[office@atlasck.com]]></a></div>
 
 		<br class="cleaner" />

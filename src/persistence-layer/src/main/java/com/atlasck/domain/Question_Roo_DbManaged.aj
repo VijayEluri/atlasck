@@ -31,12 +31,6 @@ privileged aspect Question_Roo_DbManaged {
     @NotNull
     private String Question.title;
     
-    @Column(name = "visible")
-    private Boolean Question.visible;
-    
-    @Column(name = "email_answer")
-    private Boolean Question.emailAnswer;
-    
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
@@ -69,22 +63,6 @@ privileged aspect Question_Roo_DbManaged {
     
     public void Question.setTitle(String title) {
         this.title = title;
-    }
-    
-    public Boolean Question.getVisible() {
-        return visible;
-    }
-    
-    public void Question.setVisible(Boolean visible) {
-        this.visible = visible;
-    }
-    
-    public Boolean Question.getEmailAnswer() {
-        return emailAnswer;
-    }
-    
-    public void Question.setEmailAnswer(Boolean emailAnswer) {
-        this.emailAnswer = emailAnswer;
     }
     
     public Date Question.getCreatedAt() {

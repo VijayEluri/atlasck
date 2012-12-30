@@ -54,7 +54,7 @@ privileged aspect QuestionDataOnDemand_Roo_DataOnDemand {
     }
     
     public void QuestionDataOnDemand.setEmailAnswer(Question obj, int index) {
-        Boolean emailAnswer = Boolean.TRUE;
+        Boolean emailAnswer = true;
         obj.setEmailAnswer(emailAnswer);
     }
     
@@ -72,7 +72,7 @@ privileged aspect QuestionDataOnDemand_Roo_DataOnDemand {
     }
     
     public void QuestionDataOnDemand.setVisible(Question obj, int index) {
-        Boolean visible = Boolean.TRUE;
+        Boolean visible = false;
         obj.setVisible(visible);
     }
     

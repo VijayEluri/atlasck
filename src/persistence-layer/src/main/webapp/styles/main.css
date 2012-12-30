@@ -389,10 +389,10 @@ form ul li, ul, p { padding-bottom: 20px }
 #answersList li { padding-top: 20px }
 #answersList li.answer { padding-top: 5px }
 
-small.body, small.answer {
+small.question, small.answer {
 	font-weight: bold;
 	padding-right:10px;
 	}
 
-small.body { color: #A6AD84 }
+small.question{ color: #A6AD84 }
 small.answer { color:#d65c6b }

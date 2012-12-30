@@ -41,8 +41,9 @@
 
 			<div id="header">
 				<div class="content clearfix">
+					<spring:url value="/images/atlas-ck-logo.jpg" var="logo_url" /> 
 					<a href="${home_url}" title="начална страница към счетоводна кантора атлас">
-						<img src="images/atlas-ck-logo.jpg" width="300" height="160" class="logo" border="0" alt="Счетоводна кантора АТЛАС"/>
+						<img src="${logo_url }" width="300" height="160" class="logo" border="0" alt="Счетоводна кантора АТЛАС"/>
 					</a>
 
 					<div id="language" class="floatLeft">

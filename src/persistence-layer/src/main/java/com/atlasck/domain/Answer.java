@@ -1,5 +1,6 @@
 package com.atlasck.domain;
 
+import java.util.List;
 import javax.persistence.Column;
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.javabean.RooJavaBean;

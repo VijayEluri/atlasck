@@ -38,10 +38,6 @@
 				<form:textarea path="body" id="question" cols="30" rows="11" htmlEscape="true"/>
 			</li>
 
-			<li>
-				<form:label path="emailAnswer" cssStyle="display:inline">Отговор на e-mail адрес</form:label>
-				<form:checkbox path="emailAnswer"/>
-			</li>
 		</ul>
 
 

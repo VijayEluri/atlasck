@@ -1,16 +1,19 @@
 package com.atlasck.web;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.atlasck.domain.Answer;
 import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
 
@@ -28,8 +31,20 @@ public class AdviceController {
 	 */
 	// TODO duplicated annotations to aspects
 	@RequestMapping(value = "list", method = RequestMethod.GET, produces = "text/html")
-	public String list(ModelMap modelMap) {
-		modelMap.addAttribute("actionName", "advice.list");
+	public String list(Model uiModel) {
+		uiModel.addAttribute("actionName", "advice.list");
+
+		// TODO replace with criteria query
+		Set<Answer> availableAnswers = new HashSet<Answer>();
+
+		for (Answer answer : Answer.findAllAnswers()) {
+			if(answer.getQuestion().getVisible() == true) {
+				availableAnswers.add(answer);
+			}
+		}
+
+		uiModel.addAttribute("answers", availableAnswers);
+		
 		return "advice/list";
 	}
 
@@ -49,9 +64,9 @@ public class AdviceController {
 			uiModel.addAttribute("question", question);
 			return "advice/question";
 		}
-		
+
 		question.getVisitor().setIpAddress(request.getRemoteAddr());
-		
+
 		for (Visitor v : Visitor.findAllVisitors()) {
 			if (v.getEmail().toLowerCase().equals(question.getVisitor().getEmail().toLowerCase())) {
 				v.setNickname(question.getVisitor().getNickname());
@@ -61,11 +76,11 @@ public class AdviceController {
 				break;
 			}
 		}
-		
-		if(question.getVisitor().getId() == null) {
+
+		if (question.getVisitor().getId() == null) {
 			question.getVisitor().persist();
 		}
-		
+
 		question.persist();
 
 		return "redirect:question-sent.html";

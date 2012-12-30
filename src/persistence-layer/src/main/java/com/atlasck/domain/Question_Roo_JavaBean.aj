@@ -15,4 +15,20 @@ privileged aspect Question_Roo_JavaBean {
         this.body = body;
     }
     
+    public Boolean Question.getVisible() {
+        return this.visible;
+    }
+    
+    public void Question.setVisible(Boolean visible) {
+        this.visible = visible;
+    }
+    
+    public Boolean Question.getEmailAnswer() {
+        return this.emailAnswer;
+    }
+    
+    public void Question.setEmailAnswer(Boolean emailAnswer) {
+        this.emailAnswer = emailAnswer;
+    }
+    
 }
