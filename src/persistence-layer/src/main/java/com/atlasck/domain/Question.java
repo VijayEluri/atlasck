@@ -16,10 +16,10 @@ public class Question {
     @Column(name = "body", columnDefinition = "TEXT")
     @NotNull
     private String body;
-    
+
     @Column(name = "visible")
     private Boolean visible = false;
-    
+
     @Column(name = "email_answer")
     private Boolean emailAnswer = true;
 }
