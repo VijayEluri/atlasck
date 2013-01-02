@@ -1,0 +1,47 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:form="http://www.springframework.org/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	version="2.0" class="content">
+	<jsp:output omit-xml-declaration="yes"/>
+
+	<h2>Задайте въпрос</h2>
+	<p>
+	За да изпратите въпрос е необходимо да попълните всички полета във формата.
+	Вашият въпрос ще получи отговор, само ако е одобрен. <strong>Счетоводна кантора Атлас</strong> запазва правото си
+	да коригира въпроса Ви преди да публикува отговор.
+	</p>
+
+	<form:form method="post" id="q" modelAttribute="question">
+		<ul>
+			<li>
+				<form:label path="visitor.nickname">Име</form:label>
+				<form:errors path="visitor.nickname" class="error" />
+		     	<form:input path="visitor.nickname"/>
+			</li>
+
+			<li>
+				<form:label path="visitor.email">Имейл</form:label>
+				<form:errors path="visitor.email" class="error" />
+		     	<form:input path="visitor.email"/>
+			</li>
+
+			<li>
+				<form:label path="title">Заглавие на въпроса</form:label>
+		     	<form:errors path="title" class="error" />
+		     	<form:input path="title" />
+			</li>
+			
+			<li>
+				<form:label path="body">Въпрос</form:label>
+				<form:errors path="body" class="error" />
+				<form:textarea path="body" id="question" cols="30" rows="11" htmlEscape="true"/>
+			</li>
+
+		</ul>
+
+
+		<input type="submit" value="Изпрати"/>
+	</form:form>
+
+</div>

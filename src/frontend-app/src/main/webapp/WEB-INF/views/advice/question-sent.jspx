@@ -1,0 +1,16 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:form="http://www.springframework.org/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	version="2.0" class="content">
+	<jsp:output omit-xml-declaration="yes"/>
+
+	<spring:url value="content/feedback.html" var="feedback_url"/>
+
+	<h2>Счетоводни Онлайн Консултации</h2>
+	<p>
+	Вашият въпрос беше изпратен до екипа на <strong>Счетоводна кантора Атлас</strong>. Очаквайте отговор на вашия въпрос
+	и не забравяйте, че винаги можете да се <a href="${feedback.url}">свържете</a> с екипа на кантората.
+	</p>
+
+</div>

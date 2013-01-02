@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition extends="wide" name="content/aboutus">
+		<put-attribute name="body"
+			value="/WEB-INF/views/content/aboutus.jspx" />
+	</definition>
+	
+	<definition extends="wide" name="content/services">
+		<put-attribute name="body"
+			value="/WEB-INF/views/content/services.jspx" />
+	</definition>
+	
+	<definition extends="wide" name="content/feedback">
+		<put-attribute name="body"
+			value="/WEB-INF/views/content/feedback.jspx" />
+	</definition>
+</tiles-definitions>
