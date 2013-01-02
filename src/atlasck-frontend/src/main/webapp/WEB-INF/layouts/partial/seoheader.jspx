@@ -1,7 +1,0 @@
-<jsp:root xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
-	<jsp:output omit-xml-declaration="yes"/>
-
-	<title>Счетоводна катора Атлас</title>
-	<meta name="title" content="Счетоводна катора Атлас" />
-	<meta name="description" content="Безплатни онлайн консултации от счетоводна кантора Атлас. Задайте Вашите въпроси и получете отговор." />
-</jsp:root>
