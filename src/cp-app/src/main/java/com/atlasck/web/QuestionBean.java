@@ -81,10 +81,7 @@ public class QuestionBean {
 				expressionFactory.createValueExpression(elContext, "#{questionBean.answer.answer}", String.class));
 		answersEditInput.setRows(8);
 		answersEditInput.setCols(60);
-		answersEditInput.setAutoResize(true);
-		LengthValidator answersEditInputValidator = new LengthValidator();
-		answersEditInputValidator.setMaximum(255);
-		answersEditInput.addValidator(answersEditInputValidator);
+		answersEditInput.setAutoResize(false);
 		answersEditInput.setRequired(true);
 		htmlPanelGrid.getChildren().add(answersEditInput);
 

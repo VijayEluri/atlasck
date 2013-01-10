@@ -132,7 +132,7 @@ public class AnswerBean {
 		answerEditInput.setId("answerEditInput");
 		answerEditInput.setRows(8);
 		answerEditInput.setCols(60);
-		answerEditInput.setAutoResize(true);
+		answerEditInput.setAutoResize(false);
 		answerEditInput.setValueExpression("value",
 				expressionFactory.createValueExpression(elContext, "#{answerBean.answer.answer}", String.class));
 		htmlPanelGrid.getChildren().add(answerEditInput);
