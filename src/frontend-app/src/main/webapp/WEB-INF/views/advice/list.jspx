@@ -27,7 +27,7 @@
 				<br />
 				<small>
 				от ${answer.question.visitor.nickname} на
-				<fmt:formatDate type="date" value="${answer.createdAt}" pattern="dd.MM.yyyy"/>
+				<fmt:formatDate type="date" value="${answer.createdAt.time}" pattern="dd.MM.yyyy"/>
 				</small>
 				<blockquote>
 					<spring:escapeBody htmlEscape="true">${answer.question.body}</spring:escapeBody>
@@ -41,7 +41,7 @@
 				${answer.answer}
 				</blockquote>
 			</li>
-
+			<li style="text-align:center; color:lightgray;">&#9679;	&#9679;	 &#9679;</li>
 		</c:forEach>
 	</ul>
 

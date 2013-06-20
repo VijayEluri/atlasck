@@ -1,7 +1,9 @@
 package com.atlasck.web;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -35,16 +37,25 @@ public class AdviceController {
 		uiModel.addAttribute("actionName", "advice.list");
 
 		// TODO replace with criteria query
-		Set<Answer> availableAnswers = new HashSet<Answer>();
+		List<Answer> availableAnswers = new ArrayList<Answer>();
 
 		for (Answer answer : Answer.findAllAnswers()) {
-			if(answer.getQuestion().getVisible() == true) {
+			if (answer.getQuestion().getVisible() == true) {
 				availableAnswers.add(answer);
 			}
 		}
 
+		Collections.sort(availableAnswers, new Comparator<Answer>() {
+
+			@Override
+			public int compare(Answer o1, Answer o2) {
+				return -(o1.getCreatedAt().compareTo(o2.getCreatedAt()));
+			}
+
+		});
+
 		uiModel.addAttribute("answers", availableAnswers);
-		
+
 		return "advice/list";
 	}
 
@@ -59,7 +70,8 @@ public class AdviceController {
 	 */
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
 	@Transactional
-	public String create(@Valid Question question, BindingResult result, Model uiModel, HttpServletRequest request) {
+	public String create(@Valid Question question, BindingResult result,
+			Model uiModel, HttpServletRequest request) {
 		if (result.hasErrors()) {
 			uiModel.addAttribute("question", question);
 			return "advice/question";
@@ -68,7 +80,8 @@ public class AdviceController {
 		question.getVisitor().setIpAddress(request.getRemoteAddr());
 
 		for (Visitor v : Visitor.findAllVisitors()) {
-			if (v.getEmail().toLowerCase().equals(question.getVisitor().getEmail().toLowerCase())) {
+			if (v.getEmail().toLowerCase()
+					.equals(question.getVisitor().getEmail().toLowerCase())) {
 				v.setNickname(question.getVisitor().getNickname());
 				v.setIpAddress(question.getVisitor().getIpAddress());
 				question.setVisitor(v);
@@ -104,7 +117,8 @@ public class AdviceController {
 	}
 
 	@RequestMapping(value = "question-sent", method = RequestMethod.GET, produces = "text/html")
-	public String successfulAddedQuestion(Model uiModel, HttpServletRequest request) {
+	public String successfulAddedQuestion(Model uiModel,
+			HttpServletRequest request) {
 		uiModel.addAttribute("actionName", "advice.list");
 
 		if (request.getSession().getAttribute(IS_QUESTION_POSTED) != null) {

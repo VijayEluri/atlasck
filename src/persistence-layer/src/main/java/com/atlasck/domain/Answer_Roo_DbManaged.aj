@@ -5,7 +5,7 @@ package com.atlasck.domain;
 
 import com.atlasck.domain.Answer;
 import com.atlasck.domain.Question;
-import java.util.Date;
+import java.util.Calendar;
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -21,13 +21,13 @@ privileged aspect Answer_Roo_DbManaged {
     
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date Answer.createdAt;
+    @DateTimeFormat(style = "MM")
+    private Calendar Answer.createdAt;
     
     @Column(name = "updated_at")
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date Answer.updatedAt;
+    @DateTimeFormat(style = "MM")
+    private Calendar Answer.updatedAt;
     
     public Question Answer.getQuestion() {
         return question;
@@ -37,19 +37,19 @@ privileged aspect Answer_Roo_DbManaged {
         this.question = question;
     }
     
-    public Date Answer.getCreatedAt() {
+    public Calendar Answer.getCreatedAt() {
         return createdAt;
     }
     
-    public void Answer.setCreatedAt(Date createdAt) {
+    public void Answer.setCreatedAt(Calendar createdAt) {
         this.createdAt = createdAt;
     }
     
-    public Date Answer.getUpdatedAt() {
+    public Calendar Answer.getUpdatedAt() {
         return updatedAt;
     }
     
-    public void Answer.setUpdatedAt(Date updatedAt) {
+    public void Answer.setUpdatedAt(Calendar updatedAt) {
         this.updatedAt = updatedAt;
     }
     

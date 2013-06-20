@@ -5,7 +5,7 @@ package com.atlasck.domain;
 
 import com.atlasck.domain.Question;
 import com.atlasck.domain.Visitor;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.OneToMany;
@@ -29,13 +29,13 @@ privileged aspect Visitor_Roo_DbManaged {
     
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date Visitor.createdAt;
+    @DateTimeFormat(style = "MM")
+    private Calendar Visitor.createdAt;
     
     @Column(name = "updated_at")
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date Visitor.updatedAt;
+    @DateTimeFormat(style = "MM")
+    private Calendar Visitor.updatedAt;
     
     public Set<Question> Visitor.getQuestions() {
         return questions;
@@ -61,19 +61,19 @@ privileged aspect Visitor_Roo_DbManaged {
         this.email = email;
     }
     
-    public Date Visitor.getCreatedAt() {
+    public Calendar Visitor.getCreatedAt() {
         return createdAt;
     }
     
-    public void Visitor.setCreatedAt(Date createdAt) {
+    public void Visitor.setCreatedAt(Calendar createdAt) {
         this.createdAt = createdAt;
     }
     
-    public Date Visitor.getUpdatedAt() {
+    public Calendar Visitor.getUpdatedAt() {
         return updatedAt;
     }
     
-    public void Visitor.setUpdatedAt(Date updatedAt) {
+    public void Visitor.setUpdatedAt(Calendar updatedAt) {
         this.updatedAt = updatedAt;
     }
     

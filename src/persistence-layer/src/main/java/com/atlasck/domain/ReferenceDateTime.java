@@ -1,31 +1,31 @@
 package com.atlasck.domain;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Functional Datetime fields implemented by 
- * certain domain objects.
+ * Functional Datetime fields implemented by certain domain objects.
  * 
  * @author G
  * 
  */
 public interface ReferenceDateTime {
 
-	void setCreatedAt(Date createdAt);
+	void setCreatedAt(Calendar createdAt);
 
 	/**
 	 * Returns creation date.
 	 * 
 	 * @return
 	 */
-	Date getCreatedAt();
+	Calendar getCreatedAt();
 
-	void setUpdatedAt(Date createdAt);
+	void setUpdatedAt(Calendar createdAt);
 
 	/**
 	 * Returns latest modification date.
 	 * 
 	 * @return
 	 */
-	Date getUpdatedAt();
+	Calendar getUpdatedAt();
 }

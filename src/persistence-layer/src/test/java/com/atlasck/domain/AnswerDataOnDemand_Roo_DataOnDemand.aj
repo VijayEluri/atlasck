@@ -10,7 +10,6 @@ import com.atlasck.domain.QuestionDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
@@ -29,7 +28,7 @@ privileged aspect AnswerDataOnDemand_Roo_DataOnDemand {
     private List<Answer> AnswerDataOnDemand.data;
     
     @Autowired
-    private QuestionDataOnDemand AnswerDataOnDemand.questionDataOnDemand;
+    QuestionDataOnDemand AnswerDataOnDemand.questionDataOnDemand;
     
     public Answer AnswerDataOnDemand.getNewTransientAnswer(int index) {
         Answer obj = new Answer();
@@ -46,7 +45,7 @@ privileged aspect AnswerDataOnDemand_Roo_DataOnDemand {
     }
     
     public void AnswerDataOnDemand.setCreatedAt(Answer obj, int index) {
-        Date createdAt = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
+        Calendar createdAt = Calendar.getInstance();
         obj.setCreatedAt(createdAt);
     }
     
@@ -56,7 +55,7 @@ privileged aspect AnswerDataOnDemand_Roo_DataOnDemand {
     }
     
     public void AnswerDataOnDemand.setUpdatedAt(Answer obj, int index) {
-        Date updatedAt = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
+        Calendar updatedAt = Calendar.getInstance();
         obj.setUpdatedAt(updatedAt);
     }
     
@@ -100,13 +99,13 @@ privileged aspect AnswerDataOnDemand_Roo_DataOnDemand {
             Answer obj = getNewTransientAnswer(i);
             try {
                 obj.persist();
-            } catch (ConstraintViolationException e) {
-                StringBuilder msg = new StringBuilder();
+            } catch (final ConstraintViolationException e) {
+                final StringBuilder msg = new StringBuilder();
                 for (Iterator<ConstraintViolation<?>> iter = e.getConstraintViolations().iterator(); iter.hasNext();) {
-                    ConstraintViolation<?> cv = iter.next();
-                    msg.append("[").append(cv.getConstraintDescriptor()).append(":").append(cv.getMessage()).append("=").append(cv.getInvalidValue()).append("]");
+                    final ConstraintViolation<?> cv = iter.next();
+                    msg.append("[").append(cv.getRootBean().getClass().getName()).append(".").append(cv.getPropertyPath()).append(": ").append(cv.getMessage()).append(" (invalid value = ").append(cv.getInvalidValue()).append(")").append("]");
                 }
-                throw new RuntimeException(msg.toString(), e);
+                throw new IllegalStateException(msg.toString(), e);
             }
             obj.flush();
             data.add(obj);

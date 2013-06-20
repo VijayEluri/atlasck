@@ -1,6 +1,8 @@
 package com.atlasck.domain;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -19,10 +21,12 @@ privileged aspect TimeReferenceTracking {
 	// TODO move to external class - not working from there due impossibility to
 	// assign field value.
 	public static void referenceDateTimeUpdater(ReferenceDateTime domainObject) {
+		final Calendar c = new GregorianCalendar();
+		c.setTime(new Date());
 		if (domainObject.getCreatedAt() == null) {
-			domainObject.setCreatedAt(new Date());
+			domainObject.setCreatedAt(c);
 		}
-		domainObject.setUpdatedAt(new Date());
+		domainObject.setUpdatedAt(c);
 	}
 
 	public void Visitor.updateRefDateTime() {
