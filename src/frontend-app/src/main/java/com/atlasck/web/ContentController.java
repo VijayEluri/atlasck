@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ContentController {
 
 	/**
-	 * Renders AboutUs page. 
+	 * Renders AboutUs page.
+	 * 
 	 * @param modelMap
 	 * @return
 	 */
@@ -22,6 +23,7 @@ public class ContentController {
 
 	/**
 	 * Renders Services page.
+	 * 
 	 * @param modelMap
 	 * @return
 	 */
@@ -33,6 +35,7 @@ public class ContentController {
 
 	/**
 	 * Renders feedback page.
+	 * 
 	 * @param modelMap
 	 * @return
 	 */
@@ -41,5 +44,5 @@ public class ContentController {
 		modelMap.addAttribute("actionName", "content.feedback");
 		return "content/feedback";
 	}
-	
+
 }

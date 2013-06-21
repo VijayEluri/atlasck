@@ -1,19 +1,27 @@
-<div
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:jsp="http://java.sun.com/JSP/Page"
 	xmlns:tiles="http://tiles.apache.org/tags-tiles"
-	xmlns:spring="http://www.springframework.org/tags"
-	id="footer">
-	<jsp:output omit-xml-declaration="yes"/>
+	xmlns:spring="http://www.springframework.org/tags" id="footer">
+	<jsp:output omit-xml-declaration="yes" />
 
-	<spring:url value="/" var="content_about_us_url"/>
-	<spring:url value="/content/services" var="content_services_url"/>
-	<spring:url value="/advice/list" var="advice_list_url"/>
-	<spring:url value="/content/feedback" var="content_feedback_url"/>
+	<spring:url value="/" var="content_about_us_url" />
+	<spring:url value="/content/services" var="content_services_url" />
+	<spring:url value="/advice/list" var="advice_list_url" />
+	<spring:url value="/content/feedback" var="content_feedback_url" />
 
 	<div id="footerCopyRight">
-		<div class="floatLeft"><a href="${content_about_us_url}">skatlas.com</a></div>
-		<div class="floatRight"><strong><a href="${content_about_us_url}" class="aboutTheCompany">счетоводна кантора Атлас</a></strong><![CDATA[&nbsp; &bull; &nbsp;]]> <a href="mailto:office@atlasck.com"><![CDATA[office@atlasck.com]]></a></div>
+		<div class="floatLeft">
+			<![CDATA[&nbsp; ]]>
+		</div>
+		<div class="floatRight">
+			<strong><a href="${content_about_us_url}"
+				class="aboutTheCompany">счетоводна кантора Атлас</a></strong>
+			<![CDATA[&nbsp; &bull; &nbsp;]]>
+			<a href="${content_about_us_url}">atlasck.com</a>
+			<![CDATA[&nbsp; &bull; &nbsp;]]>
+			<a href="mailto:office@atlasck.com"> <![CDATA[office@atlasck.com]]>
+			</a>
+		</div>
 
 		<br class="cleaner" />
 	</div>

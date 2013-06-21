@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -38,7 +39,6 @@ public class AdviceController {
 
 		// TODO replace with criteria query
 		List<Answer> availableAnswers = new ArrayList<Answer>();
-
 		for (Answer answer : Answer.findAllAnswers()) {
 			if (answer.getQuestion().getVisible() == true) {
 				availableAnswers.add(answer);
@@ -53,6 +53,29 @@ public class AdviceController {
 			}
 
 		});
+
+		uiModel.addAttribute("answers", availableAnswers);
+
+		return "advice/list";
+	}
+
+	/**
+	 * View single advice list.
+	 * 
+	 * @param uiModel
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = "text/html")
+	public String advice(Model uiModel, @PathVariable("id") int id) {
+		uiModel.addAttribute("actionName", "advice.list");
+
+		List<Answer> availableAnswers = new ArrayList<Answer>();
+		Answer answer = Answer.findAnswer(id);
+		
+		if (answer != null && answer.getQuestion().getVisible() == true) {
+			availableAnswers.add(answer);
+		}
 
 		uiModel.addAttribute("answers", availableAnswers);
 
@@ -129,13 +152,4 @@ public class AdviceController {
 		return "advice/list";
 	}
 
-	/*
-	 * @ExceptionHandler(Exception.class) public ResponseEntity<String>
-	 * handleIOException(Exception ex) {
-	 * 
-	 * // prepare responseEntity ResponseEntity<String> r = new
-	 * ResponseEntity<String>(ex.toString(), HttpStatus.OK);
-	 * 
-	 * return r; }
-	 */
 }

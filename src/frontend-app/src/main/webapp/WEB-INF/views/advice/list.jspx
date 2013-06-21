@@ -1,18 +1,16 @@
-<div
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
 	xmlns:jsp="http://java.sun.com/JSP/Page"
 	xmlns:spring="http://www.springframework.org/tags"
-	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
-	class="content">
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" class="content">
 
 	<h2>Счетоводни Онлайн Консултации</h2>
 
-	<spring:url value="/advice/question" var="url" scope="html"/>
+	<spring:url value="/advice/question" var="url" scope="html" />
 	<p>
-		В онлайн консултациите на <strong>счетоводна кантора Атлас</strong> можете да участвате напълно безплатно
-		като <a href="${url}.html">зададете въпрос</a>.
-		Отправените от Вас въпроси и техните отговори са публични.
+		В онлайн консултациите на <strong>счетоводна кантора Атлас</strong>
+		можете да участвате напълно безплатно като <a href="${url}.html">зададете
+			въпрос</a>. Отправените от Вас въпроси и техните отговори са публични.
 	</p>
 
 	<p>
@@ -20,28 +18,23 @@
 	</p>
 
 	<ul id="answersList">
-		<c:forEach var="answer" items="${answers}">
-			<li>
-				<small class="question">Въпрос</small>
-				<spring:escapeBody htmlEscape="true">${answer.question.title}</spring:escapeBody>
-				<br />
-				<small>
-				от ${answer.question.visitor.nickname} на
-				<fmt:formatDate type="date" value="${answer.createdAt.time}" pattern="dd.MM.yyyy"/>
-				</small>
+		<c:forEach var="answer" items="${answers}" varStatus="status">
+			<li><small class="question">Въпрос</small> <spring:escapeBody
+					htmlEscape="true">${answer.question.title}</spring:escapeBody> <small>
+					от ${answer.question.visitor.nickname} на <fmt:formatDate
+						type="date" value="${answer.createdAt.time}" pattern="dd.MM.yyyy" />
+			</small>
 				<blockquote>
 					<spring:escapeBody htmlEscape="true">${answer.question.body}</spring:escapeBody>
-				</blockquote>
+				</blockquote></li>
+			<li class="answer"><small class="answer">Отговор</small>
 
-			</li>
-			<li class="answer">
-				<small class="answer">Отговор</small>
+				<blockquote>${answer.answer}</blockquote></li>
 
-				<blockquote>
-				${answer.answer}
-				</blockquote>
-			</li>
-			<li style="text-align:center; color:lightgray;">&#9679;	&#9679;	 &#9679;</li>
+			<c:if test="${answers.size() != status.count}">
+				<li style="text-align: center; color: lightgray;">&#9679;
+					&#9679; &#9679;</li>
+			</c:if>
 		</c:forEach>
 	</ul>
 
